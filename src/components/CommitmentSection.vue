@@ -1,75 +1,58 @@
 <template>
-  <section class="py-24 bg-site-blue text-white relative overflow-hidden flex items-center justify-center">
-    <!-- Background overlay/gradient if needed -->
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/10 to-transparent opacity-30 pointer-events-none"></div>
+  <section class="py-24 bg-site-terracotta text-white relative overflow-hidden">
+    <!-- Subtle Pattern Overlay -->
+    <div class="absolute inset-0 opacity-5 pointer-events-none">
+      <svg class="h-full w-full" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 0 L100 100 M100 0 L0 100" stroke="white" stroke-width="0.1"/>
+      </svg>
+    </div>
 
-    <div class="container mx-auto px-4 max-w-5xl relative z-10">
-      <!-- Main Card Container -->
-      <div class="bg-white/10 backdrop-blur-md rounded-[50px] p-8 md:p-12 shadow-2xl border border-white/10">
-        <div class="flex flex-col md:flex-row items-center gap-12">
-          
-          <!-- Left Image -->
-          <div class="w-full md:w-5/12">
-            <div class="relative rounded-[30px] overflow-hidden shadow-2xl aspect-[4/5] group">
-              <img 
-                src="https://images.unsplash.com/photo-1519689680058-324335c77eba?q=80&w=1000&auto=format&fit=crop" 
-                alt="Mãos segurando bebê" 
-                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-              />
-              <div class="absolute inset-0 bg-black/20"></div>
-            </div>
-          </div>
+    <div class="container relative z-10 max-w-6xl">
+      <div class="text-center mb-16">
+        <span class="text-white/70 text-sm font-bold uppercase tracking-[0.3em] mb-4 block">
+          Seu Compromisso
+        </span>
+        <h2 class="text-white text-4xl md:text-5xl mb-6">Compromisso Diário</h2>
+        <div class="w-20 h-1 bg-white/30 mx-auto"></div>
+      </div>
 
-          <!-- Right Content -->
-          <div class="w-full md:w-7/12 text-left">
-            
-            <!-- Title Header -->
-            <div class="mb-10 text-center md:text-left">
-               <img 
-                src="https://cms.adocaoespiritualrio.org.br/uploads/daily_commitment_spiritual_adoption_47cab96e68.webp" 
-                alt="Compromisso Diário" 
-                class="h-24 md:h-32 w-auto mx-auto md:mx-0 mb-4 brightness-200"
-              />
-            </div>
-
-            <!-- List -->
-            <div class="space-y-6 text-[16px] leading-[26px] font-normal text-blue-50">
-              <div class="flex gap-3">
-                <span class="font-bold flex-shrink-0">1.</span>
-                <p>Rezar um dos mistérios do Rosário.</p>
-              </div>
-
-              <div class="flex gap-3">
-                <span class="font-bold flex-shrink-0">2.</span>
-                <div>
-                  <p class="mb-2">Rezar esta oração:</p>
-                  <p class="italic text-white opacity-90">
-                    "Senhor Jesus, pela intercessão de Maria, Vossa Mãe, que Vos acolheu com amor, e de São José, homem justo, que cuidou de Vós após o nascimento, peço-Vos por esta criança concebida, adotada espiritualmente por mim, que corre o perigo de ser morta pelo aborto. Dai aos seus pais amor e coragem para que a deixem viver a vida que Vós mesmo lhe destes. Amém."
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex gap-3">
-                 <span class="font-bold flex-shrink-0">3.</span>
-                 <p>Pode também acrescentar espontaneamente um propósito diário.</p>
-              </div>
-            </div>
-
-            <!-- Button -->
-            <div class="mt-10 text-center md:text-left">
-              <a 
-                href="#" 
-                class="inline-flex items-center bg-site-red text-white px-8 py-3 rounded-lg text-sm font-bold uppercase tracking-wide hover:bg-red-600 transition-all shadow-lg hover:shadow-red-500/30 hover:-translate-y-1"
-              >
-                Quero fazer uma adoção espiritual
-                <svg class="ms-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </a>
-            </div>
-
-          </div>
+      <div class="grid md:grid-cols-3 gap-12">
+        <!-- Step 1 -->
+        <div class="bg-white/10 backdrop-blur-sm p-10 rounded-sm border border-white/10 hover:bg-white/20 transition-all duration-500">
+          <div class="text-4xl font-serif mb-6 opacity-30 italic">01.</div>
+          <h3 class="text-xl font-bold uppercase tracking-wider mb-4">Santo Rosário</h3>
+          <p class="text-white/80 leading-relaxed font-medium">
+            Rezar um dos mistérios do Rosário (uma dezena) todos os dias durante nove meses.
+          </p>
         </div>
+
+        <!-- Step 2 -->
+        <div class="bg-white/10 backdrop-blur-sm p-10 rounded-sm border border-white/10 hover:bg-white/20 transition-all duration-500 md:scale-110 shadow-2xl z-10">
+          <div class="text-4xl font-serif mb-6 opacity-30 italic">02.</div>
+          <h3 class="text-xl font-bold uppercase tracking-wider mb-4">Oração Especial</h3>
+          <p class="text-white/85 leading-relaxed italic text-sm mb-6">
+            "Senhor Jesus, peço-Vos por esta criança concebida, adotada espiritualmente por mim, que corre o perigo de ser morta pelo aborto..."
+          </p>
+          <a href="#" class="text-xs font-bold uppercase tracking-widest border-b border-white pb-1 hover:text-site-dark hover:border-site-dark transition-colors">Ver oração completa</a>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-white/10 backdrop-blur-sm p-10 rounded-sm border border-white/10 hover:bg-white/20 transition-all duration-500">
+          <div class="text-4xl font-serif mb-6 opacity-30 italic">03.</div>
+          <h3 class="text-xl font-bold uppercase tracking-wider mb-4">Ação Adicional</h3>
+          <p class="text-white/80 leading-relaxed font-medium">
+            Acrescentar espontaneamente um propósito diário, como um pequeno sacrifício ou boa obra.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-20 text-center">
+        <a 
+          href="#" 
+          class="inline-block bg-white text-site-terracotta px-12 py-5 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-site-dark hover:text-white transition-all duration-300 shadow-xl"
+        >
+          Iniciar Adoção agora
+        </a>
       </div>
     </div>
   </section>

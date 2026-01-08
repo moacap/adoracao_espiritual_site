@@ -30,33 +30,35 @@ const toggleFaq = (index) => {
 </script>
 
 <template>
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-4 max-w-3xl">
-      <h2 class="text-3xl font-bold text-site-blue mb-12 text-center">Perguntas Frequentes</h2>
+  <section class="py-24 bg-site-beige">
+    <div class="container max-w-4xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <span class="text-site-terracotta text-sm font-bold uppercase tracking-[0.3em] mb-4 block">
+          Dúvidas Comuns
+        </span>
+        <h2 class="text-site-dark text-4xl md:text-5xl">Dúvidas Frequentes</h2>
+      </div>
       
       <div class="space-y-4">
-        <div v-for="(faq, index) in faqs" :key="index" class="border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+        <div v-for="(faq, index) in faqs" :key="index" class="bg-white rounded-sm overflow-hidden shadow-sm border border-black/5">
           <button 
             @click="toggleFaq(index)"
-            class="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
+            class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-black/[0.02] transition-colors group"
           >
-            <span class="font-semibold text-gray-800">{{ faq.question }}</span>
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              fill="none" 
-              viewBox="0 0 24 24" 
-              stroke-width="2" 
-              stroke="currentColor" 
-              class="w-5 h-5 transition-transform duration-300"
-              :class="{'rotate-180': faq.isOpen}"
+            <span class="font-bold text-lg text-site-dark group-hover:text-site-terracotta transition-colors">{{ faq.question }}</span>
+            <div 
+              class="w-8 h-8 rounded-full border border-black/10 flex items-center justify-center transition-all duration-300"
+              :class="{'bg-site-terracotta border-site-terracotta text-white rotate-180': faq.isOpen}"
             >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </div>
           </button>
           
           <div 
-            v-show="faq.isOpen" 
-            class="px-6 pb-4 text-gray-600 animate-fadeIn"
+            v-if="faq.isOpen" 
+            class="px-8 pb-8 text-site-dark/70 text-lg leading-relaxed border-t border-black/5 pt-6 mx-8 mb-2"
           >
             {{ faq.answer }}
           </div>
@@ -65,13 +67,3 @@ const toggleFaq = (index) => {
     </div>
   </section>
 </template>
-
-<style scoped>
-.animate-fadeIn {
-  animation: fadeIn 0.3s ease-out;
-}
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-</style>
