@@ -25,7 +25,7 @@ const slides = [
     tag: 'Fé e Compromisso',
     title: 'Um ato de amor ao próximo.',
     text: 'Adoção espiritual não requer recursos financeiros, apenas o seu tempo e o seu coração voltados para Deus.',
-    image: 'https://images.unsplash.com/photo-1544126592-807daa2b565b?q=80&w=2000&auto=format&fit=crop',
+    image: 'https://cms.adocaoespiritualrio.org.br/uploads/foto1_ee9008fbf4.webp',
     ctaPrimary: 'Comece Agora',
     ctaSecondary: 'Perguntas'
   }
