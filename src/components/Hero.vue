@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import maosBebe from '../assets/maos-fofas-de-mae-e-bebe-closeup.jpg';
+import maosBebe from '../assets/maos_bebe.png';
 
 const currentSlide = ref(0);
 let slideInterval = null;

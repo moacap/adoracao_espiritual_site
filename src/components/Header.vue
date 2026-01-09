@@ -57,7 +57,7 @@ onUnmounted(() => {
     <nav 
       :class="[
         'w-full transition-all duration-300 z-50',
-        isSticky ? 'fixed top-0 left-0 bg-white shadow-lg py-3' : 'relative bg-white py-5'
+        isSticky ? 'fixed top-0 left-0 bg-white/60 backdrop-blur-md shadow-lg py-3' : 'relative bg-white/50 backdrop-blur-md py-5'
       ]"
     >
       <div class="container flex items-center justify-center gap-8">
