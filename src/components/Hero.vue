@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
+import maosBebe from '../assets/maos-fofas-de-mae-e-bebe-closeup.jpg';
 
 const currentSlide = ref(0);
 let slideInterval = null;
@@ -25,7 +26,7 @@ const slides = [
     tag: 'Fé e Compromisso',
     title: 'Um ato de amor ao próximo.',
     text: 'Adoção espiritual não requer recursos financeiros, apenas o seu tempo e o seu coração voltados para Deus.',
-    image: 'https://cms.adocaoespiritualrio.org.br/uploads/foto1_ee9008fbf4.webp',
+    image: maosBebe,
     ctaPrimary: 'Comece Agora',
     ctaSecondary: 'Perguntas'
   }
