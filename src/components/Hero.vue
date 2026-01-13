@@ -60,7 +60,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="relative w-full aspect-[16/14] sm:aspect-[21/14] lg:aspect-[25/14] flex items-center justify-center overflow-hidden bg-site-dark">
+  <section class="relative w-full aspect-[16/21] sm:aspect-[21/21] lg:aspect-[25/21] flex items-center justify-center overflow-hidden bg-site-dark">
     <!-- Carousel Backgrounds -->
     <div class="absolute inset-0 z-0">
       <TransitionGroup name="fade-bg">
