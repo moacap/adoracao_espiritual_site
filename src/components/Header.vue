@@ -43,6 +43,8 @@ onUnmounted(() => {
             <a href="#" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-instagram"></i></a>
             <a href="#" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="hover:text-site-terracotta transition-colors text-lg"><i class="fas fa-envelope"></i></a>
           </div>
           
           <div class="w-px h-4 bg-black/10"></div> <!-- Subtle Divider -->
