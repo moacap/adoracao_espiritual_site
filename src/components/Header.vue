@@ -1,16 +1,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
+import LanguageSelector from './LanguageSelector.vue';
 
 const isSticky = ref(false);
-
-const navLinks = [
-  { name: 'Histórias', href: '#' },
-  { name: 'Em Defesa da Vida', href: '#', hasDropdown: true },
-  { name: 'Os Papas', href: '#' },
-  { name: 'Carteirinha', href: '#' },
-  { name: 'Adoção Espiritual', href: '#' },
-  { name: 'Doações', href: '#' },
-];
 
 const handleScroll = () => {
   isSticky.value = window.scrollY > 100;
@@ -27,8 +19,6 @@ onUnmounted(() => {
 
 <template>
   <header class="w-full">
-
-
     <!-- Main Navigation -->
     <nav 
       :class="[
@@ -36,8 +26,8 @@ onUnmounted(() => {
         isSticky ? 'fixed top-0 left-0 bg-white/60 backdrop-blur-md shadow-lg py-3' : 'relative bg-white/50 backdrop-blur-md py-5'
       ]"
     >
-      <div class="container flex items-center justify-center gap-8">
-        <!-- Logo -->
+      <div class="w-full flex items-center justify-between px-5 md:px-10">
+        <!-- Logo (Left) -->
         <a href="/" class="flex-shrink-0">
           <img 
             src="https://adocaoespiritual.org.br/assets/logo-0061352b.png" 
@@ -46,16 +36,22 @@ onUnmounted(() => {
           />
         </a>
 
-        <!-- Desktop Menu -->
-        <div class="hidden lg:flex items-center justify-center space-x-8">
-          <a v-for="link in navLinks" :key="link.name" :href="link.href" class="text-[15px] font-bold uppercase tracking-wider text-site-dark hover:text-site-terracotta transition-colors flex items-center whitespace-nowrap">{{ link.name }}<svg v-if="link.hasDropdown" class="ms-1.5 w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7" /></svg></a>
-          <a href="#" class="bg-site-terracotta text-white px-7 py-3 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-site-dark transition-all transform hover:-translate-y-0.5 whitespace-nowrap">Apoie</a>
-        </div>
+        <!-- Right Side Group (Social + Language) -->
+        <div class="flex items-center gap-6">
+          <!-- Social Icons -->
+          <div class="flex items-center gap-4 text-site-dark/60">
+            <a href="#" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-youtube"></i></a>
+          </div>
+          
+          <div class="w-px h-4 bg-black/10"></div> <!-- Subtle Divider -->
 
-        <!-- Mobile Toggle -->
-        <button class="lg:hidden text-site-dark">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
-        </button>
+          <!-- Language Selector -->
+          <div class="flex items-center">
+            <LanguageSelector :isWhite="true" />
+          </div>
+        </div>
       </div>
     </nav>
   </header>

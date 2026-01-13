@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
+import LanguageSelector from './LanguageSelector.vue';
 
 const isSticky = ref(false);
 
@@ -27,7 +28,7 @@ onUnmounted(() => {
           : 'bg-transparent py-8'
       ]"
     >
-      <div class="container flex items-center justify-center">
+      <div class="w-full relative flex items-center justify-center px-5">
         <!-- Logo -->
         <a href="/" class="flex-shrink-0">
           <img 
@@ -39,6 +40,11 @@ onUnmounted(() => {
             ]"
           />
         </a>
+
+        <!-- Language Selector (Right) -->
+        <div class="absolute right-0 inset-y-0 flex items-center pr-5">
+          <LanguageSelector :isWhite="isSticky" />
+        </div>
       </div>
     </nav>
   </header>
