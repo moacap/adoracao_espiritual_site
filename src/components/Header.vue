@@ -6,7 +6,7 @@ import aePretoLogo from '../assets/ae-preto.png';
 const isSticky = ref(false);
 
 const handleScroll = () => {
-  isSticky.value = window.scrollY > 100;
+  isSticky.value = window.scrollY > 50;
 };
 
 onMounted(() => {
@@ -23,8 +23,10 @@ onUnmounted(() => {
     <!-- Main Navigation -->
     <nav 
       :class="[
-        'w-full transition-all duration-300 z-50',
-        isSticky ? 'fixed top-0 left-0 bg-white/60 backdrop-blur-md shadow-lg py-3' : 'relative bg-white/50 backdrop-blur-md py-5'
+        'w-full transition-all duration-700 z-50 fixed top-0 left-0',
+        isSticky 
+          ? 'bg-white/80 backdrop-blur-lg shadow-lg py-3' 
+          : 'bg-transparent py-8'
       ]"
     >
       <div class="w-full flex items-center justify-between px-5 md:px-10">
@@ -33,26 +35,31 @@ onUnmounted(() => {
           <img 
             :src="aePretoLogo" 
             alt="Adoção Espiritual" 
-            class="h-12 lg:h-14 w-auto"
+            :class="[
+              'h-12 lg:h-16 w-auto transition-all duration-500',
+              !isSticky ? 'brightness-0 invert' : ''
+            ]"
           />
         </a>
 
         <!-- Right Side Group (Social + Language) -->
         <div class="flex items-center gap-6">
           <!-- Social Icons -->
-          <div class="flex items-center gap-4 text-site-dark/60">
+          <div 
+            class="flex items-center gap-4 transition-colors duration-300"
+            :class="isSticky ? 'text-site-dark/60' : 'text-white/80'"
+          >
             <a href="https://instagram.com/adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-instagram"></i></a>
             <a href="https://facebook.com/adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-facebook-f"></i></a>
             <a href="https://youtube.com/@adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-youtube"></i></a>
             <a href="https://wa.me/552112345678" target="_blank" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-whatsapp"></i></a>
-
           </div>
           
-          <div class="w-px h-4 bg-black/10"></div> <!-- Subtle Divider -->
+          <div class="w-px h-4" :class="isSticky ? 'bg-black/10' : 'bg-white/20'"></div> <!-- Subtle Divider -->
 
           <!-- Language Selector -->
           <div class="flex items-center">
-            <LanguageSelector :isWhite="true" />
+            <LanguageSelector :isWhite="isSticky" />
           </div>
         </div>
       </div>

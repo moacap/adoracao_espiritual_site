@@ -60,7 +60,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-site-dark">
+  <section class="relative w-full aspect-[16/14] sm:aspect-[21/14] lg:aspect-[25/14] flex items-center justify-center overflow-hidden bg-site-dark">
     <!-- Carousel Backgrounds -->
     <div class="absolute inset-0 z-0">
       <TransitionGroup name="fade-bg">
@@ -113,8 +113,15 @@ onUnmounted(() => {
       </Transition>
     </div>
 
+    <!-- Shape Divider (Soul Space Style - Concave Curve) -->
+    <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-[0] z-20">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[40px] md:h-[100px] lg:h-[150px]">
+        <path d="M0,0 C480,120 720,120 1200,0 L1200,120 L0,120 Z" fill="#FFFFFF"></path>
+      </svg>
+    </div>
+
     <!-- Navigation Dots -->
-    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex space-x-4">
+    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-30 flex space-x-4">
       <button 
         v-for="(_, index) in slides" 
         :key="index"
@@ -133,7 +140,7 @@ onUnmounted(() => {
     </div>
 
     <!-- Scroll Down Indicator -->
-    <div class="absolute bottom-8 right-12 z-20 hidden md:flex flex-col items-center space-y-4 opacity-50">
+    <div class="absolute bottom-16 right-12 z-20 hidden md:flex flex-col items-center space-y-4 opacity-50">
       <span class="text-[10px] font-bold uppercase tracking-[0.3em] rotate-90 origin-right translate-y-12">Role para ver mais</span>
       <div class="w-px h-16 bg-white/30 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-1/2 bg-white animate-scroll-down"></div>
@@ -145,7 +152,7 @@ onUnmounted(() => {
 <style scoped>
 .fade-bg-enter-active,
 .fade-bg-leave-active {
-  transition: opacity 1.5s ease;
+  transition: opacity 2s ease;
 }
 .fade-bg-enter-from,
 .fade-bg-leave-to {
@@ -154,15 +161,15 @@ onUnmounted(() => {
 
 .fade-up-enter-active,
 .fade-up-leave-active {
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fade-up-enter-from {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(20px);
 }
 .fade-up-leave-to {
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateY(-20px);
 }
 
 @keyframes scroll-down {
