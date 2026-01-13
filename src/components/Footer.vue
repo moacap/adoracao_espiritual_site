@@ -66,7 +66,7 @@ import aePretoLogo from '../assets/ae-preto.png';
 
       <!-- Bottom Bar -->
       <div class="pt-12 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-6 text-site-dark/50 text-[15px]">
-        <p>© 2026 Adoção Espiritual. Todos os direitos reservados. v3.6</p>
+        <p>© 2026 Adoção Espiritual. Todos os direitos reservados. v3.7</p>
         <div class="flex space-x-8">
           <a href="#" class="hover:text-site-terracotta transition-colors">Privacidade</a>
           <a href="#" class="hover:text-site-terracotta transition-colors">Termos</a>
