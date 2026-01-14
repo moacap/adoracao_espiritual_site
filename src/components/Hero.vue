@@ -63,7 +63,7 @@ onUnmounted(() => {
 
 <template>
   <section
-    class="relative w-full aspect-[16/48] sm:aspect-[21/48] lg:aspect-[25/48] flex items-center justify-center overflow-hidden bg-site-dark"
+    class="relative w-full aspect-[16/38] sm:aspect-[21/38] lg:aspect-[25/38] flex items-center justify-center overflow-hidden bg-site-dark"
   >
     <!-- Carousel Backgrounds -->
     <div class="absolute inset-0 z-0">
