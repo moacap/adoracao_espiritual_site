@@ -63,7 +63,7 @@ onUnmounted(() => {
 
 <template>
   <section
-    class="relative w-full aspect-[16/14] sm:aspect-[21/14] lg:aspect-[25/14] flex items-center justify-center overflow-hidden bg-site-dark"
+    class="relative w-full aspect-[16/31] sm:aspect-[21/14] lg:aspect-[25/10] flex items-center justify-center overflow-hidden bg-site-dark"
   >
     <!-- Carousel Backgrounds -->
     <div class="absolute inset-0 z-0">
@@ -92,17 +92,17 @@ onUnmounted(() => {
       <Transition name="fade-up" mode="out-in">
         <div :key="currentSlide" class="will-change-transform">
           <span
-            class="text-md md:text-lg font-bold uppercase tracking-[0.4em] mb-6 block drop-shadow-md text-white/90"
+            class="text-xs md:text-lg font-bold uppercase tracking-[0.4em] mb-6 block drop-shadow-md text-white/90"
           >
             {{ slides[currentSlide].tag }}
           </span>
           <h1
-            class="text-7xl md:text-9xl font-serif leading-tight mb-8 max-w-5xl mx-auto drop-shadow-2xl"
+            class="text-5xl md:text-9xl font-serif leading-tight mb-8 max-w-5xl mx-auto drop-shadow-2xl"
           >
             {{ slides[currentSlide].title }}
           </h1>
           <p
-            class="text-2xl md:text-4xl font-medium mb-12 max-w-3xl mx-auto opacity-90 leading-relaxed drop-shadow-md"
+            class="text-lg md:text-4xl font-medium mb-12 max-w-3xl mx-auto opacity-90 leading-relaxed drop-shadow-md"
           >
             {{ slides[currentSlide].text }}
           </p>
