@@ -30,7 +30,7 @@ const slides = computed(() => [
 ]);
 
 const nextSlide = () => {
-  currentSlide.value = (currentSlide.value + 1) % slides.length;
+  currentSlide.value = (currentSlide.value + 1) % slides.value.length;
 };
 
 const goToSlide = (index) => {
