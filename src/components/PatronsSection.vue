@@ -84,13 +84,13 @@ onMounted(() => {
                     <h3 class="text-3xl font-bold mb-4 text-site-dark">{{ patron.name }}</h3>
                     <p class="text-site-dark/70 text-lg leading-relaxed mb-6">{{ patron.description }}</p>
                     <div class="flex items-center justify-center md:justify-start">
-                      <div class="group relative inline-flex items-center h-10 pr-12 pl-4">
-                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-site-terracotta whitespace-nowrap">
+                      <div class="group relative inline-flex items-center h-12 pr-14 pl-6">
+                        <span class="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-site-terracotta whitespace-nowrap">
                           {{ $t('patrons.button') }}
                         </span>
-                        <div class="absolute right-0 top-0 h-full w-10 border border-site-terracotta rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:w-full bg-white/0">
-                          <div class="absolute right-0 top-0 w-10 h-full flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-site-terracotta">
+                        <div class="absolute right-0 top-0 h-full w-12 border border-site-terracotta rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:w-full bg-white/0">
+                          <div class="absolute right-0 top-0 w-12 h-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-site-terracotta">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
                           </div>
