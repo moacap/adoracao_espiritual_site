@@ -75,25 +75,16 @@
       "desc": "Un movimiento de oración en defensa de los no nacidos, protegiendo la vida desde la concepción."
     },
     "links1": {
-      "title": "Adopción",
-      "item1": "¿Qué es?",
-      "item2": "Cómo funciona",
-      "item3": "Compromiso Diario",
-      "item4": "Oraciones"
-    },
-    "links2": {
-      "title": "Recursos",
-      "item1": "Blog y Noticias",
-      "item2": "Testimonios",
-      "item3": "Materiales para Descargar",
-      "item4": "Galería"
-    },
-    "contact": {
-      "title": "Contacto",
-      "address": "Río de Janeiro, Brasil"
+      "title": "Adopción Espiritual",
+      "item1": "Quiénes somos",
+      "item2": "Contáctenos",
+      "item3": "Done aquí",
+      "item4": "Descargas",
+      "item5": "Política de Privacidad"
     },
     "bottom": {
-      "rights": "© 2026 Adopción Espiritual. Todos los derechos reservados. v4.3",
+      "rights": "© 2026 Adopción Espiritual. Todos los derechos reservados.",
+      "version": "v4.3",
       "privacy": "Privacidad",
       "terms": "Términos"
     }

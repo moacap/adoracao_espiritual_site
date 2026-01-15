@@ -75,25 +75,16 @@
       "desc": "A prayer movement in defense of the unborn, protecting life from conception."
     },
     "links1": {
-      "title": "Adoption",
-      "item1": "What is it?",
-      "item2": "How it works",
-      "item3": "Daily Commitment",
-      "item4": "Prayers"
-    },
-    "links2": {
-      "title": "Resources",
-      "item1": "Blog & News",
-      "item2": "Testimonies",
-      "item3": "Download Materials",
-      "item4": "Gallery"
-    },
-    "contact": {
-      "title": "Contact",
-      "address": "Rio de Janeiro, Brazil"
+      "title": "Spiritual Adoption",
+      "item1": "Who we are",
+      "item2": "Contact us",
+      "item3": "Donate here",
+      "item4": "Downloads",
+      "item5": "Privacy Policy"
     },
     "bottom": {
-      "rights": "© 2026 Spiritual Adoption. All rights reserved. v4.3",
+      "rights": "© 2026 Spiritual Adoption. All rights reserved.",
+      "version": "v4.3",
       "privacy": "Privacy",
       "terms": "Terms"
     }
