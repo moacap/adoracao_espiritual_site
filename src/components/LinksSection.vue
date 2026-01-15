@@ -2,6 +2,7 @@
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import aePretoLogo from '../assets/ae-preto.png';
+import babyAppLogo from '../assets/logo_transparent_1768482338198.png';
 
 const { t } = useI18n();
 
@@ -53,9 +54,7 @@ const links = computed(() => [
     type: 'app',
     title: t('links.item_app.title'),
     description: t('links.item_app.description'),
-    icon: 'fas fa-baby',
-    color: 'text-[#FECDD3]',
-    bgColor: 'bg-[#007A7C]',
+    icon: babyAppLogo,
     androidHref: 'https://play.google.com/store/apps/details?id=pl.abksolutions.adoptujzycie',
     iosHref: 'https://apps.apple.com/br/app/adote-a-vida/id1127974449'
   },
@@ -89,8 +88,8 @@ const links = computed(() => [
                   <img :src="link.icon" alt="Logo" class="w-full h-auto object-contain" />
                 </template>
                 <template v-else-if="link.type === 'app'">
-                  <div :class="[link.bgColor, 'w-14 h-14 rounded-full flex items-center justify-center transition-transform group-hover:scale-110 shadow-sm']">
-                    <i :class="[link.icon, link.color, 'text-2xl']"></i>
+                  <div class="w-10 h-10 flex items-center justify-center transition-transform group-hover:scale-110">
+                    <img :src="link.icon" alt="App Logo" class="w-full h-full object-contain" />
                   </div>
                 </template>
                 <template v-else>
@@ -123,7 +122,7 @@ const links = computed(() => [
                     <a :href="link.androidHref" target="_blank" class="flex items-center gap-1.5 hover:text-site-terracotta transition-colors">
                       <i class="fab fa-android text-lg"></i> {{ $t('links.item_app.android') }}
                     </a>
-                    <span class="text-gray-300 font-normal">ou</span>
+                    <span class="text-gray-300 font-normal">{{ $t('links.item_app.or') }}</span>
                     <a :href="link.iosHref" target="_blank" class="flex items-center gap-1.5 hover:text-site-terracotta transition-colors">
                       <i class="fab fa-apple text-lg"></i> {{ $t('links.item_app.ios') }}
                     </a>
