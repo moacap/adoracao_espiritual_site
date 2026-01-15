@@ -60,7 +60,7 @@ onUnmounted(() => {
 
 <template>
   <section
-    class="relative w-full aspect-[16/31] sm:aspect-[21/14] lg:aspect-[25/10] flex items-center justify-center overflow-hidden bg-site-dark"
+    class="relative w-full aspect-[3/4] sm:aspect-[21/14] lg:aspect-[25/10] flex items-center justify-center overflow-hidden bg-site-dark"
   >
     <!-- Carousel Backgrounds -->
     <div class="absolute inset-0 z-0">
@@ -89,17 +89,17 @@ onUnmounted(() => {
       <Transition name="fade-up" mode="out-in">
         <div :key="currentSlide" class="will-change-transform">
           <span
-            class="hero-tag text-xs md:text-lg font-bold uppercase tracking-[0.4em] mb-4 md:mb-6 block drop-shadow-md text-white/90"
+            class="hero-tag text-[10px] md:text-lg font-bold uppercase tracking-[0.4em] mb-4 md:mb-6 block drop-shadow-md text-white/90"
           >
             {{ slides[currentSlide].tag }}
           </span>
           <h1
-            class="hero-title text-3xl sm:text-5xl md:text-7xl lg:text-9xl font-serif leading-tight mb-4 md:mb-8 max-w-5xl mx-auto drop-shadow-2xl"
+            class="hero-title text-3xl sm:text-5xl md:text-7xl lg:text-9xl font-serif leading-tight mb-4 md:mb-8 max-w-5xl mx-auto drop-shadow-2xl font-light italic"
           >
             {{ slides[currentSlide].title }}
           </h1>
           <p
-            class="hero-text text-base md:text-2xl lg:text-4xl font-medium mb-12 max-w-3xl mx-auto opacity-90 leading-relaxed drop-shadow-md"
+            class="hero-text hidden md:block text-base md:text-2xl lg:text-4xl font-light mb-12 max-w-3xl mx-auto opacity-90 leading-relaxed drop-shadow-md italic"
           >
             {{ slides[currentSlide].text }}
           </p>
@@ -135,7 +135,7 @@ onUnmounted(() => {
         class="group relative p-2 outline-none"
       >
         <div
-          class="w-2.5 h-2.5 rounded-full transition-all duration-500"
+          class="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full transition-all duration-500"
           :class="[
             currentSlide === index
               ? 'bg-white scale-125'
@@ -204,9 +204,10 @@ onUnmounted(() => {
 
 /* Fluid typography that follows screen reduction */
 .hero-title {
-  font-size: clamp(2rem, 10vh, 8rem);
+  font-size: clamp(1.75rem, 5vh, 8rem);
   line-height: 1.1;
   margin-bottom: clamp(1rem, 3vh, 2rem);
+  letter-spacing: -0.02em;
 }
 
 .hero-text {
