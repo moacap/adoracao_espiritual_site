@@ -1,13 +1,22 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, computed } from 'vue';
 import LanguageSelector from './LanguageSelector.vue';
 import aePretoLogo from '../assets/ae-preto.png';
+
+const props = defineProps({
+  alwaysOpaque: {
+    type: Boolean,
+    default: false
+  }
+});
 
 const isSticky = ref(false);
 
 const handleScroll = () => {
   isSticky.value = window.scrollY > 50;
 };
+
+const showOpaque = computed(() => props.alwaysOpaque || isSticky.value);
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
@@ -24,7 +33,7 @@ onUnmounted(() => {
     <nav 
       :class="[
         'w-full transition-all duration-700 z-50 fixed top-0 left-0',
-        isSticky 
+        showOpaque 
           ? 'bg-white/80 backdrop-blur-lg shadow-lg py-3' 
           : 'bg-transparent py-8'
       ]"
@@ -37,14 +46,14 @@ onUnmounted(() => {
             alt="Adoção Espiritual" 
             :class="[
               'h-12 lg:h-16 w-auto transition-all duration-500',
-              !isSticky ? 'brightness-0 invert' : ''
+              !showOpaque ? 'brightness-0 invert' : ''
             ]"
           />
         </a>
 
         <!-- Language Selector (Right) -->
         <div class="flex items-center">
-          <LanguageSelector :isWhite="isSticky" />
+          <LanguageSelector :isWhite="showOpaque" />
         </div>
       </div>
     </nav>

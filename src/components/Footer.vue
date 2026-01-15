@@ -68,7 +68,7 @@ import aePretoLogo from '../assets/ae-preto.png';
       <div class="pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-site-dark/50 text-[15px]">
         <p>{{ $t('footer.bottom.rights') }}</p>
         <div class="flex space-x-8">
-          <a href="#" class="hover:text-site-terracotta transition-colors">{{ $t('footer.bottom.privacy') }}</a>
+          <a href="privacy_policy.html" class="hover:text-site-terracotta transition-colors">{{ $t('footer.bottom.privacy') }}</a>
           <a href="#" class="hover:text-site-terracotta transition-colors">{{ $t('footer.bottom.terms') }}</a>
         </div>
       </div>
