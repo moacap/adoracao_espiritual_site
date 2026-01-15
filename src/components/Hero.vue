@@ -99,7 +99,7 @@ onUnmounted(() => {
             {{ slides[currentSlide].title }}
           </h1>
           <p
-            class="hero-text hidden md:block text-base md:text-2xl lg:text-4xl font-light mb-12 max-w-3xl mx-auto opacity-90 leading-relaxed drop-shadow-md italic"
+            class="hero-text text-sm sm:text-lg md:text-2xl lg:text-4xl font-light mb-12 max-w-3xl mx-auto opacity-90 leading-relaxed drop-shadow-md italic"
           >
             {{ slides[currentSlide].text }}
           </p>
@@ -211,25 +211,19 @@ onUnmounted(() => {
 }
 
 .hero-text {
-  font-size: clamp(1rem, 3vh, 2.25rem);
+  font-size: clamp(0.875rem, 3vh, 2.25rem);
   line-height: 1.4;
   margin-bottom: clamp(1.5rem, 4vh, 3rem);
 }
 
-/* Hide hero tag earlier on short viewports */
-@media (max-width: 768px), (max-height: 750px) {
-  .hero-tag {
-    display: none !important;
-  }
-}
-
-/* Extra reduction for very short viewports */
-@media (max-height: 600px) {
+/* Ensure visibility on small screens */
+@media (max-width: 768px) {
   .hero-title {
-    font-size: clamp(1.5rem, 12vh, 4rem) !important;
+    font-size: 2rem !important;
   }
   .hero-text {
-    display: none; /* Hide subtext on very short screens to save space */
+    font-size: 1rem !important;
+    margin-bottom: 2rem;
   }
 }
 </style>
