@@ -17,8 +17,7 @@ const links = computed(() => [
   },
   {
     type: 'social',
-    title: 'INSTAGRAM',
-    handle: 'adocaoespiritualrio',
+    title: t('links.item2.title'),
     description: t('links.item2.description'),
     icon: 'fab fa-instagram',
     color: 'text-[#E1306C]',
@@ -26,8 +25,7 @@ const links = computed(() => [
   },
   {
     type: 'social',
-    title: 'facebook',
-    handle: '@adocaoespiritualrio/',
+    title: t('links.item3.title'),
     description: t('links.item3.description'),
     icon: 'fab fa-facebook',
     color: 'text-[#1877F2]',
@@ -35,8 +33,7 @@ const links = computed(() => [
   },
   {
     type: 'social',
-    title: 'YouTube',
-    handle: 'adocaoespiritualrio',
+    title: t('links.item4.title'),
     description: t('links.item4.description'),
     icon: 'fab fa-youtube',
     color: 'text-[#FF0000]',

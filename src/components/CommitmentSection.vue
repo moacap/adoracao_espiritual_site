@@ -71,9 +71,18 @@ onMounted(() => {
       <div class="mt-20 text-center reveal reveal-delay-3">
         <a 
           href="#" 
-          class="inline-block bg-white text-site-terracotta px-12 py-5 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-site-dark hover:text-white transition-all duration-300 shadow-xl"
+          class="group relative inline-flex items-center h-12 pr-14 pl-6"
         >
-          {{ $t('commitment.button') }}
+          <span class="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-white whitespace-nowrap">
+            {{ $t('commitment.button') }}
+          </span>
+          <div class="absolute right-0 top-0 h-full w-12 border border-white rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:w-full bg-white/0">
+            <div class="absolute right-0 top-0 w-12 h-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </div>
+          </div>
         </a>
       </div>
     </div>
