@@ -16,24 +16,18 @@ const slides = computed(() => [
     text: t('hero.slide1.text'),
     image:
       "https://cms.adocaoespiritualrio.org.br/uploads/banner_principal_0a4797804c.webp",
-    ctaPrimary: t('hero.slide1.ctaPrimary'),
-    ctaSecondary: t('hero.slide1.ctaSecondary'),
   },
   {
     tag: t('hero.slide2.tag'),
     title: t('hero.slide2.title'),
     text: t('hero.slide2.text'),
     image: bebeCrucifixo,
-    ctaPrimary: t('hero.slide2.ctaPrimary'),
-    ctaSecondary: t('hero.slide2.ctaSecondary'),
   },
   {
     tag: t('hero.slide3.tag'),
     title: t('hero.slide3.title'),
     text: t('hero.slide3.text'),
     image: maosBebe,
-    ctaPrimary: t('hero.slide3.ctaPrimary'),
-    ctaSecondary: t('hero.slide3.ctaSecondary'),
   },
 ]);
 
@@ -110,22 +104,6 @@ onUnmounted(() => {
             {{ slides[currentSlide].text }}
           </p>
 
-          <div
-            class="flex flex-col sm:flex-row items-center justify-center gap-4"
-          >
-            <a
-              href="#"
-              class="bg-site-terracotta text-white px-10 py-5 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-site-dark transition-all duration-300 shadow-2xl min-w-[200px]"
-            >
-              {{ slides[currentSlide].ctaPrimary }}
-            </a>
-            <a
-              href="#"
-              class="bg-white/10 backdrop-blur-md text-white border border-white/30 px-10 py-5 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-site-dark transition-all duration-300 min-w-[200px]"
-            >
-              {{ slides[currentSlide].ctaSecondary }}
-            </a>
-          </div>
         </div>
       </Transition>
     </div>
