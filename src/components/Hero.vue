@@ -84,22 +84,22 @@ onUnmounted(() => {
 
     <!-- Carousel Content -->
     <div
-      class="container relative z-10 text-center text-white px-4 pt-24 md:pt-0"
+      class="container relative z-10 text-center text-white px-4 pt-32 md:pt-40 lg:pt-24"
     >
       <Transition name="fade-up" mode="out-in">
         <div :key="currentSlide" class="will-change-transform">
           <span
-            class="text-xs md:text-lg font-bold uppercase tracking-[0.4em] mb-6 block drop-shadow-md text-white/90"
+            class="hero-tag text-xs md:text-lg font-bold uppercase tracking-[0.4em] mb-4 md:mb-6 block drop-shadow-md text-white/90"
           >
             {{ slides[currentSlide].tag }}
           </span>
           <h1
-            class="text-5xl md:text-9xl font-serif leading-tight mb-8 max-w-5xl mx-auto drop-shadow-2xl"
+            class="hero-title text-3xl sm:text-5xl md:text-7xl lg:text-9xl font-serif leading-tight mb-4 md:mb-8 max-w-5xl mx-auto drop-shadow-2xl"
           >
             {{ slides[currentSlide].title }}
           </h1>
           <p
-            class="text-lg md:text-4xl font-medium mb-12 max-w-3xl mx-auto opacity-90 leading-relaxed drop-shadow-md"
+            class="hero-text text-base md:text-2xl lg:text-4xl font-medium mb-12 max-w-3xl mx-auto opacity-90 leading-relaxed drop-shadow-md"
           >
             {{ slides[currentSlide].text }}
           </p>
@@ -200,5 +200,35 @@ onUnmounted(() => {
 
 .animate-scroll-down {
   animation: scroll-down 2s infinite ease-in-out;
+}
+
+/* Fluid typography that follows screen reduction */
+.hero-title {
+  font-size: clamp(2rem, 10vh, 8rem);
+  line-height: 1.1;
+  margin-bottom: clamp(1rem, 3vh, 2rem);
+}
+
+.hero-text {
+  font-size: clamp(1rem, 3vh, 2.25rem);
+  line-height: 1.4;
+  margin-bottom: clamp(1.5rem, 4vh, 3rem);
+}
+
+/* Hide hero tag earlier on short viewports */
+@media (max-width: 768px), (max-height: 750px) {
+  .hero-tag {
+    display: none !important;
+  }
+}
+
+/* Extra reduction for very short viewports */
+@media (max-height: 600px) {
+  .hero-title {
+    font-size: clamp(1.5rem, 12vh, 4rem) !important;
+  }
+  .hero-text {
+    display: none; /* Hide subtext on very short screens to save space */
+  }
 }
 </style>
