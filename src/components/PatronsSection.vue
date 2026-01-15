@@ -1,0 +1,158 @@
+<script setup>
+import { ref, onMounted } from 'vue';
+import padroeiraGuadalupe from '../assets/padroeira_guadalupe.png';
+import familiaUlma from '../assets/familia_ulma.png';
+
+const currentSlide = ref(0);
+
+const patrons = [
+  {
+    name: 'Nossa Senhora de Guadalupe',
+    image: padroeiraGuadalupe,
+    description: 'Padroeira das Américas e protetora dos nascituros',
+    link: '#'
+  },
+  {
+    name: 'Família Ulma',
+    image: familiaUlma,
+    description: 'Beatos mártires em defesa da vida',
+    link: '#'
+  }
+];
+
+const nextSlide = () => {
+  currentSlide.value = (currentSlide.value + 1) % patrons.length;
+};
+
+const prevSlide = () => {
+  currentSlide.value = (currentSlide.value - 1 + patrons.length) % patrons.length;
+};
+
+const goToSlide = (index) => {
+  currentSlide.value = index;
+};
+
+onMounted(() => {
+  const observerOptions = {
+    threshold: 0.15
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal-active');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.reveal').forEach((el) => {
+    observer.observe(el);
+  });
+});
+</script>
+
+<template>
+  <section class="py-40 bg-white relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="text-center mb-16 reveal">
+        <span class="text-site-terracotta text-sm font-bold uppercase tracking-[0.3em] mb-4 block">
+          {{ $t('patrons.badge') }}
+        </span>
+        <h2 class="text-site-dark text-4xl md:text-5xl mb-6">{{ $t('patrons.title') }}</h2>
+        <p class="text-site-dark/70 text-lg max-w-2xl mx-auto">{{ $t('patrons.description') }}</p>
+      </div>
+
+      <!-- Slider -->
+      <div class="relative max-w-7xl mx-auto reveal reveal-delay-1">
+        <div class="overflow-hidden rounded-sm">
+          <div class="relative" style="height: 500px;">
+            <div 
+              v-for="(patron, index) in patrons" 
+              :key="index"
+              class="absolute inset-0 transition-all duration-500 ease-in-out"
+              :class="currentSlide === index ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'"
+            >
+              <a :href="patron.link" class="block h-full group cursor-pointer">
+                <div class="grid md:grid-cols-2 gap-8 h-full bg-site-beige p-8 rounded-sm border border-black/5 hover:shadow-xl transition-all">
+                  <div class="flex items-center justify-center ps-16">
+                    <img :src="patron.image" :alt="patron.name" class="w-full h-auto object-contain max-h-96 rounded-sm shadow-2xl" />
+                  </div>
+                  <div class="flex flex-col justify-center text-center md:text-left">
+                    <h3 class="text-3xl font-bold mb-4 text-site-dark">{{ patron.name }}</h3>
+                    <p class="text-site-dark/70 text-lg leading-relaxed mb-6">{{ patron.description }}</p>
+                    <div class="flex items-center justify-center md:justify-start">
+                      <div class="group relative inline-flex items-center h-10 pr-12 pl-4">
+                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-site-terracotta whitespace-nowrap">
+                          {{ $t('patrons.button') }}
+                        </span>
+                        <div class="absolute right-0 top-0 h-full w-10 border border-site-terracotta rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:w-full bg-white/0">
+                          <div class="absolute right-0 top-0 w-10 h-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-site-terracotta">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button 
+          @click="prevSlide"
+          class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 w-10 h-10 bg-site-terracotta hover:bg-site-terracotta/80 text-white rounded-full flex items-center justify-center transition-all z-10"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </button>
+        <button 
+          @click="nextSlide"
+          class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 w-10 h-10 bg-site-terracotta hover:bg-site-terracotta/80 text-white rounded-full flex items-center justify-center transition-all z-10"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+
+        <!-- Dots -->
+        <div class="flex justify-center gap-3 mt-8">
+          <button
+            v-for="(patron, index) in patrons"
+            :key="index"
+            @click="goToSlide(index)"
+            class="w-3 h-3 rounded-full transition-all"
+            :class="currentSlide === index ? 'bg-site-terracotta w-8' : 'bg-site-terracotta/20 hover:bg-site-terracotta/40'"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single Wavy Divider beige -->
+    <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-[0] z-20">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[40px] md:h-[80px] lg:h-[110px]">
+        <path d="M0,110 C200,110 400,0 600,0 C800,0 1000,120 1200,60 V120 H0 Z" fill="#F1EDEA"></path>
+      </svg>
+    </div>
+  </section>
+</template>
+
+<style scoped>
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, opacity;
+}
+
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+</style>

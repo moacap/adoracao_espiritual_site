@@ -8,6 +8,47 @@
     "para2": "Apoiamos o direito à vida desde a concepção até a morte natural, seguindo os ensinamentos de fé e reparação pedidos por Nossa Senhora de Fátima.",
     "button": "Faça sua adoção"
   },
+  "whatIs": {
+    "badge": "Conheça",
+    "title": "O Que é a Adoção Espiritual?",
+    "description": "A Adoção Espiritual é viver a maternidade e a paternidade espiritual em relação às crianças ameaçadas pelo aborto.",
+    "button": "Saiba mais"
+  },
+  "howToParticipate": {
+    "badge": "Participe",
+    "title": "Como participar?",
+    "description": "A participação na Adoção Espiritual começa com a intenção de cuidar espiritualmente de uma criança que só Deus conhece, ameaçada pelo aborto, de sua mãe e da sua família.",
+    "button": "Saiba mais"
+  },
+  "whoIsItFor": {
+    "badge": "Para Todos",
+    "title": "Para quem recomendamos a Adoção Espiritual?",
+    "description": "A todos a Adoção Espiritual ensina confiar na amorosa providência de Deus, principalmente perante as dificuldades e desafios da vida, e abandono em Deus através da oração.",
+    "button": "Saiba mais"
+  },
+  "patrons": {
+    "badge": "Nossos Padroeiros",
+    "title": "Conheça Nossos Padroeiros",
+    "description": "Conheça os santos e beatos que inspiram nossa missão em defesa da vida.",
+    "button": "Saiba mais"
+  },
+  "stories": {
+    "badge": "Testemunhos",
+    "title": "Histórias Inspiradoras",
+    "description": "Conheça belas histórias em defesa da vida.",
+    "button": "Saiba mais"
+  },
+  "partners": {
+    "badge": "Parceiros",
+    "title": "Nossos Parceiros",
+    "description": "Conheça quem caminha conosco nesta missão."
+  },
+  "formation": {
+    "badge": "Aprenda",
+    "title": "Formação",
+    "description": "Conheça mais sobre o tema em defesa da vida.",
+    "button": "Saiba mais"
+  },
   "commitment": {
     "badge": "Seu Compromisso",
     "title": "Compromisso Diário",
@@ -28,7 +69,9 @@
   },
   "faq": {
     "badge": "Dúvidas Comuns",
-    "title": "Dúvidas Frequentes",
+    "title": "Perguntas Frequentes",
+    "description": "Separamos algumas dúvidas comuns, mas caso essas não te ajudem, entre em contato conosco. Estamos prontos para te ajudar!",
+    "button": "Saiba mais",
     "q1": {
       "question": "Quem pode participar da Adoção Espiritual?",
       "answer": "Qualquer pessoa: leigos, religiosos, crianças, jovens e adultos. Basta ter o desejo de salvar uma vida através da oração."

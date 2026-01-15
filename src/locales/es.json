@@ -8,6 +8,46 @@
     "para2": "Apoyamos el derecho a la vida desde la concepción hasta la muerte natural, siguiendo las enseñanzas de fe y reparación pedidas por Nuestra Señora de Fátima.",
     "button": "Haz tu adopción"
   },
+  "whatIs": {
+    "badge": "Conoce",
+    "title": "¿Qué es la Adopción Espiritual?",
+    "description": "La Adopción Espiritual es vivir la maternidad y la paternidad espiritual en relación a los niños amenazados por el aborto.",
+    "button": "Saber más"
+  },
+  "howToParticipate": {
+    "badge": "Participa",
+    "title": "¿Cómo participar?",
+    "description": "La participación en la Adopción Espiritual comienza con la intención de cuidar espiritualmente de un niño que solo Dios conoce, amenazado por el aborto, de su madre y de su familia.",
+    "button": "Saber más"
+  },
+  "whoIsItFor": {
+    "badge": "Para Todos",
+    "title": "¿Para quién recomendamos la Adopción Espiritual?",
+    "description": "A todos la Adopción Espiritual enseña a confiar en la amorosa providencia de Dios, principalmente ante las dificultades y desafíos de la vida, y el abandono en Dios a través de la oración.",
+    "button": "Saber más"
+  },
+  "patrons": {
+    "badge": "Nuestros Padroeiros",
+    "title": "Conoce a Nuestros Padroeiros",
+    "description": "Conoce a los santos y beatos que inspiran nuestra misión en defensa de la vida."
+  },
+  "stories": {
+    "badge": "Testimonios",
+    "title": "Historias Inspiradoras",
+    "description": "Conoce bellas historias en defensa de la vida.",
+    "button": "Saber más"
+  },
+  "partners": {
+    "badge": "Socios",
+    "title": "Nuestros Socios",
+    "description": "Conoce a quienes caminan con nosotros en esta misión."
+  },
+  "formation": {
+    "badge": "Aprende",
+    "title": "Formación",
+    "description": "Conoce más sobre el tema en defensa de la vida.",
+    "button": "Saber más"
+  },
   "commitment": {
     "badge": "Tu Compromiso",
     "title": "Compromiso Diario",

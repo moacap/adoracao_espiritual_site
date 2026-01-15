@@ -8,6 +8,46 @@
     "para2": "We support the right to life from conception to natural death, following the teachings of faith and reparation requested by Our Lady of Fatima.",
     "button": "Make your adoption"
   },
+  "whatIs": {
+    "badge": "Discover",
+    "title": "What is Spiritual Adoption?",
+    "description": "Spiritual Adoption is living spiritual motherhood and fatherhood in relation to children threatened by abortion.",
+    "button": "Learn more"
+  },
+  "howToParticipate": {
+    "badge": "Participate",
+    "title": "How to participate?",
+    "description": "Participation in Spiritual Adoption begins with the intention to spiritually care for a child that only God knows, threatened by abortion, their mother, and their family.",
+    "button": "Learn more"
+  },
+  "whoIsItFor": {
+    "badge": "For Everyone",
+    "title": "Who do we recommend Spiritual Adoption for?",
+    "description": "To everyone, Spiritual Adoption teaches to trust in God's loving providence, especially in the face of life's difficulties and challenges, and abandonment in God through prayer.",
+    "button": "Learn more"
+  },
+  "patrons": {
+    "badge": "Our Patrons",
+    "title": "Meet Our Patrons",
+    "description": "Get to know the saints and blesseds who inspire our mission in defense of life."
+  },
+  "stories": {
+    "badge": "Testimonies",
+    "title": "Inspirational Stories",
+    "description": "Discover beautiful stories in defense of life.",
+    "button": "Learn more"
+  },
+  "partners": {
+    "badge": "Partners",
+    "title": "Our Partners",
+    "description": "Meet those who walk with us in this mission."
+  },
+  "formation": {
+    "badge": "Learn",
+    "title": "Formation",
+    "description": "Learn more about the theme of defending life.",
+    "button": "Learn more"
+  },
   "commitment": {
     "badge": "Your Commitment",
     "title": "Daily Commitment",
