@@ -21,7 +21,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="py-40 bg-site-terracotta text-white relative overflow-hidden">
+  <section class="pt-36 pb-40 bg-site-terracotta text-white relative overflow-hidden">
     <!-- Subtle Pattern Overlay -->
     <div class="absolute inset-0 opacity-5 pointer-events-none">
       <svg class="h-full w-full" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">

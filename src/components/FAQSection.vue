@@ -42,7 +42,7 @@ const isFaqOpen = (index) => openIndices.value.has(index);
 </script>
 
 <template>
-  <section class="py-40 bg-white relative overflow-hidden">
+  <section class="pt-36 pb-40 bg-white relative overflow-hidden">
     <div class="container max-w-4xl mx-auto px-4">
       <div class="text-center mb-16">
         <span class="text-site-terracotta text-sm font-bold uppercase tracking-[0.3em] mb-4 block">

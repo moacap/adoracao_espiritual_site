@@ -84,7 +84,7 @@ onUnmounted(() => {
 
     <!-- Carousel Content -->
     <div
-      class="container relative z-10 text-center text-white px-4 pt-32 md:pt-40 lg:pt-24"
+      class="container relative z-10 text-center text-white px-4 pt-28 md:pt-36 lg:pt-24"
     >
       <Transition name="fade-up" mode="out-in">
         <div :key="currentSlide" class="will-change-transform">
