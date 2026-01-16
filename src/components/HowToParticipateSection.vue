@@ -21,7 +21,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="pt-20 pb-40 bg-site-beige relative overflow-hidden">
+  <section class="pt-14 pb-40 bg-site-beige relative overflow-hidden">
     <div class="container relative z-10 max-w-4xl mx-auto text-center">
       <h2
         class="reveal reveal-delay-1 text-site-terracotta text-4xl md:text-5xl leading-tight mb-8"

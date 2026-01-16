@@ -193,5 +193,8 @@
     "item6": {
       "description": "If you need, write to us."
     }
+  },
+  "general": {
+    "back": "Back"
   }
 }

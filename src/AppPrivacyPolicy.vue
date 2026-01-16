@@ -17,7 +17,7 @@ const goBack = () => {
          though HeaderStart handles scroll logic. -->
     <HeaderStart always-opaque />
 
-    <main class="pt-32 pb-20 container mx-auto px-4 lg:px-20">
+    <main class="pt-[90px] pb-20 container mx-auto px-4 lg:px-20">
       <div class="max-w-4xl mx-auto">
         <h1
           class="text-4xl md:text-5xl font-serif text-site-terracotta mb-12 text-center"
