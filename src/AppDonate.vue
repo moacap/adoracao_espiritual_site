@@ -16,7 +16,7 @@ const goBack = () => {
   <div class="min-h-screen bg-white">
     <HeaderStart always-opaque />
 
-    <main class="pt-[90px] pb-20 container mx-auto px-4 lg:px-20">
+    <main class="pt-[120px] pb-20 container mx-auto px-4 lg:px-20">
       <div class="max-w-4xl mx-auto">
         <!-- Title -->
         <h1
