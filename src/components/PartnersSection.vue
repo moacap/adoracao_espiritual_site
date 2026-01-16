@@ -83,7 +83,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="pt-14 pb-40 bg-white relative overflow-hidden">
+  <section class="pt-5 pb-40 bg-white relative overflow-hidden">
     <div class="container relative z-10">
       <div class="text-center mb-16 reveal">
         <span
