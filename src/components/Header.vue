@@ -1,7 +1,7 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
-import LanguageSelector from './LanguageSelector.vue';
-import aePretoLogo from '../assets/ae-preto.png';
+import { ref, onMounted, onUnmounted } from "vue";
+import LanguageSelector from "./LanguageSelector.vue";
+import aePretoLogo from "../assets/ae-preto.png";
 
 const isSticky = ref(false);
 
@@ -10,34 +10,36 @@ const handleScroll = () => {
 };
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener("scroll", handleScroll);
 });
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll);
+  window.removeEventListener("scroll", handleScroll);
 });
 </script>
 
 <template>
   <header class="w-full">
     <!-- Main Navigation -->
-    <nav 
+    <nav
       :class="[
         'w-full transition-all duration-700 z-50 fixed top-0 left-0',
-        isSticky 
-          ? 'bg-white/80 backdrop-blur-lg shadow-lg py-3' 
-          : 'bg-transparent py-8'
+        isSticky
+          ? 'bg-white/80 backdrop-blur-lg shadow-lg py-3'
+          : 'bg-transparent py-8',
       ]"
     >
-      <div class="w-full flex items-center justify-between ps-5 pe-2 md:ps-10 md:pe-5">
+      <div
+        class="w-full flex items-center justify-between ps-5 pe-2 md:ps-10 md:pe-5"
+      >
         <!-- Logo (Left) -->
         <a href="index.html" class="flex-shrink-0">
-          <img 
-            :src="aePretoLogo" 
-            alt="Adoção Espiritual" 
+          <img
+            :src="aePretoLogo"
+            alt="Adoção Espiritual"
             :class="[
               'h-12 lg:h-16 w-auto transition-all duration-500',
-              !isSticky ? 'brightness-0 invert' : ''
+              !isSticky ? 'brightness-0 invert' : '',
             ]"
           />
         </a>
@@ -45,17 +47,41 @@ onUnmounted(() => {
         <!-- Right Side Group (Social + Language) -->
         <div class="flex items-center gap-3 md:gap-6">
           <!-- Social Icons -->
-          <div 
+          <div
             class="flex items-center gap-2 md:gap-4 transition-colors duration-300"
             :class="isSticky ? 'text-site-dark/60' : 'text-white/80'"
           >
-            <a href="https://instagram.com/adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-base md:text-lg"><i class="fab fa-instagram"></i></a>
-            <a href="https://facebook.com/adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-base md:text-lg"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://youtube.com/@adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-base md:text-lg"><i class="fab fa-youtube"></i></a>
-            <a href="https://wa.me/552112345678" target="_blank" class="hover:text-site-terracotta transition-colors text-base md:text-lg"><i class="fab fa-whatsapp"></i></a>
+            <a
+              href="https://instagram.com/adocaoespiritualrio"
+              target="_blank"
+              class="hover:text-site-terracotta transition-colors text-base md:text-lg"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://facebook.com/adocaoespiritualrio"
+              target="_blank"
+              class="hover:text-site-terracotta transition-colors text-base md:text-lg"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://youtube.com/@adocaoespiritualrio"
+              target="_blank"
+              class="hover:text-site-terracotta transition-colors text-base md:text-lg"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              href="https://wa.me/552112345678"
+              target="_blank"
+              class="hover:text-site-terracotta transition-colors text-base md:text-lg"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
           </div>
-          
-          <div class="w-px h-4" :class="isSticky ? 'bg-black/10' : 'bg-white/20'"></div> <!-- Subtle Divider -->
+
+          <div
+            class="w-px h-4"
+            :class="isSticky ? 'bg-black/10' : 'bg-white/20'"
+          ></div>
+          <!-- Subtle Divider -->
 
           <!-- Language Selector -->
           <div class="flex items-center">

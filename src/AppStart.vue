@@ -1,13 +1,13 @@
 <script setup>
-import HeaderStart from './components/HeaderStart.vue'
-import HeroStart from './components/HeroStart.vue'
-import LinksSection from './components/LinksSection.vue'
-import Footer from './components/Footer.vue'
+import HeaderStart from "./components/HeaderStart.vue";
+import HeroStart from "./components/HeroStart.vue";
+import LinksSection from "./components/LinksSection.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
   <div class="min-h-screen bg-white">
-    <HeaderStart />
+    <HeaderStart hide-social />
     <main>
       <HeroStart />
       <LinksSection />
