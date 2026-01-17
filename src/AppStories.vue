@@ -11,6 +11,12 @@ const goBack = () => {
   }
 };
 
+const navigateTo = (storyId) => {
+  if (storyId === 1) {
+    window.location.href = "story-famosos.html";
+  }
+};
+
 const stories = [
   {
     id: 1,
@@ -95,7 +101,8 @@ onMounted(() => {
           <article 
             v-for="(story, index) in stories" 
             :key="story.id"
-            class="reveal group cursor-pointer"
+            @click="navigateTo(story.id)"
+            class="reveal group cursor-pointer flex flex-col h-full"
             :class="'reveal-delay-' + (index % 3 + 1)"
           >
             <!-- Image Container -->
@@ -125,9 +132,24 @@ onMounted(() => {
             <h2 class="text-2xl text-site-dark mb-4 group-hover:text-site-terracotta transition-colors leading-tight font-serif-site">
               {{ story.title }}
             </h2>
-            <p class="text-site-dark/70 text-lg leading-relaxed line-clamp-3">
+            <p class="text-site-dark/70 text-lg leading-relaxed line-clamp-3 mb-6">
               {{ story.description }}
             </p>
+
+            <div class="mt-auto flex justify-start">
+              <div class="relative inline-flex items-center h-10 pr-12 pl-0 transition-all">
+                <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-site-terracotta whitespace-nowrap group-hover:px-4 transition-all duration-500">
+                  Saiba mais
+                </span>
+                <div class="absolute right-0 top-0 h-full w-10 border border-site-terracotta rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:w-full bg-white/0">
+                  <div class="absolute right-0 top-0 w-10 h-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-site-terracotta">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
           </article>
         </div>
 
