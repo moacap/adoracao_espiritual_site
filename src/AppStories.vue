@@ -105,11 +105,11 @@ onMounted(() => {
             :class="'reveal-delay-' + (index % 3 + 1)"
           >
             <!-- Image Container -->
-            <div class="relative aspect-[16/10] bg-site-beige rounded-sm overflow-hidden shadow-sm mb-6 transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-1">
+            <div class="relative aspect-[16/10] bg-site-beige rounded-sm overflow-hidden mb-6">
               <img 
                 :src="story.image" 
                 :alt="story.title"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                class="w-full h-full object-cover"
               />
               <!-- Video Overlay Icon if applicable -->
               <div v-if="story.isVideo" class="absolute inset-0 flex items-center justify-center bg-black/20">
@@ -128,7 +128,7 @@ onMounted(() => {
             </div>
 
             <!-- Content -->
-            <h2 class="text-2xl text-site-dark mb-4 transition-colors leading-tight font-serif-site">
+            <h2 class="text-2xl text-site-dark mb-4 leading-tight font-serif-site">
               {{ story.title }}
             </h2>
             <p class="text-site-dark/70 text-lg leading-relaxed line-clamp-3 mb-6">
