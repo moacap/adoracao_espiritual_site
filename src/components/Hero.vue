@@ -119,7 +119,7 @@ onUnmounted(() => {
       >
         <path
           d="M0,0 C480,120 720,120 1200,0 L1200,120 L0,120 Z"
-          fill="#F1EDEA"
+          fill="#FFFFFF"
         ></path>
       </svg>
     </div>
