@@ -12,12 +12,9 @@ const goBack = () => {
 };
 
 const navigateTo = (storyId) => {
-  // Navigation disabled for now as per request
-  /*
   if (storyId === 1) {
     window.location.href = "story-famosos.html";
   }
-  */
 };
 
 const stories = [
