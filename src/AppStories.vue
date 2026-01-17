@@ -101,8 +101,7 @@ onMounted(() => {
           <article 
             v-for="(story, index) in stories" 
             :key="story.id"
-            @click="navigateTo(story.id)"
-            class="reveal group cursor-pointer flex flex-col h-full"
+            class="reveal group flex flex-col h-full"
             :class="'reveal-delay-' + (index % 3 + 1)"
           >
             <!-- Image Container -->
@@ -129,7 +128,7 @@ onMounted(() => {
             </div>
 
             <!-- Content -->
-            <h2 class="text-2xl text-site-dark mb-4 group-hover:text-site-terracotta transition-colors leading-tight font-serif-site">
+            <h2 class="text-2xl text-site-dark mb-4 transition-colors leading-tight font-serif-site">
               {{ story.title }}
             </h2>
             <p class="text-site-dark/70 text-lg leading-relaxed line-clamp-3 mb-6">
@@ -137,7 +136,10 @@ onMounted(() => {
             </p>
 
             <div class="mt-auto flex justify-center">
-              <div class="relative inline-flex items-center h-10 pr-12 pl-0 transition-all">
+              <div 
+                @click="navigateTo(story.id)"
+                class="relative inline-flex items-center h-10 pr-12 pl-0 transition-all cursor-pointer"
+              >
                 <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-site-terracotta whitespace-nowrap group-hover:px-4 transition-all duration-500">
                   Saiba mais
                 </span>
