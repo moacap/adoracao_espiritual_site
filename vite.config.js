@@ -17,6 +17,7 @@ export default defineConfig({
         site: resolve(__dirname, "site_page.html"),
         privacy_policy: resolve(__dirname, "privacy_policy.html"),
         donate: resolve(__dirname, "donate.html"),
+        stories: resolve(__dirname, "stories.html"),
       },
     },
   },
