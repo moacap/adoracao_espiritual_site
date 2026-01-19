@@ -15,15 +15,7 @@ const links = computed(() => [
     icon: aePretoLogo,
     href: "site_page.html",
   },
-  {
-    type: "contact",
-    title: "Doe Aqui",
-    subtitle: "COLABORE",
-    description: "Ajude-nos a manter este projeto de amor à vida.",
-    icon: "fas fa-heart",
-    color: "text-site-terracotta",
-    href: "donate.html",
-  },
+
   {
     type: "social",
     title: t("links.item2.title"),
