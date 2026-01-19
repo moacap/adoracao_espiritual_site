@@ -86,11 +86,7 @@ onMounted(() => {
   <section class="pt-5 pb-40 bg-site-beige relative overflow-hidden">
     <div class="container relative z-10">
       <div class="text-center mb-16 reveal">
-        <span
-          class="text-site-terracotta text-sm font-bold uppercase tracking-[0.3em] mb-4 block"
-        >
-          {{ $t("partners.badge") }}
-        </span>
+
         <h2 class="text-site-dark text-4xl md:text-5xl mb-6">
           {{ $t("partners.title") }}
         </h2>
