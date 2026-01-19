@@ -28,13 +28,7 @@ onMounted(() => {
       >
         <!-- Right Content -->
         <div class="lg:w-1/2">
-          <div class="mb-6 inline-block reveal">
-            <span
-              class="text-site-terracotta text-sm font-bold uppercase tracking-widest pb-1 border-b border-site-terracotta/20"
-            >
-              {{ $t("stories.badge") }}
-            </span>
-          </div>
+
           <h2
             class="reveal reveal-delay-1 text-site-dark text-4xl md:text-5xl leading-tight mb-8"
           >
