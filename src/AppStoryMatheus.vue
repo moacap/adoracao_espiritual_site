@@ -1,7 +1,10 @@
 <script setup>
 import { onMounted } from 'vue';
+import { useI18n } from 'vue-i18n';
 import HeaderStart from "./components/HeaderStart.vue";
 import Footer from "./components/Footer.vue";
+
+const { t } = useI18n();
 
 const storyImg = "https://cms.adocaoespiritualrio.org.br/uploads/padre_matheus_aquino_a907c69db1.jpg";
 const videoUrl = "https://www.youtube.com/embed/S016Y4Bgh04";
@@ -42,19 +45,19 @@ onMounted(() => {
         <!-- Meta -->
         <div class="flex items-center gap-4 mb-6 reveal">
           <span class="px-4 py-1.5 bg-site-terracotta/10 rounded-full text-[13px] font-bold text-site-terracotta uppercase tracking-[0.15em]">
-            Histórias de Vida
+            {{ t('stories_page.title') }}
           </span>
-          <span class="text-site-dark/40 text-sm">01 de Novembro, 2023</span>
+          <span class="text-site-dark/40 text-sm">{{ t('stories_content.matheus.date') }}</span>
         </div>
 
         <!-- Title -->
         <h1 class="text-4xl md:text-6xl text-site-dark font-serif-site leading-tight mb-8 reveal reveal-delay-1">
-          Emocionante testemunho de um Padre que quase foi abortado
+          {{ t('stories_content.matheus.title') }}
         </h1>
 
         <!-- Leadin -->
         <p class="text-xl md:text-2xl text-site-dark/60 font-medium leading-relaxed mb-12 reveal reveal-delay-2">
-          Testemunho do Padre Matheus Aquino, da Arquidiocese de São Sebastião do Rio de Janeiro.
+          {{ t('stories_content.matheus.intro') }}
         </p>
 
         <!-- Video/Banner Image -->
@@ -72,19 +75,19 @@ onMounted(() => {
         <!-- Article Content -->
         <div class="prose prose-lg max-w-none text-site-dark/80 reveal reveal-delay-1">
           <p class="text-lg leading-relaxed mb-6">
-            O Padre Matheus Aquino compartilha com profunda humildade e gratidão o milagre da sua própria vida. Em um relato que toca o coração, ele revela como esteve próximo de não nascer, mas como a mão de Deus e a corajosa decisão de sua mãe mudaram o destino de sua existência e o conduziram ao sacerdócio.
+            {{ t('stories_content.matheus.p1') }}
           </p>
 
           <p class="text-lg leading-relaxed mb-6 italic border-l-4 border-site-terracotta/30 pl-6 py-2">
-            "Eu sou fruto de um 'sim' à vida. Se hoje sou padre, se hoje posso servir aos irmãos e celebrar a Eucaristia, é porque alguém acreditou que a minha vida tinha um valor infinito desde a concepção."
+            {{ t('stories_content.matheus.p2') }}
           </p>
 
           <p class="text-lg leading-relaxed mb-6">
-            Sua história é um farol de esperança para tantas mães que, em momentos de desespero e incerteza, consideram o aborto como única saída. O testemunho do Padre Matheus é um lembrete vivo de que nunca sabemos as maravilhas que Deus reserva para cada criança que Ele permite ser gerada.
+            {{ t('stories_content.matheus.p3') }}
           </p>
 
           <p class="text-lg leading-relaxed mb-12">
-            Assista ao vídeo acima para conhecer o relato completo deste sacerdote do Rio de Janeiro que hoje dedica sua vida a proclamar o Evangelho da Vida.
+            {{ t('stories_content.matheus.p4') }}
           </p>
         </div>
 

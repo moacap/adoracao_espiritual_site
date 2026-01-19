@@ -1,7 +1,10 @@
 <script setup>
 import { onMounted } from 'vue';
+import { useI18n } from 'vue-i18n';
 import HeaderStart from "./components/HeaderStart.vue";
 import Footer from "./components/Footer.vue";
+
+const { t } = useI18n();
 
 const goBack = () => {
   if (window.history.length > 1) {
@@ -39,19 +42,19 @@ onMounted(() => {
         <!-- Meta -->
         <div class="flex items-center gap-4 mb-6 reveal">
           <span class="px-4 py-1.5 bg-site-terracotta/10 rounded-full text-[13px] font-bold text-site-terracotta uppercase tracking-[0.15em]">
-            Histórias de Vida
+            {{ t('stories_page.title') }}
           </span>
-          <span class="text-site-dark/40 text-sm">26 de Outubro, 2023</span>
+          <span class="text-site-dark/40 text-sm">{{ t('stories_content.famosos.date') }}</span>
         </div>
 
         <!-- Title -->
         <h1 class="text-4xl md:text-6xl text-site-dark font-serif-site leading-tight mb-8 reveal reveal-delay-1">
-          9 famosos que escaparam do aborto
+          {{ t('stories_content.famosos.title') }}
         </h1>
 
         <!-- Leadin -->
         <p class="text-xl md:text-2xl text-site-dark/60 font-medium leading-relaxed mb-12 reveal reveal-delay-2">
-          Eles estiveram no alvo do aborto; mas porque escaparam e tiveram a oportunidade de nascer, puderam realizar os próprios talentos.
+          {{ t('stories_content.famosos.intro') }}
         </p>
 
         <!-- Banner Image -->
@@ -66,77 +69,69 @@ onMounted(() => {
         <!-- Article Content -->
         <div class="prose prose-lg max-w-none text-site-dark/80 reveal reveal-delay-1">
           <p class="text-lg leading-relaxed mb-10">
-            Todos temos o direito a nascer; não importa quantos erros alguém possa cometer, há sempre uma razão maior para essa pessoa existir. Sempre vale a pena deixar cada um realizar o próprio show nessa terra! Tendo isso em vista, é quase impossível acreditar que os famosos abaixo quase não nasceram. Se fosse o caso, o mundo não seria o mesmo sem eles!
+            {{ t('stories_content.famosos.p1') }}
           </p>
 
           <div class="space-y-16">
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">Steve Jobs</h2>
+              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.jobs.title') }}</h2>
               <p class="text-lg leading-relaxed">
-                Imagina a sua vida sem um Mac, I-Phone ou I-Pad? Se Joanne Schieble, com então 22 anos, tivesse desistido de levar a gestação a termo, a tecnologia não seria como conhecemos hoje.
-                Joanne, mãe biológica de Steve Jobs, engravidou do namorado sírio e decidiu colocar o bebê para adoção. Ela escolheu uma família financeiramente capaz de pagar pelos estudos universitários do bebê, porém quando os candidatos a pais descobriram que Joanne esperava um menino, recuaram porque queriam uma menina. Joanne, a ponto de dar a luz e sem tempo para procurar uma nova família, acabou concordando em entregar o filho para um casal humilde.
-                Jobs, em entrevista, declarou ser agradecido por não ter terminado em um aborto.
+                {{ t('stories_content.famosos.jobs.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">Justin Bieber</h2>
+              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.bieber.title') }}</h2>
               <p class="text-lg leading-relaxed">
-                Em seu livro “Nowhere But Up”, Pattie Mallette, mãe de Justin Bieber, conta que quando se viu grávida aos 17 anos, foi pressionada a realizar um aborto. Mas isso nunca foi uma opção: “eu sabia que não poderia fazer isso”, revelou em entrevista. “A única coisa que eu sabia é que eu deveria manter a gestação. Eu não sabia como faria isso, mas eu apenas sabia que não poderia abortar”, disse.
-                Aos 18 anos, Pattie deu à luz a Justin em Ontário (Canadá) e o criou com a ajuda de seus pais Bruce e Diane, avós do cantor.
+                {{ t('stories_content.famosos.bieber.text') }}
               </p></section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">Roberto Gómez Bolaños</h2>
+              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.bolanos.title') }}</h2>
               <p class="text-lg leading-relaxed">
-                Em um breve comercial no México, Roberto Gómez Bolaños (conhecido no Brasil por sua atuação como Chaves e Chapolin), revelou que quando sua mãe estava grávida sofreu um acidente em que quase morreu. Os médicos então recomendaram que ela abortasse. “Abortar, eu? Jamais!” respondeu a mãe. “Ela defendeu a vida, a minha vida. É graças a ela que eu estou aqui”, afirmou.
+                {{ t('stories_content.famosos.bolanos.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">Susan Boyle</h2>
+              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.boyle.title') }}</h2>
               <p class="text-lg leading-relaxed">
-                Quando Bridget Boyle, aos 45 anos, engravidou, os médicos consideraram a gestação de risco e por isso a aconselharam a abortar. “Mas isso era impensável para minha mãe, uma católica devota. Eu só estou aqui porque ela teve fé”, contou a britânica.
-                Durante o parto, uma cesária de emergência, Susan sofreu falta de oxigênio e nasceu com pouco peso. Por isso, os médicos disseram a mãe: “Susan nunca será nada, não espere muito dela.” Em sua auto-biografia, Susan disse que os médicos não deveriam ter feito esse comentário. “O que eles não sabiam é que eu sou uma lutadora e tentei durante toda minha vida provar que eles estavam errados”.
-                Susan Boyle ganhou atenção internacional durante uma apresentação no programa “Britain’s Got Talent”. Seu primeiro álbum “I Dreamed a Dream” (2009) bateu recordes de vendas no Reino Unido e totalizou quase 14 milhões de cópias vendidas no mundo. Susan ganhou dois Grammys e é conhecida por apoiar causas caritativas.
+                {{ t('stories_content.famosos.boyle.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">Cristiano Ronaldo</h2>
+              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.ronaldo.title') }}</h2>
               <p class="text-lg leading-relaxed">
-                Quando Maria Dolores descobriu que estava grávida pela quarta vez, procurou por um médico para realizar o aborto. Este, porém, respondeu que não havia nenhuma razão física para abortar e que esse bebê lhe traria muita alegria na vida. Sem a cumplicidade do médico, Dolores tentou outros métodos de aborto que não funcionaram. Por fim, disse que “se a vontade de Deus é que esta criança nasça, que assim seja!”
-                Durante o parto, o mesmo médico disse uma frase que ficou para sempre na memória de Dolores: “Com pés como estes, será um jogador de futebol!” Em outras consultas, o médico vendo a preocupação da mãe, a animava dizendo: “Alegra-te, mulher, este bebê vai te dar muita sorte na vida e muitas felicidades!”
-                Cristiano é hoje a camisa 7 do clube espanhol Real Madrid e é considerado o maior jogador de futebol português de todos os tempos.
+                {{ t('stories_content.famosos.ronaldo.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">Celine Dion</h2>
+              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.dion.title') }}</h2>
               <p class="text-lg leading-relaxed">
-                A mãe da cantora canadense ficou devastada ao saber que esperava por Celine, sua 14˚ criança, e contou a um padre que pretendia fazer um aborto; o sacerdote, então, a convenceu a não fazer isso e a aceitar o bebê. “Devo a minha vida a este padre”, disse a cantora. “Quando minha mãe superou a decepção, ela não perdeu tempo com auto-piedade e me amou tão apaixonadamente quanto ao meu irmão mais novo”, declarou.
+                {{ t('stories_content.famosos.dion.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">Andrea Bocelli</h2>
+              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.bocelli.title') }}</h2>
               <p class="text-lg leading-relaxed">
-                Quando sua mãe estava grávida, foi hospitalizada com apendicite. Em função do tratamento, os médicos a aconselharam a abortar porque o bebê poderia nascer com deficiências. Mesmo assim, a jovem mãe se recusou e deu à luz a Andrea Bocelli, que nasceu com uma voz capaz de emocionar audiências em todo o mundo.
+                {{ t('stories_content.famosos.bocelli.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">Thiago Silva</h2>
+              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.silva.title') }}</h2>
               <p class="text-lg leading-relaxed">
-                Dona Angela, mãe do jogador de futebol Thiago Silva, disse que pensou em abortar. “Eu cheguei a chorar no colo do meu pai dizendo que não queria fazer o aborto, mas que eu também não tinha condição de criar mais um filho. Só que ele não deixou que eu fizesse isso, que cometesse um pecado!”, contou a mãe.
-                De origem humilde, Thiago cresceu na favela de Santa Cruz, na Zona Oeste do Rio de Janeiro. Hoje, o caçula de dona Angela, é considerado um dos melhores (e mais caros) zagueiros no mundo.
+                {{ t('stories_content.famosos.silva.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">Jack Nicholson</h2>
+              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.nicholson.title') }}</h2>
               <p class="text-lg leading-relaxed">
-                Aos 17 anos, June Frances Nicholson, apesar de pressionada pelos colegas a abortar, deu à luz a um bebê a quem chamou de Jack. June deixou o filho com os seus pais, John e Ethel, e o menino cresceu acreditando que os avós eram seus pais e que June era sua irmã. Somente após a morte da mãe, Nicholson descobriu a própria história. “Minha única emoção é gratidão, literalmente, pela minha vida. Se June e Ethel tivessem menos caráter, eu nunca teria chegado a viver. Essas mulheres me deram o presente da vida”, disse.
+                {{ t('stories_content.famosos.nicholson.text') }}
               </p>
             </section>
           </div>

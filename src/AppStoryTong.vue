@@ -1,7 +1,10 @@
 <script setup>
 import { onMounted } from 'vue';
+import { useI18n } from 'vue-i18n';
 import HeaderStart from "./components/HeaderStart.vue";
 import Footer from "./components/Footer.vue";
+
+const { t } = useI18n();
 
 const storyImg = "https://cms.adocaoespiritualrio.org.br/uploads/tong_phuoc_phuc_uai_675x450_4ae56360db.jpg";
 
@@ -41,19 +44,19 @@ onMounted(() => {
         <!-- Meta -->
         <div class="flex items-center gap-4 mb-6 reveal">
           <span class="px-4 py-1.5 bg-site-terracotta/10 rounded-full text-[13px] font-bold text-site-terracotta uppercase tracking-[0.15em]">
-            Histórias de Vida
+            {{ t('stories_page.title') }}
           </span>
-          <span class="text-site-dark/40 text-sm">01 de Novembro, 2023</span>
+          <span class="text-site-dark/40 text-sm">{{ t('stories_content.tong.date') }}</span>
         </div>
 
         <!-- Title -->
         <h1 class="text-4xl md:text-6xl text-site-dark font-serif-site leading-tight mb-8 reveal reveal-delay-1">
-          Homem já adotou mais de 100 crianças que seriam abortadas
+          {{ t('stories_content.tong.title') }}
         </h1>
 
         <!-- Leadin -->
         <p class="text-xl md:text-2xl text-site-dark/60 font-medium leading-relaxed mb-12 reveal reveal-delay-2">
-          O vietnamita Tong Phuoc Phuc é mais um exemplo maravilhoso de heróis da vida real! Se não fosse por ele, mais de cem crianças teriam sido abortadas no seu país.
+          {{ t('stories_content.tong.intro') }}
         </p>
 
         <!-- Banner Image -->
@@ -68,41 +71,39 @@ onMounted(() => {
         <!-- Article Content -->
         <div class="prose prose-lg max-w-none text-site-dark/80 reveal reveal-delay-1">
           <p class="text-lg leading-relaxed mb-6">
-            O vietnamita Tong Phuoc Phuc é mais um exemplo maravilhoso de heróis da vida real! Se não fosse por ele, mais de cem crianças teriam sido abortadas no seu país. Sim, ele é pai de dezenas de crianças que poderiam nunca ter nascido.
+            {{ t('stories_content.tong.p1') }}
           </p>
 
           <p class="text-lg leading-relaxed mb-6">
-            Essa história de amor começou em 2001, quando a esposa de Phuc estava grávida e teve muitas complicações. Durante o parto, que foi extremamente difícil, Phuc viu que muitas das mulheres que entravam na sala de perto saíam de lá sem os seus bebês.
+            {{ t('stories_content.tong.p2') }}
           </p>
 
           <p class="text-lg leading-relaxed mb-10 italic border-l-4 border-site-terracotta/30 pl-6 py-2">
-            Ele não entendia muito bem o motivo no início. Só depois Phuc foi se dar conta de que as crianças tinham sido abortadas, ao ver que os médicos estavam jogando os fetos no lixo. Phuc ficou mexido com o que viu e pediu para levar os corpos para casa.
+            {{ t('stories_content.tong.p3') }}
           </p>
 
           <p class="text-lg leading-relaxed mb-6">
-            Com uma vida humilde, ele juntou todas suas economias que tinha de seu trabalho como construtor para comprar um campo onde pudesse enterrar os restos dos bebês que eram jogados no lixo. A esposa de Phuc achou tudo muito estranho no começo, a ponto de pensar que o marido tivesse enlouquecido. Mesmo assim, ele continuou e, hoje, mais de 10 mil fetos descansam em paz no campo comprado por ele.
+            {{ t('stories_content.tong.p4') }}
           </p>
 
           <p class="text-lg leading-relaxed mb-6">
-            Desde então, as mães que abortaram as crianças visitam o cemitério para rezar por seus filhos. Além disso, mulheres grávidas com risco de aborto passaram a procurar por Phuc em busca de ajuda. Ele então abriu as portas da sua casa para recebê-las e se ofereceu para adotar os bebês que elas não pudessem criar.
+            {{ t('stories_content.tong.p5') }}
           </p>
 
           <p class="text-lg leading-relaxed mb-12">
-            Phuc fica com os pequenos até que as mães tenham condições de poder cuidar deles por conta própria.
+            {{ t('stories_content.tong.p6') }}
           </p>
 
-          <h2 class="text-3xl font-serif-site text-site-dark mt-16 mb-8">Nomes com Significado</h2>
+          <h2 class="text-3xl font-serif-site text-site-dark mt-16 mb-8">{{ t('stories_content.tong.subtitle') }}</h2>
+
+          <p class="text-lg leading-relaxed mb-6" v-html="t('stories_content.tong.p7')"></p>
 
           <p class="text-lg leading-relaxed mb-6">
-            Os meninos adotados por ele ganham o nome de <strong>Vihn</strong> (que significa “Honra”), e as meninas são chamadas de <strong>Tam</strong> (que significa “Coração”). O segundo nome é sempre o da mãe ou da cidade de origem dela – caso a mãe volte para buscá-la.
-          </p>
-
-          <p class="text-lg leading-relaxed mb-6">
-            O sobrenome é Phuc mesmo, pois ele considera todos como se fossem seus filhos. Phuc diz que “essas crianças agora têm um lar seguro. Estou disposto a ajudar e a ensiná-las a serem boas pessoas”.
+            {{ t('stories_content.tong.p8') }}
           </p>
 
           <p class="text-lg leading-relaxed mb-12">
-            Cuidar de mais de cem crianças não é uma tarefa fácil, mas Phuc não pretende parar por aqui. Ele declarou que continuará “esse trabalho até meu último suspiro de vida, e encorajo meus filhos a continuarem ajudando outras pessoas desprivilegiadas”.
+            {{ t('stories_content.tong.p9') }}
           </p>
         </div>
 

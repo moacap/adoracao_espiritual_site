@@ -1,5 +1,6 @@
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import HeaderStart from "./components/HeaderStart.vue";
 import Footer from "./components/Footer.vue";
 const goBack = () => {
@@ -9,6 +10,8 @@ const goBack = () => {
     window.location.href = "index.html";
   }
 };
+
+const { t } = useI18n();
 
 const getStoryLink = (storyId) => {
   switch (storyId) {
@@ -32,49 +35,49 @@ const navigateTo = (storyId) => {
   }
 };
 
-const stories = [
+const stories = computed(() => [
   {
     id: 1,
-    title: "9 famosos que escaparam do aborto",
-    date: "26/10/2023",
-    category: "Histórias de Vida",
-    description: "Eles estiveram no alvo do aborto; mas porque escaparam e tiveram a oportunidade de nascer, puderam realizar os próprios talentos.",
+    title: t("stories_page.items.1.title"),
+    date: t("stories_page.items.1.date"),
+    category: t("stories.title"),
+    description: t("stories_page.items.1.description"),
     image: "https://cms.adocaoespiritualrio.org.br/uploads/steve_jobs_de28ae9f15.jpg",
   },
   {
     id: 2,
-    title: "Padre Pio fez uma mulher ver o Papa que ela abortou",
-    date: "17/01/2026",
-    category: "Histórias de Vida",
-    description: "A criança que você matou no seu ventre com o aborto, nos desígnios de Deus, devia se tornar esse papa.",
+    title: t("stories_page.items.2.title"),
+    date: t("stories_page.items.2.date"),
+    category: t("stories.title"),
+    description: t("stories_page.items.2.description"),
     image: "https://cms.adocaoespiritualrio.org.br/uploads/padre_pio_29a89a4224.jpg",
   },
   {
     id: 3,
-    title: "Emocionante testemunho de um Padre que quase foi abortado",
-    date: "01/11/2023",
-    category: "Histórias de Vida",
-    description: "Testemunho do Padre Matheus Aquino, da Arquidiocese de São Sebastião do Rio de Janeiro.",
+    title: t("stories_page.items.3.title"),
+    date: t("stories_page.items.3.date"),
+    category: t("stories.title"),
+    description: t("stories_page.items.3.description"),
     image: "https://cms.adocaoespiritualrio.org.br/uploads/padre_matheus_aquino_a907c69db1.jpg",
     isVideo: true
   },
   {
     id: 4,
-    title: "Sua avó obrigou sua mãe a abortar, mas ela sobreviveu",
-    date: "01/11/2023",
-    category: "Histórias de Vida",
-    description: "No oitavo mês de gravidez foi obrigada a abortar contra sua vontade. Mas a criança que crescia em seu ventre tinha um propósito na vida, para além da morte.",
+    title: t("stories_page.items.4.title"),
+    date: t("stories_page.items.4.date"),
+    category: t("stories.title"),
+    description: t("stories_page.items.4.description"),
     image: "https://cms.adocaoespiritualrio.org.br/uploads/Melissa_Ohden_You_Tube_Susan_B_Anthony_List_060217_7a4018f526.jpg",
   },
   {
     id: 5,
-    title: "Homem já adotou mais de 100 crianças que seriam abortadas",
-    date: "01/11/2023",
-    category: "Histórias de Vida",
-    description: "O vietnamita Tong Phuoc Phuc é mais um exemplo maravilhoso de heróis da vida real! Se não fosse por ele, mais de cem crianças teriam sido abortadas no seu país.",
+    title: t("stories_page.items.5.title"),
+    date: t("stories_page.items.5.date"),
+    category: t("stories.title"),
+    description: t("stories_page.items.5.description"),
     image: "https://cms.adocaoespiritualrio.org.br/uploads/tong_phuoc_phuc_uai_675x450_4ae56360db.jpg", 
   }
-];
+]);
 
 onMounted(() => {
   const observerOptions = {
@@ -104,10 +107,10 @@ onMounted(() => {
         <!-- Title Section -->
         <div class="text-center mb-16 reveal">
           <span class="text-site-terracotta text-sm font-bold uppercase tracking-[0.3em] mb-4 block">
-            TESTEMUNHOS
+            {{ $t("stories_page.badge") }}
           </span>
           <h1 class="text-site-dark text-4xl md:text-5xl font-serif-site leading-tight">
-            Histórias de Vida
+            {{ $t("stories_page.title") }}
           </h1>
         </div>
 
@@ -162,7 +165,7 @@ onMounted(() => {
                 @click.stop
               >
                 <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-site-terracotta whitespace-nowrap group-hover/btn:px-4 transition-all duration-500">
-                  Saiba mais
+                  {{ $t("stories_page.read_more") }}
                 </span>
                 <div class="absolute right-0 top-0 h-full w-10 border border-site-terracotta rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover/btn:w-full bg-white/0">
                   <div class="absolute right-0 top-0 w-10 h-full flex items-center justify-center">

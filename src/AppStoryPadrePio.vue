@@ -1,7 +1,10 @@
 <script setup>
 import { onMounted } from 'vue';
+import { useI18n } from 'vue-i18n';
 import HeaderStart from "./components/HeaderStart.vue";
 import Footer from "./components/Footer.vue";
+
+const { t } = useI18n();
 
 const storyPadrePioImg = "https://cms.adocaoespiritualrio.org.br/uploads/padre_pio_29a89a4224.jpg";
 
@@ -41,26 +44,26 @@ onMounted(() => {
         <!-- Meta -->
         <div class="flex items-center gap-4 mb-6 reveal">
           <span class="px-4 py-1.5 bg-site-terracotta/10 rounded-full text-[13px] font-bold text-site-terracotta uppercase tracking-[0.15em]">
-            Histórias de Vida
+            {{ t('stories_page.title') }}
           </span>
-          <span class="text-site-dark/40 text-sm">17 de Janeiro, 2026</span>
+          <span class="text-site-dark/40 text-sm">{{ t('stories_content.padre_pio.date') }}</span>
         </div>
 
         <!-- Title -->
         <h1 class="text-4xl md:text-6xl text-site-dark font-serif-site leading-tight mb-8 reveal reveal-delay-1">
-          Padre Pio fez uma mulher ver o Papa que ela abortou
+          {{ t('stories_content.padre_pio.title') }}
         </h1>
 
         <!-- Leadin -->
         <p class="text-xl md:text-2xl text-site-dark/60 font-medium leading-relaxed mb-12 reveal reveal-delay-2">
-          "A criança que você matou no seu ventre com o aborto, nos desígnios de Deus, devia se tornar esse papa."
+          {{ t('stories_content.padre_pio.intro') }}
         </p>
 
         <!-- Banner Image -->
         <div class="relative aspect-[16/9] rounded-sm overflow-hidden shadow-sm mb-16 reveal reveal-delay-3">
           <img 
             :src="storyPadrePioImg" 
-            alt="Padre Pio e a Vision do Papa"
+            alt="Padre Pio"
             class="w-full h-full object-cover"
           />
         </div>
@@ -68,29 +71,23 @@ onMounted(() => {
         <!-- Article Content -->
         <div class="prose prose-lg max-w-none text-site-dark/80 reveal reveal-delay-1">
           <p class="text-lg leading-relaxed mb-10 italic border-l-4 border-site-terracotta/30 pl-6 py-2">
-            Na vida de S. Padre Pio de Pietrelcina há este belo e interessante episódio.
+            {{ t('stories_content.padre_pio.p1') }}
           </p>
 
-          <p class="text-lg leading-relaxed mb-6">
-            Para uma mulher que foi ao seu confessionário, o padre Pio disse:
-            <br />
-            <strong>“Feche os olhos e me diga o que vê.”</strong>
-          </p>
+          <p class="text-lg leading-relaxed mb-6" v-html="t('stories_content.padre_pio.p2')"></p>
 
           <p class="text-lg leading-relaxed mb-6">
-            A senhora obedeceu, fechou os olhos e disse: “Vejo uma praça enorme com muita gente. Entre as pessoas, vejo uma procissão que se move solenemente. Vejo no tribunal muitos padres, bispos e cardeais: todos precedem um papa que está assumindo no trono. Sim, vejo precisamente um papa no trono (era a cadeira gestacional) e uma grande multidão que aclama esse papa, muito bonita … Mas o que tudo isso significa?”
+            {{ t('stories_content.padre_pio.p3') }}
           </p>
 
-          <p class="text-lg leading-relaxed mb-6">
-            O padre Pio respondeu: <strong>“A criança que você matou no seu ventre com o aborto, nos desígnios de Deus, devia se tornar esse papa”.</strong>
-          </p>
+          <p class="text-lg leading-relaxed mb-6" v-html="t('stories_content.padre_pio.p4')"></p>
 
           <p class="text-lg leading-relaxed mb-12">
-            A pobre mulher gritou e desmaiou ao lado do confessionário.
+            {{ t('stories_content.padre_pio.p5') }}
           </p>
 
           <div class="text-sm text-site-dark/40 italic pt-8 border-t border-site-dark/5">
-            (Retirado de: E. Boninsegna, Ero curato, ora sono da curare, Verona, Manuscrito profissional, 2019, pág. 139).
+            {{ t('stories_content.padre_pio.source') }}
           </div>
         </div>
 

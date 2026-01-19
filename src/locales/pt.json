@@ -14,6 +14,146 @@
     "description": "A Adoção Espiritual é viver a maternidade e a paternidade espiritual em relação às crianças ameaçadas pelo aborto.",
     "button": "Saiba mais"
   },
+  "stories_page": {
+    "badge": "Testemunhos",
+    "title": "Histórias de Vida",
+    "read_more": "Saiba mais",
+    "items": {
+      "1": {
+        "title": "9 famosos que escaparam do aborto",
+        "description": "Eles estiveram no alvo do aborto; mas porque escaparam e tiveram a oportunidade de nascer, puderam realizar os próprios talentos.",
+        "date": "26/10/2023"
+      },
+      "2": {
+        "title": "Padre Pio fez uma mulher ver o Papa que ela abortou",
+        "description": "A criança que você matou no seu ventre com o aborto, nos desígnios de Deus, devia se tornar esse papa.",
+        "date": "17/01/2026"
+      },
+      "3": {
+        "title": "Emocionante testemunho de um Padre que quase foi abortado",
+        "description": "Testemunho do Padre Matheus Aquino, da Arquidiocese de São Sebastião do Rio de Janeiro.",
+        "date": "01/11/2023"
+      },
+      "4": {
+        "title": "Sua avó obrigou sua mãe a abortar, mas ela sobreviveu",
+        "description": "No oitavo mês de gravidez foi obrigada a abortar contra sua vontade. Mas a criança que crescia em seu ventre tinha um propósito na vida, para além da morte.",
+        "date": "01/11/2023"
+      },
+      "5": {
+        "title": "Homem já adotou mais de 100 crianças que seriam abortadas",
+        "description": "O vietnamita Tong Phuoc Phuc é mais um exemplo maravilhoso de heróis da vida real! Se não fosse por ele, mais de cem crianças teriam sido abortadas no seu país.",
+        "date": "01/11/2023"
+      }
+    }
+  },
+  "stories_content": {
+    "famosos": {
+      "date": "26 de Outubro, 2023",
+      "title": "9 famosos que escaparam do aborto",
+      "intro": "Eles estiveram no alvo do aborto; mas porque escaparam e tiveram a oportunidade de nascer, puderam realizar os próprios talentos.",
+      "p1": "Todos temos o direito a nascer; não importa quantos erros alguém possa cometer, há sempre uma razão maior para essa pessoa existir. Sempre vale a pena deixar cada um realizar o próprio show nessa terra! Tendo isso em vista, é quase impossível acreditar que os famosos abaixo quase não nasceram. Se fosse o caso, o mundo não seria o mesmo sem eles!",
+      "jobs": {
+        "title": "Steve Jobs",
+        "text": "Imagina a sua vida sem um Mac, I-Phone ou I-Pad? Se Joanne Schieble, com então 22 anos, tivesse desistido de levar a gestação a termo, a tecnologia não seria como conhecemos hoje. Joanne, mãe biológica de Steve Jobs, engravidou do namorado sírio e decidiu colocar o bebê para adoção. Ela escolheu uma família financeiramente capaz de pagar pelos estudos universitários do bebê, porém quando os candidatos a pais descobriram que Joanne esperava um menino, recuaram porque queriam uma menina. Joanne, a ponto de dar a luz e sem tempo para procurar uma nova família, acabou concordando em entregar o filho para um casal humilde. Jobs, em entrevista, declarou ser agradecido por não ter terminado em um aborto."
+      },
+      "bieber": {
+        "title": "Justin Bieber",
+        "text": "Em seu livro “Nowhere But Up”, Pattie Mallette, mãe de Justin Bieber, conta que quando se viu grávida aos 17 anos, foi pressionada a realizar um aborto. Mas isso nunca foi uma opção: “eu sabia que não poderia fazer isso”, revelou em entrevista. “A única coisa que eu sabia é que eu deveria manter a gestação. Eu não sabia como faria isso, mas eu apenas sabia que não poderia abortar”, disse. Aos 18 anos, Pattie deu à luz a Justin em Ontário (Canadá) e o criou com a ajuda de seus pais Bruce e Diane, avós do cantor."
+      },
+      "bolanos": {
+        "title": "Roberto Gómez Bolaños",
+        "text": "Em um breve comercial no México, Roberto Gómez Bolaños (conhecido no Brasil por sua atuação como Chaves e Chapolin), revelou que quando sua mãe estava grávida sofreu um acidente em que quase morreu. Os médicos então recomendaram que ela abortasse. “Abortar, eu? Jamais!” respondeu a mãe. “Ela defendeu a vida, a minha vida. É graças a ela que eu estou aqui”, afirmou."
+      },
+      "boyle": {
+        "title": "Susan Boyle",
+        "text": "Quando Bridget Boyle, aos 45 anos, engravidou, os médicos consideraram a gestação de risco e por isso a aconselharam a abortar. “Mas isso era impensável para minha mãe, uma católica devota. Eu só estou aqui porque ela teve fé”, contou a britânica. Durante o parto, uma cesária de emergência, Susan sofreu falta de oxigênio e nasceu com pouco peso. Por isso, os médicos disseram a mãe: “Susan nunca será nada, não espere muito dela.” Em sua auto-biografia, Susan disse que os médicos não deveriam ter feito esse comentário. “O que eles não sabiam é que eu sou uma lutadora e tentei durante toda minha vida provar que eles estavam errados”. Susan Boyle ganhou atenção internacional durante uma apresentação no programa “Britain’s Got Talent”. Seu primeiro álbum “I Dreamed a Dream” (2009) bateu recordes de vendas no Reino Unido e totalizou quase 14 milhões de cópias vendidas no mundo. Susan ganhou dois Grammys e é conhecida por apoiar causas caritativas."
+      },
+      "ronaldo": {
+        "title": "Cristiano Ronaldo",
+        "text": "Quando Maria Dolores descobriu que estava grávida pela quarta vez, procurou por um médico para realizar o aborto. Este, porém, respondeu que não havia nenhuma razão física para abortar e que esse bebê lhe traria muita alegria na vida. Sem a cumplicidade do médico, Dolores tentou outros métodos de aborto que não funcionaram. Por fim, disse que “se a vontade de Deus é que esta criança nasça, que assim seja!” Durante o parto, o mesmo médico disse uma frase que ficou para sempre na memória de Dolores: “Com pés como estes, será um jogador de futebol!” Em outras consultas, o médico vendo a preocupação da mãe, a animava dizendo: “Alegra-te, mulher, este bebê vai te dar muita sorte na vida e muitas felicidades!” Cristiano é hoje a camisa 7 do clube espanhol Real Madrid e é considerado o maior jogador de futebol português de todos os tempos."
+      },
+      "dion": {
+        "title": "Celine Dion",
+        "text": "A mãe da cantora canadense ficou devastada ao saber que esperava por Celine, sua 14˚ criança, e contou a um padre que pretendia fazer um aborto; o sacerdote, então, a convenceu a não fazer isso e a aceitar o bebê. “Devo a minha vida a este padre”, disse a cantora. “Quando minha mãe superou a decepção, ela não perdeu tempo com auto-piedade e me amou tão apaixonadamente quanto ao meu irmão mais novo”, declarou."
+      },
+      "bocelli": {
+        "title": "Andrea Bocelli",
+        "text": "Quando sua mãe estava grávida, foi hospitalizada com apendicite. Em função do tratamento, os médicos a aconselharam a abortar porque o bebê poderia nascer com deficiências. Mesmo assim, a jovem mãe se recusou e deu à luz a Andrea Bocelli, que nasceu com uma voz capaz de emocionar audiências em todo o mundo."
+      },
+      "silva": {
+        "title": "Thiago Silva",
+        "text": "Dona Angela, mãe do jogador de futebol Thiago Silva, disse que pensou em abortar. “Eu cheguei a chorar no colo do meu pai dizendo que não queria fazer o aborto, mas que eu também não tinha condição de criar mais um filho. Só que ele não deixou que eu fizesse isso, que cometesse um pecado!”, contou a mãe. De origem humilde, Thiago cresceu na favela de Santa Cruz, na Zona Oeste do Rio de Janeiro. Hoje, o caçula de dona Angela, é considerado um dos melhores (e mais caros) zagueiros no mundo."
+      },
+      "nicholson": {
+        "title": "Jack Nicholson",
+        "text": "Aos 17 anos, June Frances Nicholson, apesar de pressionada pelos colegas a abortar, deu à luz a um bebê a quem chamou de Jack. June deixou o filho com os seus pais, John e Ethel, e o menino cresceu acreditando que os avós eram seus pais e que June era sua irmã. Somente após a morte da mãe, Nicholson descobriu a própria história. “Minha única emoção é gratidão, literalmente, pela minha vida. Se June e Ethel tivessem menos caráter, eu nunca teria chegado a viver. Essas mulheres me deram o presente da vida”, disse."
+      }
+    },
+    "padre_pio": {
+      "date": "17 de Janeiro, 2026",
+      "title": "Padre Pio fez uma mulher ver o Papa que ela abortou",
+      "intro": "\"A criança que você matou no seu ventre com o aborto, nos desígnios de Deus, devia se tornar esse papa.\"",
+      "p1": "Na vida de S. Padre Pio de Pietrelcina há este belo e interessante episódio.",
+      "p2": "Para uma mulher que foi ao seu confessionário, o padre Pio disse:<br /><strong>“Feche os olhos e me diga o que vê.”</strong>",
+      "p3": "A senhora obedeceu, fechou os olhos e disse: “Vejo uma praça enorme com muita gente. Entre as pessoas, vejo uma procissão que se move solenemente. Vejo no tribunal muitos padres, bispos e cardeais: todos precedem um papa que está assumindo no trono. Sim, vejo precisamente um papa no trono (era a cadeira gestacional) e uma grande multidão que aclama esse papa, muito bonita … Mas o que tudo isso significa?”",
+      "p4": "O padre Pio respondeu: <strong>“A criança que você matou no seu ventre com o aborto, nos desígnios de Deus, devia se tornar esse papa”.</strong>",
+      "p5": "A pobre mulher gritou e desmaiou ao lado do confessionário.",
+      "source": "(Retirado de: E. Boninsegna, Ero curato, ora sono da curare, Verona, Manuscrito profissional, 2019, pág. 139)."
+    },
+    "matheus": {
+      "date": "01 de Novembro, 2023",
+      "title": "Emocionante testemunho de um Padre que quase foi abortado",
+      "intro": "Testemunho do Padre Matheus Aquino, da Arquidiocese de São Sebastião do Rio de Janeiro.",
+      "p1": "O Padre Matheus Aquino compartilha com profunda humildade e gratidão o milagre da sua própria vida. Em um relato que toca o coração, ele revela como esteve próximo de não nascer, mas como a mão de Deus e a corajosa decisão de sua mãe mudaram o destino de sua existência e o conduziram ao sacerdócio.",
+      "p2": "\"Eu sou fruto de um 'sim' à vida. Se hoje sou padre, se hoje posso servir aos irmãos e celebrar a Eucaristia, é porque alguém acreditou que a minha vida tinha um valor infinito desde a concepção.\"",
+      "p3": "Sua história é um farol de esperança para tantas mães que, em momentos de desespero e incerteza, consideram o aborto como única saída. O testemunho do Padre Matheus é um lembrete vivo de que nunca sabemos as maravilhas que Deus reserva para cada criança que Ele permite ser gerada.",
+      "p4": "Assista ao vídeo acima para conhecer o relato completo deste sacerdote do Rio de Janeiro que hoje dedica sua vida a proclamar o Evangelho da Vida."
+    },
+    "melissa": {
+      "date": "07 de Fevereiro, 2017",
+      "title": "Sua avó obrigou sua mãe a abortar, mas ela sobreviveu",
+      "intro": "No oitavo mês de gravidez foi obrigada a abortar contra sua vontade. Mas a criança que crescia em seu ventre tinha um propósito na vida, para além da morte.",
+      "source_meta": "MADRI, 07 fev. 17 / 06:00 pm (ACI/Actuall)",
+      "p1": "No oitavo mês de gravidez, uma universitária de 19 anos, de Ohio (Estados Unidos), foi obrigada a abortar contra sua vontade. Mas a criança que crescia em seu ventre tinha um propósito na vida, para além da morte.",
+      "p2": "O aborto não foi sucedido e nasceu uma menina chamada Melissa. Entretanto, a recém-nascida teve que enfrentar outro desafio.",
+      "p3": "Quando uma criança abortada nasce viva, os abortistas tem a obrigação de lhe negar a assistência médica para que morra sozinha. Mas nessa ocasião uma enfermeira desafiou esta ordem e levou Melissa para o hospital a fim de que recebesse os cuidados adequados.",
+      "p4": "Melissa pesava apenas um quilo e sofria de graves problemas respiratórios, os médicos disseram que teria uma vida cheia de complicações e não havia esperança para o seu futuro.",
+      "p5": "Entretanto, Melissa foi adotada por uma família que lutou pela sua vida. Quando completou 14 anos, a sua família adotiva lhe explicou que era adotada. Esta notícia causou uma mudança radical em sua vida.",
+      "p6": "Um novo mundo de perguntas vinha à sua mente: “Fiquei surpresa quando meus pais me disseram que eu era adotada. Quem era então a minha mãe biológica? Quais eram as minhas raízes? De onde eu vim?”, reconhece.",
+      "p7": "Com tantas perguntas sem nenhuma resposta, durante os anos seguintes a jovem começou a investigar nos papéis da adoção e nos registros médicos à procura de pistas que a levassem à sua mãe biológica.",
+      "subtitle1": "A tragédia por trás da verdade",
+      "p8": "Depois de muito tempo lutando com os entraves burocráticos, descobriu uma verdade que escondia muitos segredos:",
+      "p9": "“Descobri que havia sobrevivido a um aborto, mas a história se complicava e, na medida em que ia investigando, me deparei com a dura realidade”, diz Melissa.",
+      "p10": "Na verdade, a mãe biológica de Melissa tinha sido obrigada a abortar. O mais surpreendente desta história é saber quem a obrigou e cometeu este crime: a avó de Melissa, uma “enfermeira” que trabalhava em um lugar que praticavam abortos e não hesitou em organizar tudo para matar a sua própria neta antes do seu nascimento, no oitavo mês de gestação.",
+      "p11": "A crueldade da sua avó não tinha limites. Ao descobrir que o bebê havia sobrevivido ao aborto, a deixou em um quarto para que morresse sozinha. Foi a bondade de outra enfermeira que a salvou. Sem que a avó percebesse, ela chamou uma ambulância para transferir a recém-nascida a um hospital.",
+      "subtitle2": "Uma mãe enganada e atormentada",
+      "p12": "Mas havia um segundo segredo nesta história, a mãe biológica de Melissa não sabia que a sua filha tinha sobrevivido ao aborto. Disseram-lhe que havia falecido e durante todos esses anos havia vivido atormentada por ter matado o seu bebê.",
+      "p13": "Quando Melissa soube da terrível história do seu nascimento, experimentou uma luta em seu interior. “Não queria contar para ninguém, estava envergonhada e ao mesmo tempo com raiva, vivi vários anos desolada por isso. Mas percebi que se eu não contasse, a minha mãe biológica nunca saberia que eu estava viva”, afirma a Fox News.",
+      "p14": "Demorou vários anos para experimentar o verdadeiro perdão. Graças à sua fé cristã conseguiu superar o trauma do seu nascimento, inclusive chegou a entrar em contato com a sua mãe biológica.",
+      "p15": "“Agora, sei que minha avó queria mudar o meu destino para que não estivesse no mundo. Por algum motivo, meu nascimento e minha adoção foram um segredo para todo o mundo. Mas não aguento mais permanecer com este segredo. Quero contar minha história para ajudar a salvar milhões de bebês que são abortados a cada ano. Quero ajudar as mães para que tomem a decisão de apostar pela vida de seus filhos”, continua Melissa.",
+      "p16": "O aborto é um assunto de direitos humanos, por isso, esta sobrevivente faz parte do movimento pró-vida nos Estados Unidos.",
+      "p17": "“Uma vez, li uma estatística que dizia que cada aborto afeta sete pessoas, não apenas a mãe, mas o pai, os avós, irmãos… Se foram feitos 58 milhões de abortos nos últimos 44 anos, equivale a no mínimo 406 milhões de pessoas que sofreram as consequências de um aborto”.",
+      "p18": "Assim, Melissa lançou uma mensagem de ânimo para a comunidade pró-vida que está sendo perseguida. “Às pessoas que zombam e ridicularizam a vida humana eu somente posso mostrar amor, podemos amar as pessoas, mas não compartilhar a sua forma de pensar, mesmo se não acreditam que a vida tem valor único”, afirma.",
+      "p19": "Melissa também criticou a Planned Parenthood, o primeiro provedor de abortos nos Estados Unidos. “Tenho certeza que se tivessem levado a minha mãe para abortar no centro Planned Parenthood eu não teria sobrevivido: lá não existe piedade. E mesmo que eu tivesse sobrevivido ao aborto, eles fariam tudo para que eu não estivesse viva”, sentencia.",
+      "p20": "Agora, Melissa Ohden é autora de vários livros nos quais fala sobre o perdão e o sentido da vida. Além disso, criou o site “Os sobreviventes do aborto”, uma comunidade para que as pessoas que sobreviveram a um aborto possam encontrar ajuda psicológica e social.",
+      "p21": "Na vida pessoa, Melissa formou sua própria família. É mãe de duas filhas e a mais velha, Olivia, nasceu no mesmo hospital onde ela foi cuidada após sobreviver ao aborto."
+    },
+    "tong": {
+      "date": "01 de Novembro, 2023",
+      "title": "Homem já adotou mais de 100 crianças que seriam abortadas",
+      "intro": "O vietnamita Tong Phuoc Phuc é mais um exemplo maravilhoso de heróis da vida real! Se não fosse por ele, mais de cem crianças teriam sido abortadas no seu país.",
+      "p1": "O vietnamita Tong Phuoc Phuc é mais um exemplo maravilhoso de heróis da vida real! Se não fosse por ele, mais de cem crianças teriam sido abortadas no seu país. Sim, ele é pai de dezenas de crianças que poderiam nunca ter nascido.",
+      "p2": "Essa história de amor começou em 2001, quando a esposa de Phuc estava grávida e teve muitas complicações. Durante o parto, que foi extremamente difícil, Phuc viu que muitas das mulheres que entravam na sala de perto saíam de lá sem os seus bebês.",
+      "p3": "Ele não entendia muito bem o motivo no início. Só depois Phuc foi se dar conta de que as crianças tinham sido abortadas, ao ver que os médicos estavam jogando os fetos no lixo. Phuc ficou mexido com o que viu e pediu para levar os corpos para casa.",
+      "p4": "Com uma vida humilde, ele juntou todas suas economias que tinha de seu trabalho como construtor para comprar um campo onde pudesse enterrar os restos dos bebês que eram jogados no lixo. A esposa de Phuc achou tudo muito estranho no começo, a ponto de pensar que o marido tivesse enlouquecido. Mesmo assim, ele continuou e, hoje, mais de 10 mil fetos descansam em paz no campo comprado por ele.",
+      "p5": "Desde então, as mães que abortaram as crianças visitam o cemitério para rezar por seus filhos. Além disso, mulheres grávidas com risco de aborto passaram a procurar por Phuc em busca de ajuda. Ele então abriu as portas da sua casa para recebê-las e se ofereceu para adotar os bebês que elas não pudessem criar.",
+      "p6": "Phuc fica com os pequenos até que as mães tenham condições de poder cuidar deles por conta própria.",
+      "subtitle": "Nomes com Significado",
+      "p7": "Os meninos adotados por ele ganham o nome de <strong>Vihn</strong> (que significa “Honra”), e as meninas são chamadas de <strong>Tam</strong> (que significa “Coração”). O segundo nome é sempre o da mãe ou da cidade de origem dela – caso a mãe volte para buscá-la.",
+      "p8": "O sobrenome é Phuc mesmo, pois ele considera todos como se fossem seus filhos. Phuc diz que “essas crianças agora têm um lar seguro. Estou disposto a ajudar e a ensiná-las a serem boas pessoas”.",
+      "p9": "Cuidar de mais de cem crianças não é uma tarefa fácil, mas Phuc não pretende parar por aqui. Ele declarou que continuará “esse trabalho até meu último suspiro de vida, e encorajo meus filhos a continuarem ajudando outras pessoas desprivilegiadas”."
+    }
+  },
   "intro": {
     "title": "O que é a Adoção Espiritual?",
     "text": "A Adoção Espiritual é o exercício da maternidade e paternidade espiritual com as crianças ameaçadas pelo aborto. Imagine que em algum lugar que somente Deus conhece, surgiu uma criança que não está sendo esperada. Quando os pais descobrirem sua existência, irão se assustar e considerar o aborto como solução. Seja a mãe ou o pai espiritual desta criança. Acolha-a com seu carinho e amor por meio de uma breve oração diária durante 9 meses.",
