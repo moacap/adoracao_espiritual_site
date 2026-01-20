@@ -42,7 +42,7 @@ const isFaqOpen = (index) => openIndices.value.has(index);
 </script>
 
 <template>
-  <section class="pt-5 pb-10 bg-site-beige relative overflow-hidden">
+  <section class="pt-5 pb-40 bg-site-beige relative overflow-hidden">
     <div class="container max-w-4xl mx-auto px-4">
       <div class="text-center mb-16">
         <h2 class="text-site-dark text-4xl md:text-5xl mb-6">
@@ -148,7 +148,7 @@ const isFaqOpen = (index) => openIndices.value.has(index);
       >
         <path
           d="M0,110 C200,110 400,0 600,0 C800,0 1000,120 1200,60 V120 H0 Z"
-          fill="#FFFFFF"
+          fill="#BC6F65"
         ></path>
       </svg>
     </div>

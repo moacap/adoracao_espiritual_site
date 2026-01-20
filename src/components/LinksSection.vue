@@ -13,7 +13,7 @@ const links = computed(() => [
     subtitle: t("links.item1.subtitle"),
     description: t("links.item1.description"),
     icon: aePretoLogo,
-    href: "site_page.html",
+    href: "/site_page.html",
   },
 
   {
@@ -216,7 +216,7 @@ const links = computed(() => [
       >
         <path
           d="M0,110 C200,110 400,0 600,0 C800,0 1000,120 1200,60 V120 H0 Z"
-          fill="#FFFFFF"
+          fill="#BC6F65"
         ></path>
       </svg>
     </div>
