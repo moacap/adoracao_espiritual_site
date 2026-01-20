@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <footer class="bg-site-beige pt-24 pb-12">
+  <footer class="bg-white pt-24 pb-12">
     <div class="container">
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 text-center md:text-left"

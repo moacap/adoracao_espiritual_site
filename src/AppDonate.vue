@@ -41,19 +41,19 @@ onMounted(() => {
         <h1
           class="text-4xl md:text-5xl font-serif text-site-terracotta mb-12 text-center reveal"
         >
-          Colabore com nosso projeto
+          {{ $t("donate.title") }}
         </h1>
 
         <!-- Image Banner with Overlay Text -->
         <div class="relative rounded-sm overflow-hidden shadow-2xl mb-12 aspect-[16/9] reveal reveal-delay-1">
           <img
             :src="supportHands"
-            alt="Colabore com nosso projeto"
+            :alt="$t('donate.title')"
             class="w-full h-full object-cover"
           />
           <div class="absolute inset-0 bg-black/30 flex items-center justify-center p-6 text-center">
             <h2 class="text-white text-2xl md:text-3xl lg:text-4xl font-serif italic">
-              Sua contribuição faz a diferença!
+              {{ $t("donate.banner_overlay") }}
             </h2>
           </div>
         </div>
@@ -61,11 +61,7 @@ onMounted(() => {
         <!-- Description -->
         <div class="prose prose-lg text-site-dark/80 max-w-none text-justify mb-16 reveal reveal-delay-2">
           <p>
-            Você pode ajudar nosso projeto fazendo uma doação via chave PIX ou
-            por transferência bancária. Sua contribuição nos auxilia a cobrir os
-            custos dos materiais de divulgação como carteirinhas, panfletos,
-            banners, entre outros, além de despesas operacionais e a manutenção
-            de nossas mídias.
+            {{ $t("donate.description") }}
           </p>
         </div>
 
@@ -74,10 +70,10 @@ onMounted(() => {
           <!-- PIX Section -->
           <div class="bg-site-beige p-8 rounded-sm border border-black/5 hover:shadow-lg transition-all">
             <h3 class="text-xl font-bold text-site-terracotta uppercase tracking-wider mb-4 border-b border-site-terracotta/20 pb-2">
-              PIX
+              {{ $t("donate.pix_title") }}
             </h3>
             <div class="flex flex-col gap-2">
-              <span class="text-site-dark/60 text-sm uppercase font-bold tracking-widest">Chave PIX (E-mail):</span>
+              <span class="text-site-dark/60 text-sm uppercase font-bold tracking-widest">{{ $t("donate.pix_key_label") }}</span>
               <p class="text-site-dark text-lg font-bold break-all">adocaoespiritualrio@gmail.com</p>
             </div>
           </div>
@@ -85,25 +81,25 @@ onMounted(() => {
           <!-- Bank Account Section -->
           <div class="bg-site-beige p-8 rounded-sm border border-black/5 hover:shadow-lg transition-all">
             <h3 class="text-xl font-bold text-site-terracotta uppercase tracking-wider mb-4 border-b border-site-terracotta/20 pb-2">
-              Dados Bancários
+              {{ $t("donate.bank_title") }}
             </h3>
             <div class="space-y-4">
               <div>
-                <span class="text-site-dark/60 text-xs uppercase font-bold tracking-widest block mb-1">Banco:</span>
-                <p class="text-site-dark text-lg font-bold">Banco Bradesco</p>
+                <span class="text-site-dark/60 text-xs uppercase font-bold tracking-widest block mb-1">{{ $t("donate.bank_label") }}</span>
+                <p class="text-site-dark text-lg font-bold">{{ $t("donate.bank_name") }}</p>
               </div>
               <div class="grid grid-cols-2 gap-4">
                 <div>
-                  <span class="text-site-dark/60 text-xs uppercase font-bold tracking-widest block mb-1">Agência:</span>
+                  <span class="text-site-dark/60 text-xs uppercase font-bold tracking-widest block mb-1">{{ $t("donate.agency_label") }}</span>
                   <p class="text-site-dark text-lg font-bold">0814</p>
                 </div>
                 <div>
-                  <span class="text-site-dark/60 text-xs uppercase font-bold tracking-widest block mb-1">Conta Corrente:</span>
+                  <span class="text-site-dark/60 text-xs uppercase font-bold tracking-widest block mb-1">{{ $t("donate.account_label") }}</span>
                   <p class="text-site-dark text-lg font-bold">77307-7</p>
                 </div>
               </div>
               <div>
-                <span class="text-site-dark/60 text-xs uppercase font-bold tracking-widest block mb-1">CNPJ:</span>
+                <span class="text-site-dark/60 text-xs uppercase font-bold tracking-widest block mb-1">{{ $t("donate.cnpj_label") }}</span>
                 <p class="text-site-dark text-lg font-bold">33.593.575/0001-14</p>
               </div>
             </div>

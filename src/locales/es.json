@@ -54,7 +54,7 @@
   "howToParticipate": {
     "badge": "Participa",
     "title": "¿Cómo participar?",
-    "description": "La participación en la Adopción Espiritual comienza con la intención de cuidar espiritualmente de un niño que solo Dios conoce, amenazado por el aborto, de su madre y de su familia.",
+    "description": "La participación en la Adopción Espiritual comienza con la intención de cuidar espiritualmente de un niño que solo Dios conoce, amenazado por el aborto, de su madre y de su familia. Expresamos esta intención a través de la oración que da inicio a la Adopción Espiritual.",
     "button": "Saber más"
   },
   "whoIsItFor": {
@@ -232,6 +232,19 @@
   },
   "general": {
     "back": "Volver"
+  },
+  "donate": {
+    "title": "Colabora con nuestro proyecto",
+    "banner_overlay": "¡Tu contribución hace la diferencia!",
+    "description": "Puedes ayudar a nuestro proyecto haciendo una donación vía clave PIX o por transferencia bancaria. Tu contribución nos ayuda a cubrir los costos de los materiales de divulgación como carnés, folletos, pancartas, entre otros, además de gastos operativos y el mantenimiento de nuestros medios.",
+    "pix_title": "PIX",
+    "pix_key_label": "Clave PIX (E-mail):",
+    "bank_title": "Datos Bancarios",
+    "bank_label": "Banco:",
+    "bank_name": "Banco Bradesco",
+    "agency_label": "Agencia:",
+    "account_label": "Cuenta Corriente:",
+    "cnpj_label": "CNPJ:"
   },
   "privacy": {
     "title": "Política de Privacidad",

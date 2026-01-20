@@ -216,7 +216,7 @@ const links = computed(() => [
       >
         <path
           d="M0,110 C200,110 400,0 600,0 C800,0 1000,120 1200,60 V120 H0 Z"
-          fill="#F1EDEA"
+          fill="#FFFFFF"
         ></path>
       </svg>
     </div>

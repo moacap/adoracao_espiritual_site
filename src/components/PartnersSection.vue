@@ -1,5 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import rndvfLogo from '../assets/RNDVF-logo-v5-final-noBorder.svg';
+import cmvdLogo from '../assets/cropped-CMVD-Por-Extensopng-1.png';
 
 const currentIndex = ref(0);
 const itemsToShow = ref(4);
@@ -22,12 +24,12 @@ const partners = [
   },
   {
     name: "Comunidade Mãe do Verbo Divino",
-    logo: "/images/partners/cmvd.png",
+    logo: cmvdLogo,
     link: "https://www.cmvd.org/",
   },
   {
     name: "Rede Nacional em Defesa da Vida e da Família",
-    logo: "/images/partners/rede_nacional_defesa_vida.png",
+    logo: rndvfLogo,
     link: "https://redenacionalemdefesadavida.org/",
   },
 ];

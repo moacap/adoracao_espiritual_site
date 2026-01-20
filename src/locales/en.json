@@ -54,7 +54,7 @@
   "howToParticipate": {
     "badge": "Participate",
     "title": "How to participate?",
-    "description": "Participation in Spiritual Adoption begins with the intention to spiritually care for a child that only God knows, threatened by abortion, their mother, and their family.",
+    "description": "Participation in Spiritual Adoption begins with the intention to spiritually care for a child that only God knows, threatened by abortion, their mother, and their family. We express this intention through the prayer that begins the Spiritual Adoption.",
     "button": "Learn more"
   },
   "whoIsItFor": {
@@ -232,6 +232,19 @@
   },
   "general": {
     "back": "Back"
+  },
+  "donate": {
+    "title": "Support our project",
+    "banner_overlay": "Your contribution makes a difference!",
+    "description": "You can help our project by making a donation via PIX or bank transfer. Your contribution helps us cover the costs of promotional materials such as cards, flyers, banners, among others, as well as operational expenses and the maintenance of our media.",
+    "pix_title": "PIX",
+    "pix_key_label": "PIX Key (E-mail):",
+    "bank_title": "Bank Details",
+    "bank_label": "Bank:",
+    "bank_name": "Banco Bradesco",
+    "agency_label": "Agency:",
+    "account_label": "Account Number:",
+    "cnpj_label": "CNPJ:"
   },
   "privacy": {
     "title": "Privacy Policy",
