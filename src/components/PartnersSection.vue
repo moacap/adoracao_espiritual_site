@@ -1,8 +1,8 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import jesusMeninoLogo from '../assets/partners/jesus_menino.png';
-import missaoDuasVidasLogo from '../assets/partners/missao_duas_vidas.png';
-import associacaoGuadalupeLogo from '../assets/partners/associacao_guadalupe.png';
+import jesusMeninoLogo from '../assets/partners/Parceiro_Jesus Menino.webp';
+import missaoDuasVidasLogo from '../assets/partners/missao_duas_vidas_new.png';
+import associacaoGuadalupeLogo from '../assets/partners/LOGO-G3-1.png';
 import rndvfLogo from '../assets/RNDVF-logo-v5-final-noBorder.svg';
 import cmvdLogo from '../assets/cropped-CMVD-Por-Extensopng-1.png';
 
@@ -14,6 +14,8 @@ const partners = [
     name: "Comunidade Católica Jesus Menino",
     logo: jesusMeninoLogo,
     link: "https://comunidadejesusmenino.org.br/",
+    bgColor: "bg-[#008ADA]",
+    imgClass: "brightness-0 invert",
   },
   {
     name: "Missão Duas Vidas",
@@ -24,6 +26,7 @@ const partners = [
     name: "Associação Guadalupe",
     logo: associacaoGuadalupeLogo,
     link: "https://associacaoguadalupe.org.br/",
+    bgColor: "bg-[#5A8CA5]",
   },
   {
     name: "Comunidade Mãe do Verbo Divino",
@@ -103,7 +106,7 @@ onMounted(() => {
           <div
             class="flex transition-transform duration-500 ease-in-out gap-8"
             :style="{
-              transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)`,
+              transform: `translateX(calc(-${currentIndex} * (100% + 32px) / ${itemsToShow}))`,
             }"
           >
             <div
@@ -117,12 +120,14 @@ onMounted(() => {
               <a
                 :href="partner.link"
                 target="_blank"
-                class="block bg-white overflow-hidden rounded-sm shadow-sm hover:shadow-xl transition-all duration-300 h-56 flex items-center justify-center group"
+                class="block overflow-hidden rounded-sm shadow-sm hover:shadow-xl transition-all duration-300 h-56 flex items-center justify-center group"
+                :class="partner.bgColor ? partner.bgColor : 'bg-white'"
               >
                 <img
                   :src="partner.logo"
                   :alt="partner.name"
                   class="w-full h-full object-contain p-6 transition-all"
+                  :class="partner.imgClass"
                 />
               </a>
             </div>
