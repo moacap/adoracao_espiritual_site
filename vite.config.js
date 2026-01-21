@@ -24,6 +24,7 @@ export default defineConfig({
         story_melissa: resolve(__dirname, 'story-melissa.html'),
         story_tong: resolve(__dirname, 'story-tong.html'),
         story_matheus: resolve(__dirname, 'story-matheus.html'),
+        recomendacao_info: resolve(__dirname, 'recomendacao_info.html'),
         site_page: resolve(__dirname, 'site_page.html'),
       },
     },

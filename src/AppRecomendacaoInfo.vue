@@ -20,50 +20,55 @@ const goBack = () => {
         <h1
           class="text-4xl md:text-5xl font-serif text-site-terracotta mb-12 text-center"
         >
-          {{ $t("participate_page.title") }}
+          {{ $t("participate_page.recommendations.title") }}
         </h1>
 
         <div class="prose prose-lg text-site-dark/80 max-w-none text-justify">
-          <p class="text-xl text-site-dark leading-relaxed mb-12">
-            {{ $t("participate_page.intro") }}
-          </p>
+          
+          <div class="space-y-12">
+            <!-- Aborto -->
+            <section>
+              <h3 class="text-xl font-serif text-site-terracotta mb-4">
+                {{ $t("participate_page.recommendations.aborto.title") }}
+              </h3>
+              <p>{{ $t("participate_page.recommendations.aborto.p1") }}</p>
+              <p>{{ $t("participate_page.recommendations.aborto.p2") }}</p>
+            </section>
 
-          <!-- Start Prayer -->
-          <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
-            {{ $t("participate_page.start_prayer.title") }}
-          </h2>
-          <div class="bg-site-terracotta/5 p-8 rounded-2xl italic border-l-4 border-site-terracotta my-8">
-            <p class="mb-0">"{{ $t("participate_page.start_prayer.text") }}"</p>
+            <!-- Idosos -->
+            <section>
+              <h3 class="text-xl font-serif text-site-terracotta mb-4">
+                {{ $t("participate_page.recommendations.idosos.title") }}
+              </h3>
+              <p>{{ $t("participate_page.recommendations.idosos.p1") }}</p>
+            </section>
+
+            <!-- Jovens -->
+            <section>
+              <h3 class="text-xl font-serif text-site-terracotta mb-4">
+                {{ $t("participate_page.recommendations.jovens.title") }}
+              </h3>
+              <p>{{ $t("participate_page.recommendations.jovens.p1") }}</p>
+              <p>{{ $t("participate_page.recommendations.jovens.p2") }}</p>
+            </section>
+
+            <!-- Crianças -->
+            <section>
+              <h3 class="text-xl font-serif text-site-terracotta mb-4">
+                {{ $t("participate_page.recommendations.criancas.title") }}
+              </h3>
+              <p>{{ $t("participate_page.recommendations.criancas.p1") }}</p>
+            </section>
+
+            <!-- Casais -->
+            <section>
+              <h3 class="text-xl font-serif text-site-terracotta mb-4">
+                {{ $t("participate_page.recommendations.casais.title") }}
+              </h3>
+              <p>{{ $t("participate_page.recommendations.casais.p1") }}</p>
+            </section>
           </div>
-
-          <!-- Daily Commitment -->
-          <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
-            {{ $t("participate_page.commitment.title") }}
-          </h2>
-          <p>{{ $t("participate_page.commitment.intro") }}</p>
-          <div class="bg-site-beige/50 p-8 rounded-2xl italic border-l-4 border-site-terracotta/30 my-8">
-            <p class="mb-0">"{{ $t("participate_page.commitment.prayer") }}"</p>
-          </div>
-
-          <!-- End Prayer -->
-          <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
-            {{ $t("participate_page.end_prayer.title") }}
-          </h2>
-          <p>{{ $t("participate_page.end_prayer.intro") }}</p>
-          <div class="bg-site-terracotta/5 p-8 rounded-2xl italic border-l-4 border-site-terracotta my-8">
-            <p class="mb-0">"{{ $t("participate_page.end_prayer.text") }}"</p>
-          </div>
-          <p class="text-sm text-site-dark/60 mt-4 italic">
-            {{ $t("participate_page.end_prayer.footer") }}
-          </p>
-
-          <!-- Who Can Participate -->
-          <h2 class="text-2xl font-serif text-site-terracotta mt-16 mb-6 border-b border-site-terracotta/20 pb-2">
-            {{ $t("participate_page.who_can.title") }}
-          </h2>
-          <p>{{ $t("participate_page.who_can.text") }}</p>
         </div>
-
 
         <!-- Back Button -->
         <div class="mt-20 flex justify-center">
