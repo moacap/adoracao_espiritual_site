@@ -27,14 +27,14 @@ const goBack = () => {
           <p>{{ $t("what_is_page.intro_p1") }}</p>
           <p>{{ $t("what_is_page.intro_p2") }}</p>
 
-          <h2 class="text-2xl font-serif text-site-dark mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
+          <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
             {{ $t("what_is_page.manifesto.title") }}
           </h2>
           <p>{{ $t("what_is_page.manifesto.p1") }}</p>
           <p>{{ $t("what_is_page.manifesto.p2") }}</p>
           <p>{{ $t("what_is_page.manifesto.p3") }}</p>
 
-          <h2 class="text-2xl font-serif text-site-dark mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
+          <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
             {{ $t("what_is_page.child_gesture.title") }}
           </h2>
           <p>{{ $t("what_is_page.child_gesture.p1") }}</p>
@@ -42,7 +42,7 @@ const goBack = () => {
           <p>{{ $t("what_is_page.child_gesture.p3") }}</p>
           <p>{{ $t("what_is_page.child_gesture.p4") }}</p>
 
-          <h2 class="text-2xl font-serif text-site-dark mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
+          <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
             {{ $t("what_is_page.mother_gesture.title") }}
           </h2>
           <p>{{ $t("what_is_page.mother_gesture.p1") }}</p>
@@ -75,7 +75,7 @@ const goBack = () => {
           <p>{{ $t("what_is_page.psychological_consequences.p3") }}</p>
           <p>{{ $t("what_is_page.psychological_consequences.p4") }}</p>
 
-          <h2 class="text-2xl font-serif text-site-dark mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
+          <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
             {{ $t("what_is_page.spiritual_consequences.title") }}
           </h2>
           <p>{{ $t("what_is_page.spiritual_consequences.p1") }}</p>
@@ -83,11 +83,11 @@ const goBack = () => {
           <p>{{ $t("what_is_page.spiritual_consequences.p3") }}</p>
           <p>{{ $t("what_is_page.spiritual_consequences.p4") }}</p>
           
-          <p class="font-bold text-site-dark mt-8">{{ $t("what_is_page.spiritual_consequences.citations_intro") }}</p>
+          <p class="font-bold text-site-terracotta mt-8">{{ $t("what_is_page.spiritual_consequences.citations_intro") }}</p>
 
           <div class="mt-8 space-y-10 pl-4 border-l-2 border-site-terracotta/30">
             <section>
-              <h4 class="text-lg font-bold text-site-dark mb-4 uppercase tracking-wider text-sm">
+              <h4 class="text-lg font-bold text-site-terracotta mb-4 uppercase tracking-wider text-sm">
                 {{ $t("what_is_page.spiritual_consequences.donum_vitae.title") }}
               </h4>
               <blockquote class="italic text-site-dark/70 my-4">
@@ -99,7 +99,7 @@ const goBack = () => {
             </section>
 
             <section>
-              <h4 class="text-lg font-bold text-site-dark mb-4 uppercase tracking-wider text-sm">
+              <h4 class="text-lg font-bold text-site-terracotta mb-4 uppercase tracking-wider text-sm">
                 {{ $t("what_is_page.spiritual_consequences.gaudium_et_spes.title") }}
               </h4>
               <blockquote class="italic text-site-dark/70 my-4">
@@ -108,7 +108,7 @@ const goBack = () => {
             </section>
 
             <section>
-              <h4 class="text-lg font-bold text-site-dark mb-4 uppercase tracking-wider text-sm">
+              <h4 class="text-lg font-bold text-site-terracotta mb-4 uppercase tracking-wider text-sm">
                 {{ $t("what_is_page.spiritual_consequences.catechism.title") }}
               </h4>
               <p>{{ $t("what_is_page.spiritual_consequences.catechism.p2271") }}</p>
@@ -116,7 +116,7 @@ const goBack = () => {
             </section>
           </div>
 
-          <h2 class="text-2xl font-serif text-site-dark mt-16 mb-6 border-b border-site-terracotta/20 pb-2">
+          <h2 class="text-2xl font-serif text-site-terracotta mt-16 mb-6 border-b border-site-terracotta/20 pb-2">
             {{ $t("what_is_page.family_gesture.title") }}
           </h2>
           <p>{{ $t("what_is_page.family_gesture.p1") }}</p>
@@ -124,7 +124,7 @@ const goBack = () => {
           <p>{{ $t("what_is_page.family_gesture.p3") }}</p>
           <p>{{ $t("what_is_page.family_gesture.p4") }}</p>
 
-          <h2 class="text-2xl font-serif text-site-dark mt-16 mb-6 border-b border-site-terracotta/20 pb-2">
+          <h2 class="text-2xl font-serif text-site-terracotta mt-16 mb-6 border-b border-site-terracotta/20 pb-2">
             {{ $t("what_is_page.history.title") }}
           </h2>
           <p>{{ $t("what_is_page.history.p1") }}</p>
@@ -188,7 +188,7 @@ h1 {
 
 .prose :deep(h2) {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  color: #1a1a1a;
+  color: #b25e5e;
   font-size: 2rem;
   margin-top: 4rem;
 }
@@ -197,12 +197,13 @@ h1 {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 1.4rem;
   margin-top: 2.5rem;
+  color: #b25e5e;
 }
 
 .prose :deep(h4) {
   font-family: inherit;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #b25e5e;
 }
 
 blockquote {
