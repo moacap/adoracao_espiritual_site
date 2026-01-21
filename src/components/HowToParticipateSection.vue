@@ -22,7 +22,7 @@ onMounted(() => {
 
 <template>
   <section class="pt-10 pb-40 bg-site-beige relative overflow-hidden">
-    <div class="container relative z-10 max-w-4xl mx-auto text-center">
+    <div class="container relative z-10 max-w-4xl mx-auto px-6 text-center">
       <h2
         class="reveal reveal-delay-1 text-site-terracotta text-4xl md:text-5xl leading-tight mb-8"
       >
@@ -30,7 +30,7 @@ onMounted(() => {
       </h2>
 
       <div
-        class="reveal reveal-delay-2 space-y-6 text-site-dark/80 text-lg leading-relaxed max-w-2xl mx-auto"
+        class="reveal reveal-delay-2 text-site-dark/80 text-lg leading-relaxed mb-12 text-justify"
       >
         <p>
           {{ $t("howToParticipate.description") }}

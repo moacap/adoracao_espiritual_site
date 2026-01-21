@@ -90,7 +90,7 @@ onMounted(() => {
     <div class="container relative z-10">
       <div class="text-center mb-16 reveal">
 
-        <h2 class="text-site-dark text-4xl md:text-5xl mb-6">
+        <h2 class="text-site-terracotta text-4xl md:text-5xl mb-6">
           {{ $t("partners.title") }}
         </h2>
         <p class="text-site-dark/70 text-lg max-w-2xl mx-auto">

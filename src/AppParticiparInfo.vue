@@ -29,7 +29,7 @@ const goBack = () => {
           </p>
 
           <!-- Start Prayer -->
-          <h2 class="text-2xl font-serif text-site-dark mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
+          <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
             {{ $t("participate_page.start_prayer.title") }}
           </h2>
           <div class="bg-site-terracotta/5 p-8 rounded-2xl italic border-l-4 border-site-terracotta my-8">
@@ -37,7 +37,7 @@ const goBack = () => {
           </div>
 
           <!-- Daily Commitment -->
-          <h2 class="text-2xl font-serif text-site-dark mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
+          <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
             {{ $t("participate_page.commitment.title") }}
           </h2>
           <p>{{ $t("participate_page.commitment.intro") }}</p>
@@ -46,7 +46,7 @@ const goBack = () => {
           </div>
 
           <!-- End Prayer -->
-          <h2 class="text-2xl font-serif text-site-dark mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
+          <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
             {{ $t("participate_page.end_prayer.title") }}
           </h2>
           <p>{{ $t("participate_page.end_prayer.intro") }}</p>
@@ -58,13 +58,13 @@ const goBack = () => {
           </p>
 
           <!-- Who Can Participate -->
-          <h2 class="text-2xl font-serif text-site-dark mt-16 mb-6 border-b border-site-terracotta/20 pb-2">
+          <h2 class="text-2xl font-serif text-site-terracotta mt-16 mb-6 border-b border-site-terracotta/20 pb-2">
             {{ $t("participate_page.who_can.title") }}
           </h2>
           <p>{{ $t("participate_page.who_can.text") }}</p>
 
           <!-- Recommendations -->
-          <h2 class="text-2xl font-serif text-site-dark mt-16 mb-8 border-b border-site-terracotta/20 pb-2">
+          <h2 class="text-2xl font-serif text-site-terracotta mt-16 mb-8 border-b border-site-terracotta/20 pb-2">
             {{ $t("participate_page.recommendations.title") }}
           </h2>
 
@@ -168,7 +168,7 @@ h1 {
 
 .prose :deep(h2) {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  color: #1a1a1a;
+  color: #b25e5e;
   font-size: 2rem;
   margin-top: 4rem;
 }

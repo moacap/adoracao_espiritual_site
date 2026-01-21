@@ -22,18 +22,18 @@ onMounted(() => {
 
 <template>
   <section class="pt-5 pb-40 bg-white relative overflow-hidden">
-    <div class="container relative z-10">
+    <div class="container relative z-10 max-w-4xl mx-auto px-6">
       <div class="text-center">
         <!-- Content -->
-        <div class="max-w-3xl mx-auto">
+        <div class="mx-auto">
           <h2
-            class="reveal reveal-delay-1 text-site-dark text-4xl md:text-5xl leading-tight mb-8"
+            class="reveal reveal-delay-1 text-site-terracotta text-4xl md:text-5xl leading-tight mb-8"
           >
             {{ $t("stories.title") }}
           </h2>
 
           <div
-            class="reveal reveal-delay-2 space-y-6 text-site-dark/80 text-lg leading-relaxed max-w-xl mx-auto"
+            class="reveal reveal-delay-2 text-site-dark/80 text-lg leading-relaxed mb-12 text-justify"
           >
             <p v-html="$t('stories.description')"></p>
           </div>
