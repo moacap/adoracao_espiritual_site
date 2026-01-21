@@ -36,6 +36,62 @@ const goToSlide = (index) => {
   currentSlide.value = index;
 };
 
+// Swipe/Drag functionality
+const startX = ref(0);
+const endX = ref(0);
+const isDragging = ref(false);
+const minSwipeDistance = 50;
+
+const handleStart = (clientX) => {
+  startX.value = clientX;
+  isDragging.value = true;
+};
+
+const handleMove = (clientX) => {
+  if (!isDragging.value) return;
+  endX.value = clientX;
+};
+
+const handleEnd = () => {
+  if (!isDragging.value) return;
+
+  const distance = startX.value - endX.value;
+  if (Math.abs(distance) > minSwipeDistance) {
+    if (distance > 0) {
+      nextSlide();
+    } else {
+      prevSlide();
+    }
+  }
+
+  // Reset
+  startX.value = 0;
+  endX.value = 0;
+  isDragging.value = false;
+};
+
+const handleTouchStart = (e) => handleStart(e.touches[0].clientX);
+const handleTouchMove = (e) => handleMove(e.touches[0].clientX);
+const handleTouchEnd = () => handleEnd();
+
+const handleMouseDown = (e) => {
+  handleStart(e.clientX);
+  window.addEventListener("mouseup", handleMouseUpGlobal);
+};
+
+const handleMouseMove = (e) => handleMove(e.clientX);
+const handleMouseUp = () => {
+  handleEnd();
+  window.removeEventListener("mouseup", handleMouseUpGlobal);
+};
+
+const handleMouseUpGlobal = () => {
+  if (isDragging.value) {
+    handleEnd();
+  }
+  window.removeEventListener("mouseup", handleMouseUpGlobal);
+};
+
 onMounted(() => {
   const observerOptions = {
     threshold: 0.15,
@@ -72,7 +128,16 @@ onMounted(() => {
       <div
         class="relative max-w-5xl mx-auto reveal reveal-delay-1 px-10 md:px-0"
       >
-        <div class="overflow-hidden rounded-sm">
+        <div 
+          class="overflow-hidden rounded-sm cursor-grab active:cursor-grabbing"
+          @touchstart="handleTouchStart"
+          @touchmove="handleTouchMove"
+          @touchend="handleTouchEnd"
+          @mousedown="handleMouseDown"
+          @mousemove="handleMouseMove"
+          @mouseup="handleMouseUp"
+          @mouseleave="handleMouseUp"
+        >
           <div class="relative h-[580px] md:h-[500px]">
             <div
               v-for="(patron, index) in patrons"
@@ -92,7 +157,8 @@ onMounted(() => {
                     <img
                       :src="patron.image"
                       :alt="patron.name"
-                      class="w-full h-auto object-contain max-h-[220px] md:max-h-[400px] rounded-sm shadow-2xl"
+                      class="w-full h-auto object-contain max-h-[220px] md:max-h-[400px] rounded-sm shadow-2xl pointer-events-none"
+                      draggable="false"
                     />
                   </div>
                   <div

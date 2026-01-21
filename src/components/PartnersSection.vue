@@ -52,6 +52,63 @@ const prevPartners = () => {
   }
 };
 
+// Swipe/Drag functionality
+const startX = ref(0);
+const endX = ref(0);
+const isDragging = ref(false);
+const minSwipeDistance = 50;
+
+const handleStart = (clientX) => {
+  startX.value = clientX;
+  isDragging.value = true;
+};
+
+const handleMove = (clientX) => {
+  if (!isDragging.value) return;
+  endX.value = clientX;
+};
+
+const handleEnd = () => {
+  if (!isDragging.value) return;
+
+  const distance = startX.value - endX.value;
+  if (Math.abs(distance) > minSwipeDistance) {
+    if (distance > 0) {
+      nextPartners();
+    } else {
+      prevPartners();
+    }
+  }
+
+  // Reset
+  startX.value = 0;
+  endX.value = 0;
+  isDragging.value = false;
+};
+
+const handleTouchStart = (e) => handleStart(e.touches[0].clientX);
+const handleTouchMove = (e) => handleMove(e.touches[0].clientX);
+const handleTouchEnd = () => handleEnd();
+
+const handleMouseDown = (e) => {
+  handleStart(e.clientX);
+  // Add global mouseup to handle release outside the element
+  window.addEventListener('mouseup', handleMouseUpGlobal);
+};
+
+const handleMouseMove = (e) => handleMove(e.clientX);
+const handleMouseUp = () => {
+  handleEnd();
+  window.removeEventListener('mouseup', handleMouseUpGlobal);
+};
+
+const handleMouseUpGlobal = () => {
+  if (isDragging.value) {
+    handleEnd();
+  }
+  window.removeEventListener('mouseup', handleMouseUpGlobal);
+};
+
 onMounted(() => {
   const observerOptions = {
     threshold: 0.15,
@@ -102,7 +159,16 @@ onMounted(() => {
       <div
         class="relative max-w-6xl mx-auto reveal reveal-delay-1 px-10 md:px-0"
       >
-        <div class="overflow-hidden">
+        <div 
+          class="overflow-hidden cursor-grab active:cursor-grabbing"
+          @touchstart="handleTouchStart"
+          @touchmove="handleTouchMove"
+          @touchend="handleTouchEnd"
+          @mousedown="handleMouseDown"
+          @mousemove="handleMouseMove"
+          @mouseup="handleMouseUp"
+          @mouseleave="handleMouseUp"
+        >
           <div
             class="flex transition-transform duration-500 ease-in-out gap-8"
             :style="{
@@ -126,8 +192,9 @@ onMounted(() => {
                 <img
                   :src="partner.logo"
                   :alt="partner.name"
-                  class="w-full h-full object-contain p-6 transition-all"
+                  class="w-full h-full object-contain p-6 transition-all pointer-events-none"
                   :class="partner.imgClass"
+                  draggable="false"
                 />
               </a>
             </div>
