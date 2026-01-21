@@ -23,12 +23,9 @@ onMounted(() => {
 <template>
   <section class="pt-5 pb-40 bg-white relative overflow-hidden">
     <div class="container relative z-10">
-      <div
-        class="flex flex-col lg:flex-row-reverse items-center gap-16 lg:gap-24 text-center lg:text-left"
-      >
-        <!-- Right Content -->
-        <div class="lg:w-1/2">
-
+      <div class="text-center">
+        <!-- Content -->
+        <div class="max-w-3xl mx-auto">
           <h2
             class="reveal reveal-delay-1 text-site-dark text-4xl md:text-5xl leading-tight mb-8"
           >
@@ -36,7 +33,7 @@ onMounted(() => {
           </h2>
 
           <div
-            class="reveal reveal-delay-2 space-y-6 text-site-dark/80 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0"
+            class="reveal reveal-delay-2 space-y-6 text-site-dark/80 text-lg leading-relaxed max-w-xl mx-auto"
           >
             <p v-html="$t('stories.description')"></p>
           </div>
@@ -75,20 +72,6 @@ onMounted(() => {
               </div>
             </a>
           </div>
-        </div>
-
-        <!-- Left Image -->
-        <div class="lg:w-1/2">
-          <a 
-            href="stories.html"
-            class="reveal reveal-delay-1 block rounded-sm overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500 cursor-pointer"
-          >
-            <img
-              src="https://cms.adocaoespiritualrio.org.br/uploads/papa_joao_paulo_II_cc80df17b9.jpg"
-              alt="Histórias Inspiradoras"
-              class="w-full h-auto object-cover aspect-[4/3]"
-            />
-          </a>
         </div>
       </div>
     </div>
