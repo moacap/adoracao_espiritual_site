@@ -25,6 +25,7 @@ export default defineConfig({
         story_tong: resolve(__dirname, 'story-tong.html'),
         story_matheus: resolve(__dirname, 'story-matheus.html'),
         recomendacao_info: resolve(__dirname, 'recomendacao_info.html'),
+        familia_ulma: resolve(__dirname, 'familia_ulma.html'),
         site_page: resolve(__dirname, 'site_page.html'),
       },
     },

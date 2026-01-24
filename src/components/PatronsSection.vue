@@ -2,7 +2,7 @@
 import { ref, onMounted, computed } from "vue";
 import { useI18n } from "vue-i18n";
 import padroeiraGuadalupe from "../assets/padroeira_guadalupe.jpg";
-import familiaUlma from "../assets/familia_ulma.png";
+import familiaUlma from "../assets/familia_ulma_cropped.png";
 
 const { t } = useI18n();
 
@@ -19,7 +19,7 @@ const patrons = computed(() => [
     name: t("patrons.ulma.name"),
     image: familiaUlma,
     description: t("patrons.ulma.description"),
-    link: "#",
+    link: "familia_ulma.html",
   },
 ]);
 
@@ -151,13 +151,13 @@ onMounted(() => {
             >
               <a :href="patron.link" class="block h-full group cursor-pointer">
                 <div
-                  class="grid md:grid-cols-2 gap-4 md:gap-8 h-full bg-site-beige p-6 md:p-8 rounded-sm border border-black/5 hover:shadow-xl transition-all"
+                  class="grid md:grid-cols-2 gap-4 md:gap-8 h-full bg-transparent p-0 rounded-sm transition-all"
                 >
-                  <div class="flex items-center justify-center md:ps-16">
+                  <div class="flex items-center justify-center">
                     <img
                       :src="patron.image"
                       :alt="patron.name"
-                      class="w-full h-auto object-contain max-h-[220px] md:max-h-[400px] rounded-sm shadow-2xl pointer-events-none"
+                      class="w-full h-auto object-contain max-h-[220px] md:max-h-[400px] pointer-events-none mix-blend-multiply"
                       draggable="false"
                     />
                   </div>
