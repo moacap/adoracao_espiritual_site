@@ -61,7 +61,7 @@ onUnmounted(() => {
           <template v-if="!hideSocial">
             <div
               class="flex items-center gap-2 md:gap-4 transition-colors duration-300"
-              :class="showOpaque ? 'text-[#969696]' : 'text-white/80'"
+              :class="showOpaque ? 'text-site-dark/60' : 'text-white/80'"
             >
               <a
                 href="https://instagram.com/adocaoespiritualrio"

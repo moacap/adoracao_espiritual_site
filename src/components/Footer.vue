@@ -21,7 +21,7 @@
           <ul class="flex flex-col space-y-6 text-lg font-sans">
             <li>
               <a
-                href="#"
+                href="who_we_are.html"
                 class="hover:opacity-70 transition-opacity"
                 >{{ $t("footer.links1.item1") }}</a
               >
