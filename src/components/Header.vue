@@ -46,7 +46,7 @@ onUnmounted(() => {
         <div class="flex items-center gap-2 md:gap-4">
           <!-- Social Icons -->
           <div
-            class="flex items-center gap-2 md:gap-[23px] transition-colors duration-300"
+            class="flex items-center gap-3.5 md:gap-[23px] transition-colors duration-300"
             :class="isSticky ? 'text-site-dark/60' : 'text-white/80'"
           >
             <a

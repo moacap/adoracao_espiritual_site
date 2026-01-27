@@ -60,7 +60,7 @@ onUnmounted(() => {
           <!-- Social Icons -->
           <template v-if="!hideSocial">
             <div
-              class="flex items-center gap-2 md:gap-[23px] transition-colors duration-300"
+              class="flex items-center gap-3.5 md:gap-[23px] transition-colors duration-300"
               :class="showOpaque ? 'text-site-dark/60' : 'text-white/80'"
             >
               <a
