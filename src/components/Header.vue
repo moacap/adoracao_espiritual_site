@@ -29,9 +29,7 @@ onUnmounted(() => {
           : 'bg-transparent py-8',
       ]"
     >
-      <div
-        class="w-full flex items-center justify-between ps-5 pe-2 md:ps-10 md:pe-5"
-      >
+      <div class="w-full flex items-center justify-between px-5 md:px-10">
         <!-- Logo (Left) -->
         <a href="index.html" class="flex-shrink-0">
           <img
@@ -45,10 +43,10 @@ onUnmounted(() => {
         </a>
 
         <!-- Right Side Group (Social + Language) -->
-        <div class="flex items-center gap-1 md:gap-2">
+        <div class="flex items-center gap-1.5 md:gap-2.5">
           <!-- Social Icons -->
           <div
-            class="flex items-center gap-5 md:gap-8 transition-colors duration-300"
+            class="flex items-center gap-4 md:gap-6 transition-colors duration-300"
             :class="isSticky ? 'text-site-dark/60' : 'text-white/80'"
           >
             <a
@@ -78,8 +76,8 @@ onUnmounted(() => {
           </div>
 
           <div
-            class="w-px h-4"
-            :class="isSticky ? 'bg-black/10' : 'bg-white/20'"
+            class="w-px h-5"
+            :class="isSticky ? 'bg-black/20' : 'bg-white/30'"
           ></div>
           <!-- Subtle Divider -->
 
