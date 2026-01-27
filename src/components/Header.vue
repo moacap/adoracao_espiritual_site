@@ -43,7 +43,7 @@ onUnmounted(() => {
         </a>
 
         <!-- Right Side Group (Social + Language) -->
-        <div class="flex items-center gap-1.5 md:gap-2.5">
+        <div class="flex items-center gap-4 md:gap-6">
           <!-- Social Icons -->
           <div
             class="flex items-center gap-[15px] md:gap-[23px] transition-colors duration-300"
