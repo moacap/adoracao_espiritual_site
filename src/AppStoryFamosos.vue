@@ -16,13 +16,15 @@ const goBack = () => {
 
 onMounted(() => {
   const observerOptions = {
-    threshold: 0.1,
+    threshold: 0.05,
+    rootMargin: '0px 0px 50px 0px'
   };
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("reveal-active");
+        observer.unobserve(entry.target); // Stop observing once revealed
       }
     });
   }, observerOptions);
@@ -40,7 +42,7 @@ onMounted(() => {
     <main class="pt-[140px] pb-20">
       <div class="container mx-auto px-6 max-w-4xl">
         <!-- Meta -->
-        <div class="flex items-center gap-4 mb-6 reveal">
+        <div class="flex items-center gap-4 mb-4 md:mb-6 reveal">
           <span class="px-4 py-1.5 bg-site-terracotta/10 rounded-full text-[13px] font-bold text-site-terracotta uppercase tracking-[0.15em]">
             {{ t('stories_page.title') }}
           </span>
@@ -48,17 +50,17 @@ onMounted(() => {
         </div>
 
         <!-- Title -->
-        <h1 class="text-4xl md:text-6xl text-site-dark font-serif-site leading-tight mb-8 reveal reveal-delay-1">
+        <h1 class="text-4xl md:text-6xl text-site-dark font-serif-site leading-tight mb-4 md:mb-8 reveal reveal-delay-1">
           {{ t('stories_content.famosos.title') }}
         </h1>
 
         <!-- Leadin -->
-        <p class="text-xl md:text-2xl text-site-dark/60 font-medium leading-relaxed mb-12 reveal reveal-delay-2">
+        <p class="text-xl md:text-2xl text-site-dark/60 font-medium leading-relaxed mb-8 md:mb-12 reveal reveal-delay-2">
           {{ t('stories_content.famosos.intro') }}
         </p>
 
         <!-- Banner Image -->
-        <div class="relative aspect-[16/9] rounded-sm overflow-hidden shadow-sm mb-16 reveal reveal-delay-3">
+        <div class="relative aspect-[16/9] rounded-sm overflow-hidden shadow-sm mb-8 md:mb-16 reveal reveal-delay-3">
           <img 
             src="https://cms.adocaoespiritualrio.org.br/uploads/steve_jobs_de28ae9f15.jpg" 
             alt="Steve Jobs"
@@ -68,68 +70,68 @@ onMounted(() => {
 
         <!-- Article Content -->
         <div class="prose prose-lg max-w-none text-site-dark/80 reveal reveal-delay-1">
-          <p class="text-lg leading-relaxed mb-10">
+          <p class="text-lg leading-relaxed mb-6 md:mb-10">
             {{ t('stories_content.famosos.p1') }}
           </p>
 
-          <div class="space-y-16">
+          <div class="space-y-8 md:space-y-16">
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.jobs.title') }}</h2>
+              <h2 class="text-2xl md:text-3xl font-serif-site text-site-dark mb-3 md:mb-6">{{ t('stories_content.famosos.jobs.title') }}</h2>
               <p class="text-lg leading-relaxed">
                 {{ t('stories_content.famosos.jobs.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.bieber.title') }}</h2>
+              <h2 class="text-2xl md:text-3xl font-serif-site text-site-dark mb-3 md:mb-6">{{ t('stories_content.famosos.bieber.title') }}</h2>
               <p class="text-lg leading-relaxed">
                 {{ t('stories_content.famosos.bieber.text') }}
               </p></section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.bolanos.title') }}</h2>
+              <h2 class="text-2xl md:text-3xl font-serif-site text-site-dark mb-3 md:mb-6">{{ t('stories_content.famosos.bolanos.title') }}</h2>
               <p class="text-lg leading-relaxed">
                 {{ t('stories_content.famosos.bolanos.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.boyle.title') }}</h2>
+              <h2 class="text-2xl md:text-3xl font-serif-site text-site-dark mb-3 md:mb-6">{{ t('stories_content.famosos.boyle.title') }}</h2>
               <p class="text-lg leading-relaxed">
                 {{ t('stories_content.famosos.boyle.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.ronaldo.title') }}</h2>
+              <h2 class="text-2xl md:text-3xl font-serif-site text-site-dark mb-3 md:mb-6">{{ t('stories_content.famosos.ronaldo.title') }}</h2>
               <p class="text-lg leading-relaxed">
                 {{ t('stories_content.famosos.ronaldo.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.dion.title') }}</h2>
+              <h2 class="text-2xl md:text-3xl font-serif-site text-site-dark mb-3 md:mb-6">{{ t('stories_content.famosos.dion.title') }}</h2>
               <p class="text-lg leading-relaxed">
                 {{ t('stories_content.famosos.dion.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.bocelli.title') }}</h2>
+              <h2 class="text-2xl md:text-3xl font-serif-site text-site-dark mb-3 md:mb-6">{{ t('stories_content.famosos.bocelli.title') }}</h2>
               <p class="text-lg leading-relaxed">
                 {{ t('stories_content.famosos.bocelli.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.silva.title') }}</h2>
+              <h2 class="text-2xl md:text-3xl font-serif-site text-site-dark mb-3 md:mb-6">{{ t('stories_content.famosos.silva.title') }}</h2>
               <p class="text-lg leading-relaxed">
                 {{ t('stories_content.famosos.silva.text') }}
               </p>
             </section>
 
             <section>
-              <h2 class="text-3xl font-serif-site text-site-dark mb-6">{{ t('stories_content.famosos.nicholson.title') }}</h2>
+              <h2 class="text-2xl md:text-3xl font-serif-site text-site-dark mb-3 md:mb-6">{{ t('stories_content.famosos.nicholson.title') }}</h2>
               <p class="text-lg leading-relaxed">
                 {{ t('stories_content.famosos.nicholson.text') }}
               </p>
@@ -138,7 +140,7 @@ onMounted(() => {
         </div>
 
         <!-- Final Back Button -->
-        <div class="flex justify-center mt-24 reveal">
+        <div class="flex justify-center mt-16 md:mt-24 reveal">
           <button
             @click="goBack"
             class="group relative inline-flex items-center h-12 pl-14 pr-6"
@@ -182,8 +184,8 @@ onMounted(() => {
 <style scoped>
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   will-change: transform, opacity;
 }
 
