@@ -29,14 +29,14 @@ onUnmounted(() => {
           : 'bg-transparent py-8',
       ]"
     >
-      <div class="w-full flex items-center justify-between px-5 md:px-10">
+      <div class="w-full flex items-center justify-between px-3 md:px-10">
         <!-- Logo (Left) -->
         <a href="index.html" class="flex-shrink-0">
           <img
             :src="aePretoLogo"
             alt="Adoção Espiritual"
             :class="[
-              'h-12 lg:h-16 w-auto transition-all duration-500',
+              'h-9 md:h-12 lg:h-16 w-auto transition-all duration-500',
               !isSticky ? 'brightness-0 invert' : '',
             ]"
           />
@@ -46,7 +46,7 @@ onUnmounted(() => {
         <div class="flex items-center gap-2 md:gap-4">
           <!-- Social Icons -->
           <div
-            class="flex items-center gap-[15px] md:gap-[23px] transition-colors duration-300"
+            class="flex items-center gap-2 md:gap-[23px] transition-colors duration-300"
             :class="isSticky ? 'text-site-dark/60' : 'text-white/80'"
           >
             <a
