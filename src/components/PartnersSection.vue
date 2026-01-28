@@ -1,13 +1,10 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import jesusMeninoLogo from '../assets/partners/Parceiro_Jesus Menino.webp';
 import missaoDuasVidasLogo from '../assets/partners/missao_duas_vidas_new.png';
 import associacaoGuadalupeLogo from '../assets/partners/LOGO-G3-1.png';
 import rndvfLogo from '../assets/RNDVF-logo-v5-final-noBorder.svg';
 import cmvdLogo from '../assets/cropped-CMVD-Por-Extensopng-1.png';
-
-const currentIndex = ref(0);
-const itemsToShow = ref(4);
 
 const partners = [
   {
@@ -40,73 +37,34 @@ const partners = [
   },
 ];
 
-const nextPartners = () => {
-  if (currentIndex.value + itemsToShow.value < partners.length) {
-    currentIndex.value++;
-  }
-};
-
-const prevPartners = () => {
-  if (currentIndex.value > 0) {
-    currentIndex.value--;
-  }
-};
-
-// Swipe/Drag functionality
+const scrollContainer = ref(null);
+const isDown = ref(false);
 const startX = ref(0);
-const endX = ref(0);
-const isDragging = ref(false);
-const minSwipeDistance = 50;
-
-const handleStart = (clientX) => {
-  startX.value = clientX;
-  isDragging.value = true;
-};
-
-const handleMove = (clientX) => {
-  if (!isDragging.value) return;
-  endX.value = clientX;
-};
-
-const handleEnd = () => {
-  if (!isDragging.value) return;
-
-  const distance = startX.value - endX.value;
-  if (Math.abs(distance) > minSwipeDistance) {
-    if (distance > 0) {
-      nextPartners();
-    } else {
-      prevPartners();
-    }
-  }
-
-  // Reset
-  startX.value = 0;
-  endX.value = 0;
-  isDragging.value = false;
-};
-
-const handleTouchStart = (e) => handleStart(e.touches[0].clientX);
-const handleTouchMove = (e) => handleMove(e.touches[0].clientX);
-const handleTouchEnd = () => handleEnd();
+const scrollLeft = ref(0);
 
 const handleMouseDown = (e) => {
-  handleStart(e.clientX);
-  // Add global mouseup to handle release outside the element
-  window.addEventListener('mouseup', handleMouseUpGlobal);
+  isDown.value = true;
+  scrollContainer.value.classList.add('active');
+  startX.value = e.pageX - scrollContainer.value.offsetLeft;
+  scrollLeft.value = scrollContainer.value.scrollLeft;
 };
 
-const handleMouseMove = (e) => handleMove(e.clientX);
+const handleMouseLeave = () => {
+  isDown.value = false;
+  scrollContainer.value.classList.remove('active');
+};
+
 const handleMouseUp = () => {
-  handleEnd();
-  window.removeEventListener('mouseup', handleMouseUpGlobal);
+  isDown.value = false;
+  scrollContainer.value.classList.remove('active');
 };
 
-const handleMouseUpGlobal = () => {
-  if (isDragging.value) {
-    handleEnd();
-  }
-  window.removeEventListener('mouseup', handleMouseUpGlobal);
+const handleMouseMove = (e) => {
+  if (!isDown.value) return;
+  e.preventDefault();
+  const x = e.pageX - scrollContainer.value.offsetLeft;
+  const walk = (x - startX.value) * 2; // scroll-fast
+  scrollContainer.value.scrollLeft = scrollLeft.value - walk;
 };
 
 onMounted(() => {
@@ -125,29 +83,14 @@ onMounted(() => {
   document.querySelectorAll(".reveal").forEach((el) => {
     observer.observe(el);
   });
-
-  // Responsive items
-  const updateItemsToShow = () => {
-    if (window.innerWidth < 768) {
-      itemsToShow.value = 1;
-    } else if (window.innerWidth < 1024) {
-      itemsToShow.value = 2;
-    } else {
-      itemsToShow.value = 4;
-    }
-  };
-
-  updateItemsToShow();
-  window.addEventListener("resize", updateItemsToShow);
 });
 </script>
 
 <template>
-  <section class="pt-5 pb-40 bg-site-beige relative overflow-hidden">
-    <div class="container relative z-10">
+  <section class="py-24 bg-site-beige relative overflow-hidden border-t border-site-terracotta/5">
+    <div class="container mx-auto px-6">
       <div class="text-center mb-16 reveal">
-
-        <h2 class="text-site-terracotta text-4xl md:text-5xl mb-6">
+        <h2 class="text-site-terracotta text-4xl md:text-5xl font-serif mb-4">
           {{ $t("partners.title") }}
         </h2>
         <p class="text-site-dark/70 text-lg max-w-2xl mx-auto">
@@ -155,118 +98,57 @@ onMounted(() => {
         </p>
       </div>
 
-      <!-- Carousel -->
-      <div
-        class="relative max-w-6xl mx-auto reveal reveal-delay-1 px-10 md:px-0"
-      >
-        <div 
-          class="overflow-hidden cursor-grab active:cursor-grabbing"
-          @touchstart="handleTouchStart"
-          @touchmove="handleTouchMove"
-          @touchend="handleTouchEnd"
-          @mousedown="handleMouseDown"
-          @mousemove="handleMouseMove"
-          @mouseup="handleMouseUp"
-          @mouseleave="handleMouseUp"
-        >
-          <div
-            class="flex transition-transform duration-500 ease-in-out gap-8"
-            :style="{
-              transform: `translateX(calc(-${currentIndex} * (100% + 32px) / ${itemsToShow}))`,
-            }"
-          >
-            <div
-              v-for="(partner, index) in partners"
-              :key="index"
-              class="flex-shrink-0"
-              :style="{
-                width: `calc(${100 / itemsToShow}% - ${((itemsToShow - 1) * 32) / itemsToShow}px)`,
-              }"
-            >
-              <a
-                :href="partner.link"
-                target="_blank"
-                class="block overflow-hidden rounded-sm shadow-sm hover:shadow-xl transition-all duration-300 h-56 flex items-center justify-center group"
-                :class="partner.bgColor ? partner.bgColor : 'bg-white'"
-              >
-                <img
-                  :src="partner.logo"
-                  :alt="partner.name"
-                  class="w-full h-full object-contain p-6 transition-all pointer-events-none"
-                  :class="partner.imgClass"
-                  draggable="false"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Navigation Arrows -->
-        <button
-          @click="prevPartners"
-          :disabled="currentIndex === 0"
-          class="absolute -left-4 md:-translate-x-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-site-terracotta hover:bg-site-terracotta/80 disabled:opacity-30 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-all z-10"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            class="w-5 h-5"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 19.5L8.25 12l7.5-7.5"
-            />
-          </svg>
-        </button>
-        <button
-          @click="nextPartners"
-          :disabled="currentIndex + itemsToShow >= partners.length"
-          class="absolute -right-4 md:translate-x-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-site-terracotta hover:bg-site-terracotta/80 disabled:opacity-30 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-all z-10"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            class="w-5 h-5"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M8.25 4.5l7.5 7.5-7.5 7.5"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <!-- Single Wavy Divider beige -->
-    <div
-      class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-[0] z-10"
+    <!-- Partners Scroll Area - Removed 'container' to allow edge-to-edge bleed which demonstrates scrollability -->
+    <div 
+      ref="scrollContainer"
+      class="partners-scroll-container flex items-center gap-12 md:gap-20 overflow-x-auto py-10 cursor-grab active:cursor-grabbing select-none reveal reveal-delay-1 px-6 md:px-[10vw] snap-x snap-mandatory"
+      @mousedown="handleMouseDown"
+      @mouseleave="handleMouseLeave"
+      @mouseup="handleMouseUp"
+      @mousemove="handleMouseMove"
     >
-      <svg
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-        class="relative block w-full h-[40px] md:h-[80px] lg:h-[110px]"
+      <div
+        v-for="(partner, index) in partners"
+        :key="index"
+        class="flex-shrink-0 flex items-center justify-center transition-all duration-500 snap-center"
       >
-        <path
-          d="M0,110 C200,110 400,0 600,0 C800,0 1000,120 1200,60 V120 H0 Z"
-          fill="#FFFFFF"
-        ></path>
-      </svg>
+        <a
+          :href="partner.link"
+          target="_blank"
+          class="block w-52 h-52 md:w-64 md:h-64 rounded-sm shadow-sm hover:shadow-xl transition-all duration-300 flex items-center justify-center p-8 group snap-center"
+          :class="partner.bgColor ? partner.bgColor : 'bg-white border border-site-terracotta/5'"
+          @click="(e) => isDown && e.preventDefault()"
+        >
+          <img
+            :src="partner.logo"
+            :alt="partner.name"
+            class="w-full h-full object-contain pointer-events-none transition-all duration-500 group-hover:scale-110"
+            :class="partner.imgClass"
+            draggable="false"
+          />
+        </a>
+      </div>
+      <!-- Empty space at the end to allow for overflow visualization -->
+      <div class="flex-shrink-0 w-6 md:w-[10vw]"></div>
+    </div>
     </div>
   </section>
 </template>
 
 <style scoped>
+.partners-scroll-container {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  -webkit-overflow-scrolling: touch;
+}
+
+.partners-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(30px);
   transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   will-change: transform, opacity;
 }
@@ -279,4 +161,5 @@ onMounted(() => {
 .reveal-delay-1 {
   transition-delay: 0.1s;
 }
+
 </style>
