@@ -87,9 +87,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="py-24 bg-site-beige relative overflow-hidden border-t border-site-terracotta/5">
+  <section class="pt-10 pb-20 md:pb-32 lg:pb-40 bg-site-beige relative overflow-hidden border-t border-site-terracotta/5">
     <div class="container mx-auto px-6">
-      <div class="text-center mb-16 reveal">
+      <div class="text-center mb-8 reveal">
         <h2 class="text-site-terracotta text-4xl md:text-5xl font-serif mb-4">
           {{ $t("partners.title") }}
         </h2>
@@ -101,7 +101,7 @@ onMounted(() => {
     <!-- Partners Scroll Area - Removed 'container' to allow edge-to-edge bleed which demonstrates scrollability -->
     <div 
       ref="scrollContainer"
-      class="partners-scroll-container flex items-center gap-12 md:gap-20 overflow-x-auto py-10 cursor-grab active:cursor-grabbing select-none reveal reveal-delay-1 px-6 md:px-[10vw] snap-x snap-mandatory"
+      class="partners-scroll-container flex items-center gap-12 md:gap-20 overflow-x-auto py-4 cursor-grab active:cursor-grabbing select-none reveal reveal-delay-1 px-6 md:px-[10vw] snap-x snap-mandatory"
       @mousedown="handleMouseDown"
       @mouseleave="handleMouseLeave"
       @mouseup="handleMouseUp"
@@ -131,6 +131,22 @@ onMounted(() => {
       <!-- Empty space at the end to allow for overflow visualization -->
       <div class="flex-shrink-0 w-6 md:w-[10vw]"></div>
     </div>
+    </div>
+
+    <!-- Single Wavy Divider white -->
+    <div
+      class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-[0] z-10"
+    >
+      <svg
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+        class="relative block w-full h-[40px] md:h-[80px] lg:h-[110px]"
+      >
+        <path
+          d="M0,110 C200,110 400,0 600,0 C800,0 1000,120 1200,60 V120 H0 Z"
+          fill="#FFFFFF"
+        ></path>
+      </svg>
     </div>
   </section>
 </template>

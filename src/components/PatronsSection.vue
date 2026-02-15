@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, computed } from "vue";
 import { useI18n } from "vue-i18n";
-import padroeiraGuadalupe from "../assets/padroeira_guadalupe.jpg";
+import padroeiraGuadalupe from "../assets/padroeira_guadalupe.png";
 import familiaUlma from "../assets/familia_ulma_cropped.png";
 
 const { t } = useI18n();
@@ -55,7 +55,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="pt-5 pb-40 bg-site-beige relative overflow-hidden">
+  <section class="pt-5 pb-16 md:pb-24 lg:pb-32 bg-site-beige relative overflow-hidden">
     <div class="container relative z-10">
       <div class="text-center mb-16 reveal">
 
@@ -84,7 +84,7 @@ onMounted(() => {
                "
              >
                <div class="block h-full">
-                 <div class="bg-gray-300 rounded-sm p-4 h-full flex flex-col relative">
+                  <div class="bg-gray-300 rounded-sm p-4 h-full flex flex-col relative">
                    <!-- Título e Subtítulo -->
                    <div class="text-center mb-4 z-10">
                      <h3 class="text-xl font-bold mb-1 text-black">
@@ -96,11 +96,11 @@ onMounted(() => {
                    </div>
  
                    <!-- Imagem -->
-                   <div class="relative flex-1 flex items-center justify-center -mt-2 pb-8 px-8 md:pb-14 md:px-14">
+                   <div class="relative flex-1 flex items-center justify-center -mt-2 pb-4 px-8 md:pb-8 md:px-14">
                      <img
                        :src="patron.image"
                        :alt="patron.name"
-                       class="w-full h-[320px] md:h-[420px] object-contain pointer-events-none"
+                        class="w-full h-[320px] md:h-[420px] object-contain pointer-events-none mix-blend-multiply"
                        draggable="false"
                      />
                    </div>

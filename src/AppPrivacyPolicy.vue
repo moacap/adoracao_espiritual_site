@@ -1,6 +1,26 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+import { useI18n } from 'vue-i18n';
 import HeaderStart from "./components/HeaderStart.vue";
 import Footer from "./components/Footer.vue";
+
+const { t } = useI18n();
+
+const footerRef = ref(null);
+const buttonBottom = ref('2rem'); // 32px standard spacing
+
+const handleScroll = () => {
+  if (!footerRef.value) return;
+  const footerRect = footerRef.value.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  if (footerRect.top < windowHeight) {
+    const overlap = windowHeight - footerRect.top;
+    buttonBottom.value = `${32 + overlap}px`;
+  } else {
+    buttonBottom.value = '2rem';
+  }
+};
 
 const goBack = () => {
   if (window.history.length > 1) {
@@ -9,6 +29,17 @@ const goBack = () => {
     window.location.href = "index.html";
   }
 };
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('resize', handleScroll);
+  handleScroll(); 
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+  window.removeEventListener('resize', handleScroll);
+});
 </script>
 
 <template>
@@ -76,10 +107,13 @@ const goBack = () => {
         </div>
 
         <!-- Back Button -->
-        <div class="mt-20 flex justify-center">
+        <div 
+          class="fixed right-6 md:right-12 z-50 will-change-auto"
+          :style="{ bottom: buttonBottom }"
+        >
           <button
             @click="goBack"
-            class="group relative inline-flex items-center h-12 pl-14 pr-6"
+            class="group relative inline-flex items-center h-12 pl-14 pr-6 bg-white/90 backdrop-blur rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <div
               class="absolute left-0 top-0 h-full w-12 border border-site-terracotta rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:w-full bg-white/0"
@@ -113,7 +147,9 @@ const goBack = () => {
       </div>
     </main>
 
-    <Footer />
+    <div ref="footerRef">
+      <Footer />
+    </div>
   </div>
 </template>
 

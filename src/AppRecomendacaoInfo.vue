@@ -1,6 +1,39 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+import { useI18n } from 'vue-i18n';
 import HeaderStart from "./components/HeaderStart.vue";
 import Footer from "./components/Footer.vue";
+
+const { t } = useI18n();
+
+const footerRef = ref(null);
+const buttonBottom = ref('2rem'); // 32px standard spacing
+
+const handleScroll = () => {
+  if (!footerRef.value) return;
+  const footerRect = footerRef.value.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  if (footerRect.top < windowHeight) {
+    // Footer is entering the viewport
+    const overlap = windowHeight - footerRect.top;
+    // Push the button up by the overlap amount + original spacing
+    buttonBottom.value = `${32 + overlap}px`;
+  } else {
+    buttonBottom.value = '2rem';
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('resize', handleScroll);
+  handleScroll(); // Initial check
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+  window.removeEventListener('resize', handleScroll);
+});
 
 const goBack = () => {
   if (window.history.length > 1) {
@@ -13,7 +46,7 @@ const goBack = () => {
 
 <template>
   <div class="min-h-screen bg-white">
-    <HeaderStart always-opaque />
+    <header-start always-opaque />
 
     <main class="pt-[160px] pb-20 container mx-auto px-4 lg:px-20">
       <div class="max-w-4xl mx-auto">
@@ -71,10 +104,13 @@ const goBack = () => {
         </div>
 
         <!-- Back Button -->
-        <div class="mt-20 flex justify-center">
+        <div 
+          class="fixed right-6 md:right-12 z-50 will-change-auto"
+          :style="{ bottom: buttonBottom }"
+        >
           <button
             @click="goBack"
-            class="group relative inline-flex items-center h-12 pl-14 pr-6"
+            class="group relative inline-flex items-center h-12 pl-14 pr-6 bg-white/90 backdrop-blur rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <div
               class="absolute left-0 top-0 h-full w-12 border border-site-terracotta rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:w-full bg-white/0"
@@ -108,7 +144,9 @@ const goBack = () => {
       </div>
     </main>
 
-    <Footer />
+    <div ref="footerRef">
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -134,6 +172,7 @@ h1 {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 1.4rem;
   margin-top: 2.5rem;
+  color: #b25e5e;
 }
 
 .prose :deep(h4) {
