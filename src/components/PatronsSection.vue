@@ -72,7 +72,7 @@ onMounted(() => {
         class="relative max-w-5xl mx-auto reveal reveal-delay-1 px-10 md:px-0"
       >
         <div class="overflow-hidden rounded-sm">
-      <div class="relative h-[580px] md:h-[650px]">
+      <div class="relative h-[450px] md:h-[650px]">
              <div
                v-for="(patron, index) in patrons"
                :key="index"
@@ -84,9 +84,9 @@ onMounted(() => {
                "
              >
                <div class="block h-full">
-                  <div class="bg-gray-300 rounded-sm p-4 h-full flex flex-col relative">
+                   <div class="bg-gray-300 rounded-sm p-2 pb-0 md:p-4 h-full flex flex-col relative">
                    <!-- Título e Subtítulo -->
-                   <div class="text-center mb-4 z-10">
+                    <div class="text-center mb-0 md:mb-4 z-10">
                      <h3 class="text-xl font-bold mb-1 text-black">
                        {{ patron.name }}
                      </h3>
@@ -94,15 +94,14 @@ onMounted(() => {
                        {{ patron.description }}
                      </p>
                    </div>
- 
-                   <!-- Imagem -->
-                   <div class="relative flex-1 flex items-center justify-center -mt-2 pb-4 px-8 md:pb-8 md:px-14">
+                    <!-- Imagem -->
+                     <div class="relative md:flex-1 flex items-start md:items-center justify-center pt-2 md:pt-0 pb-0 px-2 md:pb-8 md:px-14">
                      <img
                        :src="patron.image"
                        :alt="patron.name"
-                        class="w-full h-[320px] md:h-[420px] object-contain pointer-events-none mix-blend-multiply"
+                         class="w-full h-[280px] md:h-[420px] object-contain pointer-events-none mix-blend-multiply"
                        draggable="false"
-                     />
+                    />
                    </div>
                     
                   <!-- Botão SAIBA MAIS no canto inferior direito -->
