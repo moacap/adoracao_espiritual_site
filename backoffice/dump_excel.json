@@ -1,0 +1,1130 @@
+{
+  "Planilha1": [
+    {
+      "__EMPTY": "1. Dom Tiago "
+    },
+    {
+      "__EMPTY": "2. Meri",
+      "__EMPTY_1": "MODERADOR"
+    },
+    {
+      "__EMPTY": "3. Vitória ",
+      "__EMPTY_1": "MODERADOR"
+    },
+    {
+      "__EMPTY": "4. Débora",
+      "__EMPTY_1": "MODERADOR"
+    },
+    {
+      "__EMPTY": "5. ⁠Silvia",
+      "TREINADO": "SIM"
+    },
+    {
+      "__EMPTY": "6. ⁠Andrea Oliveira "
+    },
+    {
+      "__EMPTY": "7. Monica Paes"
+    },
+    {
+      "__EMPTY": "8. Vandinha"
+    },
+    {
+      "__EMPTY": "9. Maria das Graças"
+    },
+    {
+      "__EMPTY": "10. Patrícia F"
+    },
+    {
+      "__EMPTY": "11. Maria Cristina",
+      "__EMPTY_1": "MODERADOR"
+    },
+    {
+      "__EMPTY": "12. Mônica Barbosa"
+    },
+    {
+      "__EMPTY": "13. Telma Costa"
+    },
+    {
+      "__EMPTY": "14. Joao Procopio"
+    },
+    {
+      "__EMPTY": "15. Monica Baptista"
+    },
+    {
+      "__EMPTY": "16. Elisangela Passos"
+    },
+    {
+      "__EMPTY": "17. ⁠Alicia Castro"
+    },
+    {
+      "__EMPTY": "18. ⁠Pedro Garcia"
+    },
+    {
+      "__EMPTY": " 19.  Claudia Ferreira"
+    },
+    {
+      "__EMPTY": "20. Claudia Ventura"
+    },
+    {
+      "__EMPTY": "21. Mirza"
+    },
+    {
+      "__EMPTY": "22. Daniel "
+    },
+    {
+      "__EMPTY": "23. Nilda "
+    },
+    {
+      "__EMPTY": " 24.  Kelly Carvalho"
+    },
+    {
+      "__EMPTY": "25. Larissa"
+    },
+    {
+      "__EMPTY": "26. ⁠Aline"
+    },
+    {
+      "__EMPTY": "27. Carol da Val"
+    },
+    {
+      "__EMPTY": "28. Silvia Rocha"
+    },
+    {
+      "__EMPTY": "29. Jair Romão"
+    },
+    {
+      "__EMPTY": "30. Claudia Torres"
+    },
+    {
+      "__EMPTY": "31. Célia  Barros"
+    },
+    {
+      "__EMPTY": "32. ⁠Reynaldo"
+    },
+    {
+      "__EMPTY_2": "MEDIADOR"
+    },
+    {
+      "__EMPTY_1": "GRUPO"
+    },
+    {
+      "__EMPTY": "1. Meri ",
+      "__EMPTY_2": "MERI",
+      "__EMPTY_3": "GRUPO 3",
+      "__EMPTY_4": "GRUPO 1: COMO IMPLEMENTAR A ADOÇÃO ESPIRITUAL NAS PARÓQUIAS DO RIO DE JANEIRO"
+    },
+    {
+      "__EMPTY": "2. ⁠Maria Cristina "
+    },
+    {
+      "__EMPTY": "3. ⁠Silvia Juliasse",
+      "__EMPTY_1": 1,
+      "__EMPTY_2": "DÉBORA",
+      "__EMPTY_3": "GRUPO 2",
+      "__EMPTY_4": "GRUPO 2: COMO TORNAR A ADOÇÃO ESPIRITUAL MAIS VISÍVEL NA ARQUIDIOCESE DO RIO DE JANEIRO"
+    },
+    {
+      "__EMPTY": "4. Maria das Graças",
+      "__EMPTY_1": 2
+    },
+    {
+      "__EMPTY": "5. ⁠Aline ",
+      "__EMPTY_1": 3,
+      "__EMPTY_2": "VITORIA",
+      "__EMPTY_3": "GRUPO 4:",
+      "__EMPTY_4": "GRUPO 2: COMO ENCONTRAR NOVOS COLABORADORES E MANTER A CHAMA ACESA NOS ANTIGOS"
+    },
+    {
+      "__EMPTY": "6. Daniel ",
+      "__EMPTY_1": 4
+    },
+    {
+      "__EMPTY": "7. Nilda",
+      "__EMPTY_1": 1,
+      "__EMPTY_2": "CRISTINA",
+      "__EMPTY_3": "GRUPO 1: ",
+      "__EMPTY_4": "GRUPO 1: O QUE VOCÊS COMO COLABORADORES ESPERAM DA ADOÇÃO ESPIRITUAL"
+    },
+    {
+      "__EMPTY": "8. Débora "
+    },
+    {
+      "__EMPTY": "9. Vitoria"
+    },
+    {
+      "__EMPTY": "10. Mirza",
+      "__EMPTY_1": 2
+    },
+    {
+      "__EMPTY": "11. Cláudia Torres",
+      "__EMPTY_1": 3,
+      "__EMPTY_3": "CESTINHA:",
+      "__EMPTY_4": "4 PERGUNTAS QUE DÉBORA VAI LEVAR NO ENVELOPE"
+    },
+    {
+      "__EMPTY": "12. Célia  Barros",
+      "__EMPTY_1": 4
+    },
+    {
+      "__EMPTY": "13. Kelly Carvalho",
+      "__EMPTY_1": 1
+    },
+    {
+      "__EMPTY": "14. Thelma Costa",
+      "__EMPTY_1": 1
+    },
+    {
+      "__EMPTY": "15. Monica Paes",
+      "__EMPTY_1": 4
+    },
+    {
+      "__EMPTY": "16. Pedro Garcia",
+      "__EMPTY_1": 2
+    },
+    {
+      "__EMPTY": "17. Fatinha",
+      "__EMPTY_1": 3
+    },
+    {
+      "__EMPTY": "18. Carolina Ribeiro",
+      "__EMPTY_1": 1
+    },
+    {
+      "__EMPTY": "19. Marlene",
+      "__EMPTY_1": 4
+    },
+    {
+      "__EMPTY": "20. ⁠Alicia Castro",
+      "__EMPTY_1": 2
+    },
+    {
+      "__EMPTY": "21. Andrea Oliveira ",
+      "__EMPTY_1": 3
+    },
+    {
+      "__EMPTY": "22. Vandinha",
+      "__EMPTY_1": 1
+    },
+    {
+      "__EMPTY": "23. Patrícia F.",
+      "__EMPTY_1": 2
+    },
+    {
+      "__EMPTY": "24. Monica Barbosa ",
+      "__EMPTY_1": 3
+    },
+    {
+      "__EMPTY": "25. João Procopio ",
+      "__EMPTY_1": 3
+    },
+    {
+      "__EMPTY": "26. Monica Baptista ",
+      "__EMPTY_1": 4
+    },
+    {
+      "__EMPTY": "27. Elisângela  Passos",
+      "__EMPTY_1": 3
+    },
+    {
+      "__EMPTY": "28. Claudia Ventura ",
+      "__EMPTY_1": 2
+    },
+    {
+      "__EMPTY": "29. Larissa ",
+      "__EMPTY_1": 4
+    },
+    {
+      "__EMPTY": "30. Carol da Val",
+      "__EMPTY_1": 2
+    },
+    {
+      "__EMPTY": "31. Silvia Rocha",
+      "__EMPTY_1": 4
+    },
+    {
+      "__EMPTY": "32. Jair Romão ",
+      "__EMPTY_1": 2
+    },
+    {
+      "__EMPTY": "33. Bruno de Carvalho",
+      "__EMPTY_1": 1
+    },
+    {
+      "__EMPTY": "34. Doris Hipólito ",
+      "__EMPTY_1": 3
+    },
+    {
+      "__EMPTY": "35. Aline Hipólito ",
+      "__EMPTY_1": 4
+    },
+    {
+      "__EMPTY": "36. Reinaldo",
+      "__EMPTY_1": 1
+    },
+    {
+      "__EMPTY": "37. Jussara",
+      "__EMPTY_1": 1
+    },
+    {
+      "__EMPTY": "38. Daniel David",
+      "__EMPTY_1": 3
+    },
+    {
+      "__EMPTY": "39. Marcela",
+      "__EMPTY_1": 2
+    }
+  ],
+  "PAIS": [
+    {
+      "ID_PAIS": 1,
+      "SIGLA_PAIS": "BR",
+      "NOME_PAIS": "BRASIL"
+    }
+  ],
+  "REGIONAL": [
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 1,
+      "DESC_REGIONAL": "REGIONAL NORTE I"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 2,
+      "DESC_REGIONAL": "REGIONAL NORTE II"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 3,
+      "DESC_REGIONAL": "REGIONAL NORTE III"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 4,
+      "DESC_REGIONAL": "REGIONAL NORDESTE I"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 5,
+      "DESC_REGIONAL": "REGIONAL NORDESTE II"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 6,
+      "DESC_REGIONAL": "REGIONAL NORDESTE III"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 7,
+      "DESC_REGIONAL": "REGIONAL NORDESTE IV"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 8,
+      "DESC_REGIONAL": "REGIONAL NORDESTE V"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 9,
+      "DESC_REGIONAL": "REGIONAL LESTE 1"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 10,
+      "DESC_REGIONAL": "REGIONAL LESTE 2"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 11,
+      "DESC_REGIONAL": "REGIONAL LESTE 3"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 12,
+      "DESC_REGIONAL": "REGIONAL CENTRO-OESTE"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 13,
+      "DESC_REGIONAL": "REGIONAL OESTE I"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 14,
+      "DESC_REGIONAL": "REGIONAL OESTE II"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 15,
+      "DESC_REGIONAL": "REGIONAL NOROESTE"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 16,
+      "DESC_REGIONAL": "REGIONAL SUL 1"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 17,
+      "DESC_REGIONAL": "REGIONAL SUL 2"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 18,
+      "DESC_REGIONAL": "REGIONAL SUL 3"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_REGIONAL": 19,
+      "DESC_REGIONAL": "REGIONAL SUL 4"
+    }
+  ],
+  "ESTADOS": [
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 1,
+      "NOME_ESTADO": "ACRE",
+      "SIGLA_ESTADO": "AC"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 2,
+      "NOME_ESTADO": "ALAGOAS",
+      "SIGLA_ESTADO": "AL"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 3,
+      "NOME_ESTADO": "AMAPÁ",
+      "SIGLA_ESTADO": "AP"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 4,
+      "NOME_ESTADO": "AMAZONAS",
+      "SIGLA_ESTADO": "AM"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 5,
+      "NOME_ESTADO": "BAHIA",
+      "SIGLA_ESTADO": "BA"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 6,
+      "NOME_ESTADO": "CEARÁ",
+      "SIGLA_ESTADO": "CE"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 7,
+      "NOME_ESTADO": "DISTRITO FEDERAL",
+      "SIGLA_ESTADO": "DF"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 8,
+      "NOME_ESTADO": "ESPÍRITO SANTO",
+      "SIGLA_ESTADO": "ES"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 9,
+      "NOME_ESTADO": "GOIÁS",
+      "SIGLA_ESTADO": "GO"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 10,
+      "NOME_ESTADO": "MARANHÃO",
+      "SIGLA_ESTADO": "MA"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 11,
+      "NOME_ESTADO": "MATO GROSSO",
+      "SIGLA_ESTADO": "MT"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 12,
+      "NOME_ESTADO": "MATO GROSSO DO SUL",
+      "SIGLA_ESTADO": "MS"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 13,
+      "NOME_ESTADO": "MINAS GERAIS",
+      "SIGLA_ESTADO": "MG"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 14,
+      "NOME_ESTADO": "PARÁ",
+      "SIGLA_ESTADO": "PA"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 15,
+      "NOME_ESTADO": "PARAÍBA",
+      "SIGLA_ESTADO": "PB"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 16,
+      "NOME_ESTADO": "PARANÁ",
+      "SIGLA_ESTADO": "PR"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 17,
+      "NOME_ESTADO": "PERNAMBUCO",
+      "SIGLA_ESTADO": "PE"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 18,
+      "NOME_ESTADO": "PIAUÍ",
+      "SIGLA_ESTADO": "PI"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 19,
+      "NOME_ESTADO": "RIO DE JANEIRO",
+      "SIGLA_ESTADO": "RJ"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 20,
+      "NOME_ESTADO": "RIO GRANDE DO NORTE",
+      "SIGLA_ESTADO": "RN"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 21,
+      "NOME_ESTADO": "RIO GRANDE DO SUL",
+      "SIGLA_ESTADO": "RS"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 22,
+      "NOME_ESTADO": "RONDÔNIA",
+      "SIGLA_ESTADO": "RO"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 23,
+      "NOME_ESTADO": "RORAIMA",
+      "SIGLA_ESTADO": "RR"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 24,
+      "NOME_ESTADO": "SANTA CATARINA",
+      "SIGLA_ESTADO": "SC"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 25,
+      "NOME_ESTADO": "SÃO PAULO",
+      "SIGLA_ESTADO": "SP"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 26,
+      "NOME_ESTADO": "SERGIPE",
+      "SIGLA_ESTADO": "SE"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 27,
+      "NOME_ESTADO": "TOCANTINS",
+      "SIGLA_ESTADO": "TO"
+    }
+  ],
+  "REGIONAL_ESTADO": [
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 1,
+      "ID_REGIONAL": 15,
+      "NOME_ESTADO": "ACRE",
+      "SIGLA_ESTADO": "AC"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 2,
+      "ID_REGIONAL": 5,
+      "NOME_ESTADO": "ALAGOAS",
+      "SIGLA_ESTADO": "AL"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 3,
+      "ID_REGIONAL": 2,
+      "NOME_ESTADO": "AMAPÁ",
+      "SIGLA_ESTADO": "AP"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 4,
+      "ID_REGIONAL": 1,
+      "NOME_ESTADO": "AMAZONAS",
+      "SIGLA_ESTADO": "AM"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 4,
+      "ID_REGIONAL": 15,
+      "NOME_ESTADO": "AMAZONAS",
+      "SIGLA_ESTADO": "AM"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 5,
+      "ID_REGIONAL": 6,
+      "NOME_ESTADO": "BAHIA",
+      "SIGLA_ESTADO": "BA"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 6,
+      "ID_REGIONAL": 4,
+      "NOME_ESTADO": "CEARÁ",
+      "SIGLA_ESTADO": "CE"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 7,
+      "ID_REGIONAL": 12,
+      "NOME_ESTADO": "DISTRITO FEDERAL",
+      "SIGLA_ESTADO": "DF"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 8,
+      "ID_REGIONAL": 11,
+      "NOME_ESTADO": "ESPÍRITO SANTO",
+      "SIGLA_ESTADO": "ES"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 9,
+      "ID_REGIONAL": 12,
+      "NOME_ESTADO": "GOIÁS",
+      "SIGLA_ESTADO": "GO"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 10,
+      "ID_REGIONAL": 8,
+      "NOME_ESTADO": "MARANHÃO",
+      "SIGLA_ESTADO": "MA"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 11,
+      "ID_REGIONAL": 3,
+      "NOME_ESTADO": "MATO GROSSO",
+      "SIGLA_ESTADO": "MT"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 11,
+      "ID_REGIONAL": 12,
+      "NOME_ESTADO": "MATO GROSSO",
+      "SIGLA_ESTADO": "MT"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 11,
+      "ID_REGIONAL": 14,
+      "NOME_ESTADO": "MATO GROSSO",
+      "SIGLA_ESTADO": "MT"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 11,
+      "ID_REGIONAL": 15,
+      "NOME_ESTADO": "MATO GROSSO",
+      "SIGLA_ESTADO": "MT"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 12,
+      "ID_REGIONAL": 13,
+      "NOME_ESTADO": "MATO GROSSO DO SUL",
+      "SIGLA_ESTADO": "MS"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 13,
+      "ID_REGIONAL": 10,
+      "NOME_ESTADO": "MINAS GERAIS",
+      "SIGLA_ESTADO": "MG"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 14,
+      "ID_REGIONAL": 2,
+      "NOME_ESTADO": "PARÁ",
+      "SIGLA_ESTADO": "PA"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 14,
+      "ID_REGIONAL": 3,
+      "NOME_ESTADO": "PARÁ",
+      "SIGLA_ESTADO": "PA"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 15,
+      "ID_REGIONAL": 5,
+      "NOME_ESTADO": "PARAÍBA",
+      "SIGLA_ESTADO": "PB"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 16,
+      "ID_REGIONAL": 17,
+      "NOME_ESTADO": "PARANÁ",
+      "SIGLA_ESTADO": "PR"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 17,
+      "ID_REGIONAL": 5,
+      "NOME_ESTADO": "PERNAMBUCO",
+      "SIGLA_ESTADO": "PE"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 18,
+      "ID_REGIONAL": 7,
+      "NOME_ESTADO": "PIAUÍ",
+      "SIGLA_ESTADO": "PI"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 19,
+      "ID_REGIONAL": 9,
+      "NOME_ESTADO": "RIO DE JANEIRO",
+      "SIGLA_ESTADO": "RJ"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 20,
+      "ID_REGIONAL": 5,
+      "NOME_ESTADO": "RIO GRANDE DO NORTE",
+      "SIGLA_ESTADO": "RN"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 21,
+      "ID_REGIONAL": 18,
+      "NOME_ESTADO": "RIO GRANDE DO SUL",
+      "SIGLA_ESTADO": "RS"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 22,
+      "ID_REGIONAL": 15,
+      "NOME_ESTADO": "RONDÔNIA",
+      "SIGLA_ESTADO": "RO"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 23,
+      "ID_REGIONAL": 1,
+      "NOME_ESTADO": "RORAIMA",
+      "SIGLA_ESTADO": "RR"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 24,
+      "ID_REGIONAL": 19,
+      "NOME_ESTADO": "SANTA CATARINA",
+      "SIGLA_ESTADO": "SC"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 25,
+      "ID_REGIONAL": 16,
+      "NOME_ESTADO": "SÃO PAULO",
+      "SIGLA_ESTADO": "SP"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 26,
+      "ID_REGIONAL": 6,
+      "NOME_ESTADO": "SERGIPE",
+      "SIGLA_ESTADO": "SE"
+    },
+    {
+      "ID_PAIS": 1,
+      "ID_ESTADO": 27,
+      "ID_REGIONAL": 3,
+      "NOME_ESTADO": "TOCANTINS",
+      "SIGLA_ESTADO": "TO"
+    }
+  ],
+  "SITUACAO": [
+    {
+      "ID_SITUACAO": 1,
+      "DESC_SITUACAO": "ATIVO"
+    },
+    {
+      "ID_SITUACAO": 2,
+      "DESC_SITUACAO": "INATIVO"
+    },
+    {
+      "ID_SITUACAO": 3,
+      "DESC_SITUACAO": "EM ANÁLISE"
+    }
+  ],
+  "ARQUIDIOCESE": [
+    {
+      "ID_ARQUIDIOCESE": 1,
+      "ID_ESTADO": 3,
+      "NOME_ARQUIDIOCESE": "Diocese de Macapá",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 2,
+      "ID_ESTADO": 4,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Manaus",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 3,
+      "ID_ESTADO": 5,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Salvador",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 4,
+      "ID_ESTADO": 5,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Vitória da Conquista",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 5,
+      "ID_ESTADO": 5,
+      "NOME_ARQUIDIOCESE": "Diocese de Bom Jesus da Lapa",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 6,
+      "ID_ESTADO": 5,
+      "NOME_ARQUIDIOCESE": "Diocese de Itabuna",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 7,
+      "ID_ESTADO": 5,
+      "NOME_ARQUIDIOCESE": "Diocese de Serrinha",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 8,
+      "ID_ESTADO": 6,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Fortaleza",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 9,
+      "ID_ESTADO": 6,
+      "NOME_ARQUIDIOCESE": "Diocese de Crato",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 10,
+      "ID_ESTADO": 6,
+      "NOME_ARQUIDIOCESE": "Diocese de Iguatu",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 11,
+      "ID_ESTADO": 6,
+      "NOME_ARQUIDIOCESE": "Diocese de Itapipoca",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 12,
+      "ID_ESTADO": 6,
+      "NOME_ARQUIDIOCESE": "Diocese de Limoeiro do Norte",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 13,
+      "ID_ESTADO": 6,
+      "NOME_ARQUIDIOCESE": "Diocese de Tianguá",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 14,
+      "ID_ESTADO": 9,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Goiânia",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 15,
+      "ID_ESTADO": 9,
+      "NOME_ARQUIDIOCESE": "Diocese de Jataí",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 16,
+      "ID_ESTADO": 11,
+      "NOME_ARQUIDIOCESE": "Diocese de Diamantino",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 17,
+      "ID_ESTADO": 13,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Belo Horizonte",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 18,
+      "ID_ESTADO": 13,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Mariana",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 19,
+      "ID_ESTADO": 13,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Montes Claros",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 20,
+      "ID_ESTADO": 13,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Pouso Alegre",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 21,
+      "ID_ESTADO": 13,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Sete Lagoas",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 22,
+      "ID_ESTADO": 13,
+      "NOME_ARQUIDIOCESE": "Diocese da Campanha",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 23,
+      "ID_ESTADO": 13,
+      "NOME_ARQUIDIOCESE": "Diocese de Divinopolis",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 24,
+      "ID_ESTADO": 13,
+      "NOME_ARQUIDIOCESE": "Diocese de Governador Valadares",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 25,
+      "ID_ESTADO": 15,
+      "NOME_ARQUIDIOCESE": "Arquidiocese da Paraíba",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 26,
+      "ID_ESTADO": 15,
+      "NOME_ARQUIDIOCESE": "Diocese de Guarabira",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 27,
+      "ID_ESTADO": 16,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Londrina",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 28,
+      "ID_ESTADO": 16,
+      "NOME_ARQUIDIOCESE": "Diocese de Cornélio Procópio",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 29,
+      "ID_ESTADO": 17,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Recife e Olinda",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 30,
+      "ID_ESTADO": 19,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Niterói",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 31,
+      "ID_ESTADO": 19,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de São Sebastião do Rio de Janeiro",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 32,
+      "ID_ESTADO": 19,
+      "NOME_ARQUIDIOCESE": "Diocese de Itaguaí",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 33,
+      "ID_ESTADO": 19,
+      "NOME_ARQUIDIOCESE": "Diocese de Nova Friburgo",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 34,
+      "ID_ESTADO": 19,
+      "NOME_ARQUIDIOCESE": "Diocese de Petrópolis",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 35,
+      "ID_ESTADO": 22,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Porto Velho",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 36,
+      "ID_ESTADO": 22,
+      "NOME_ARQUIDIOCESE": "Diocese de Ji-Paraná",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 37,
+      "ID_ESTADO": 22,
+      "NOME_ARQUIDIOCESE": "Ordinariado Militar do Brasil",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 38,
+      "ID_ESTADO": 24,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Florianópolis",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 39,
+      "ID_ESTADO": 24,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Joinvile",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 40,
+      "ID_ESTADO": 25,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de Campinas",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 41,
+      "ID_ESTADO": 25,
+      "NOME_ARQUIDIOCESE": "Arquidiocese de São Paulo",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 42,
+      "ID_ESTADO": 25,
+      "NOME_ARQUIDIOCESE": "Diocese de Amparo",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 43,
+      "ID_ESTADO": 25,
+      "NOME_ARQUIDIOCESE": "Diocese de Assis",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 44,
+      "ID_ESTADO": 25,
+      "NOME_ARQUIDIOCESE": "Diocese de Barretos",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 45,
+      "ID_ESTADO": 25,
+      "NOME_ARQUIDIOCESE": "Diocese de Bauru",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 46,
+      "ID_ESTADO": 25,
+      "NOME_ARQUIDIOCESE": "Diocese de Franca",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 47,
+      "ID_ESTADO": 25,
+      "NOME_ARQUIDIOCESE": "Diocese de Jundiaí",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 48,
+      "ID_ESTADO": 25,
+      "NOME_ARQUIDIOCESE": "Diocese de Lorena",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 49,
+      "ID_ESTADO": 25,
+      "NOME_ARQUIDIOCESE": "Diocese de Santo Amaro",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 50,
+      "ID_ESTADO": 25,
+      "NOME_ARQUIDIOCESE": "Diocese de São José dos Campos",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 51,
+      "ID_ESTADO": 25,
+      "NOME_ARQUIDIOCESE": "Diocese de São Miguel Paulista",
+      "ID_SITUACAO": 1
+    },
+    {
+      "ID_ARQUIDIOCESE": 52,
+      "ID_ESTADO": 27,
+      "NOME_ARQUIDIOCESE": "Diocese de Cristalândia",
+      "ID_SITUACAO": 1
+    }
+  ],
+  "PAROQUIA": [
+    {
+      "ID_PAROQUIA": 1,
+      "ID_REGIONAL": 9,
+      "ID_ARQUIDIOCESE": 31,
+      "NOME_PAROQUIA": "São Pedro do Mar",
+      "PAROCO_PAROQUIA": "Padre Julinho",
+      "ENDERECO_PAROQUIA": "Rua Gilberto Freire, 100",
+      "BAIRRO PAROQUIA": "Recreio dos Bandeirantes",
+      "CIDADE_PAROQUIA": "Rio de Janeiro",
+      "ID_ESTADO": 19,
+      "TIPO_PAROQUIA": 1
+    }
+  ],
+  "FUNCOES": [
+    {
+      "ID_FUNCAO": 1,
+      "DESCRICAO_FUNCAO": "ARQUIDIOCESES",
+      "ORDEM_FUNCAO": 1
+    },
+    {
+      "ID_FUNCAO": 2,
+      "DESCRICAO_FUNCAO": "PARÓQUIAS E INSTITUIÇÕES",
+      "ORDEM_FUNCAO": 2
+    },
+    {
+      "ID_FUNCAO": 3,
+      "DESCRICAO_FUNCAO": "COLABORADORES",
+      "ORDEM_FUNCAO": 3
+    }
+  ]
+}
