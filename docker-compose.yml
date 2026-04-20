@@ -1,0 +1,22 @@
+version: '3'
+services:
+  srvadocaonewsite:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: srvadocaonewsite
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      VITE_API_HOST: ${VITE_API_HOST}
+      VITE_API_TOKEN_SALT: ${VITE_API_TOKEN_SALT}
+      VITE_GOOGLE_ANALYTICS_PROPERTY_ID: ${VITE_GOOGLE_ANALYTICS_PROPERTY_ID}
+    ports:
+      - '1448:80'
+    networks:
+      - srvadocaonetwork
+
+networks:
+  srvadocaonetwork:
+    name: srvadocaonetwork
+    external: true
